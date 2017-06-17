@@ -138,7 +138,7 @@ public class WebServiceProcessRequest extends Thread
 			System.out.println("## " + filePath + " ## " + reqParams);
 			if (filePath.equals("/favicon.ico")) {
 				outBuf.append("have no /favicon.ico");
-			} else if (filePath.equals("/question")) {
+			} else if (filePath.equals("/question") || filePath.equals("/") || filePath.isEmpty()) {
 				String webPage = loadWebPage("next_question.html");
 				String ratingAndNextQuestion[] = new String[2]; // die beiden Array Elemente werden von der Methode "evaluateAnswerAndGetNextQuestion" gefuellt
 				String books = "<option value=\"" + book + "\">" + book + "</option>"; // the currently selected one

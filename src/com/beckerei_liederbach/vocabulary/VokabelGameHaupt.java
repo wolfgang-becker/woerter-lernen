@@ -29,14 +29,24 @@ public class VokabelGameHaupt
 
 	public static void main(String[] args) throws Exception
 	{
-		new VokabelGameHaupt();
+		new VokabelGameHaupt(args);
 	}
 
-	public VokabelGameHaupt() throws Exception
-	{	
-		openOrCreateDatabase();
+	public VokabelGameHaupt(String[] args) throws Exception
+	{
+		String databaseDir = null;
+		int port = 80;
+		for (int a = 0; a < args.length; a++) {
+			switch(args[a]) {
+			case "-dbdir": databaseDir = args[++a]; break;
+			case "-port": port = Integer.parseInt(args[++a]); break;
+			default: throw new Exception("invalid command line arg '" + args[a] + "'");
+			}
+		}
 
-		new WebService(this); // this object listens to requests from the Internet
+		openOrCreateDatabase(databaseDir);
+
+		new WebService(this, port); // this object listens to requests from the Internet
 
 		new SessionSaver(this);
 		
@@ -199,10 +209,11 @@ public class VokabelGameHaupt
 	}
 
 
-	private void openOrCreateDatabase() throws SQLException
+	private void openOrCreateDatabase(String databaseDir) throws Exception
 	{
+		if (databaseDir == null) throw new Exception("databaseDir is null");
 		DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
-		con = DriverManager.getConnection("jdbc:derby:directory:C:/temp/Privat/Spiele/VokabelGame/src/resources/database;create=true", "", "");
+		con = DriverManager.getConnection("jdbc:derby:directory:" + databaseDir + ";create=true", "", "");
 		con.setAutoCommit(false);
 		// lookup which tables exist and create missing tables
 		Set<String> existingTables = new HashSet<>();

@@ -5,15 +5,15 @@ import java.net.Socket;
 
 public class WebService extends Thread
 {
-	private static int PORT = 8081;
+	private int port;
 	private ServerSocket acceptSocket;
 	VokabelGameHaupt vokabelGameHaupt;
 
-	WebService(VokabelGameHaupt vokabelGameHaupt) throws Exception
+	WebService(VokabelGameHaupt vokabelGameHaupt, int port) throws Exception
 	{
 		this.vokabelGameHaupt = vokabelGameHaupt;
-		acceptSocket = new ServerSocket(PORT);
-		setName("WebService TCP listener at port " + PORT);
+		acceptSocket = new ServerSocket(port);
+		setName("WebService TCP listener at port " + port);
 		start();
 	}
 

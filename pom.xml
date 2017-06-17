@@ -26,4 +26,13 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+      <dependency>
+        <groupId>org.apache.derby</groupId>
+        <artifactId>derby</artifactId>
+        <version>10.8.2.2</version>
+        <type>jar</type>
+        <scope>compile</scope>
+      </dependency>
+  </dependencies>
 </project>
