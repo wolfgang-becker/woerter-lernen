@@ -1,19 +1,27 @@
-<html>
+<html><head><style>
+body, table, input, select { font-family: Arial, Helvetica, sans-serif; color: blue; font-size: 50px; }
+@media only screen and (max-width: 400px) {
+  body, table, input, select { font-size: 25px; }
+}
+</style></head>
 <body>
 <p>
 <form action="/question" method="post">
-  Username: <input type="text" name="user" value="${user}"/><br/>
-  Password: <input type="password" name="pass" value="${pass}"/><br/>
-  Buch:     <select name="book">${book}</select><br/>
-  Kapitel:  <select name="unit">${unit}</select><br/>
-  &nbsp;<br/>
-  ${rating}<br/>
-  &nbsp;<br/>
-  ${question} ? <input type="text" name="answer"/><br/>
-  <input type="hidden" name="question" value="${question}"/>
-  <input type="submit" value="Enter"/>
+<table>
+  <tbody>
+    <tr>	<td>Username:</td>	<td><input type="text" name="user" value="${user}"/></td></tr>
+    <tr>	<td>Password:</td>	<td><input type="password" name="pass" value="${pass}"/></td></tr>
+    <tr>	<td>Buch:</td>		<td><select name="book">${book}</select></td></tr>
+    <tr>	<td>Kapitel:</td>	<td><select name="unit">${unit}</select></td></tr>
+    <tr>	<td colspan="2">&nbsp;</td></tr>
+    <tr>	<td colspan="2">${rating}</td></tr>
+    <tr>	<td colspan="2">&nbsp;</td></tr>
+    <tr>	<td>${question} ?</td>	<td><input type="text" name="answer"/>
+					    <input type="hidden" name="question" value="${question}"/></td></tr>
+    <tr>	<td><input type="submit" value="Enter"/></td>	<td></td></tr>
+</table>
 </form>
-</p><p>
+<p>
 <a href="scores">Hall of Fame</a>
 </p>
 </body>
