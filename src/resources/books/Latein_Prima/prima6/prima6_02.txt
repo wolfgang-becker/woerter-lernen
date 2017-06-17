@@ -1,0 +1,24 @@
+hodie;heute;6L02 
+ludus;Spiel, Wettkampf, Schule;6L02 
+sunt;sie sind;6L02 
+sed;aber, sondern;6L02 
+amicus;Freund;6L02 
+diu;lange Zeit;6L02 
+exspectare, exspectat;warten, erwarten;6L02 
+tandem;endlich;6L02 
+populus;Volk (Pöbel);6L02 
+etiam;auch, sogar;6L02 
+nunc;jetzt, nun;6L02 
+tacere, tacet;schweigen;6L02 
+porta;Tor (Pforte, Portal);6L02 
+patere, patet;offen stehen, sich erstrecken (Patent);6L02 
+equus;Pferd;6L02 
+accedere, accedit;herbeikommen, hinzukommen;6L02 
+denique;schließlich, zuletzt;6L02 
+signum;Zeichen, Merkmal (Signal, Signatur);6L02 
+dare, dat;geben (Datum, Daten);6L02 
+currere, currit;eilen, laufen (Kurier);6L02 
+surgere, surgit;aufstehen, sich erheben, aufrichten;6L02 
+victor;Sieger;6L02 
+ecce;schau, schaut, sieh da, seht da!;6L02 
+praemium;Belohnung, Lohn, (Sieges-)Preis (Prämie);6L02 

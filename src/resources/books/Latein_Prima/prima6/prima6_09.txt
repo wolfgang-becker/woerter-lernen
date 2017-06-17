@@ -1,0 +1,25 @@
+convenire, convenio;besuchen, zusammenkommen, zusammenpassen (Konvent);6L09 
+hospes, hospitis m;Fremder, Gast, Gastgeber (Hospital, Hotel);6L09 
+dominus;Herr (dominant);6L09 
+considere, consido;sich setzen, sich niederlassen;6L09 
+parere, pareo; gehorchen, sich richten nach (parieren);6L09 
+aqua;Wasser (Aquarium);6L09 
+postea;nachher, später;6L09 
+cibus;Nahrung, Speise;6L09 
+praebere, praebeo;geben, hinhalten;6L09 
+bibere, bibo;trinken;6L09 
+oratio, orationis f;Rede;6L09 
+habere, habeo;haben, halten;6L09 
+vobis Dat.;euch;6L09 
+gratia;Ansehen, Beliebtheit, Dank, Gefälligkeit (Grazie, gratis);6L09 
+gratias agere;danken;6L09 
+interesse, intersum m.Dat.;dazwischen sein, teilnehmen an (Interesse);6L09 
+mos, moris m;Sitte, Brauch, Pl. Charakter (Moral);6L09 
+maiores, maiorum m;Vorfahren;6L09 
+munus, muneris n;Aufgabe, Geschenk;6L09 
+atque;und;6L09 
+inducere, induco;(hin)einführen, verleiten (Induktion);6L09 
+quoque (nachgestellt);auch;6L09 
+narrare, narro (de m.Abl.); erzählen (von/über);6L09 
+iter, itineris n; Reise, Weg, Marsch;6L09 
+Graecia;Griechenland;6L09 

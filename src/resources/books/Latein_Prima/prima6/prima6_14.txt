@@ -1,0 +1,24 @@
+qui, quae, quod;welcher, welche, welches, der, die, das, dieser, diese, dieses;6L14 
+appellare, appello (m.dopp.Akk.);anrufen, nennen, bezeichnen (als) (appellieren, Appell);6L14 
+quia Subj.m.Ind.;weil;6L14 
+superare, supero;besiegen, überragen, übertreffen;6L14 
+imprimis;besonders, vor allem;6L14 
+decernere, decerno, decrevi;beschließen, entscheiden, zuerkennen (Dekret);6L14 
+crimen, criminis n;Beschuldigung, Vorwurf, Verbrechen (Krimi);6L14 
+falsus;falsch;6L14 
+virtus, virtutis f;Tapferkeit, Tüchtigkeit, Vortrefflichkeit, Leistung (Virtuosität);6L14 
+vester, vestra, vestrum;euer;6L14 
+nescire, nescio, nescivi;nicht wissen;6L14 
+neque;und nicht, auch nicht, nicht einmal;6L14 
+errare, erro;(sich) irren;6L14 
+exemplum;Beispiel, Vorbild (Exempel, Exemplar);6L14 
+clarus;berühmt, hell, klar;6L14 
+desperare, despero (de m.Abl.);die Hoffnung aufgeben (auf), verzweifeln (an) (Desperado);6L14 
+familia;Familie, Hausgemeinschaft;6L14 
+solus;allein, einzig (Solo);6L14 
+curare, curo (m.Akk.);pflegen, sorgen für, besorgen (kurieren);6L14 
+studere, studeo, studui (m.Dat.);sich (wissenschaftl.) beschäftigen, sich bemühen (um), streben (nach) (studieren);6L14 
+vita;Leben, Lebensweise (vital, Vitamin);6L14 
+dimittere, dimitto, dimisi;aufgeben, entlassen;6L14 
+remanere, remaneo, remansi;(zurück)bleiben;6L14 
+Poeni, Poenorum; die Punier;6L14 

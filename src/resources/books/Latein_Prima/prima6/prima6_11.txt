@@ -1,0 +1,39 @@
+esse, sum, fui;sein, sich befinden;6L11 
+calamitas, calamitatis f;Schaden, Unglück, Niederlage (Kalamität);6L11 
+necare, neco, necavi; töten;6L11 
+maritus;Ehemann;6L11 
+credere, credo;anvertrauen, glauben (Kredit);6L11 
+posse, possum, potui;können (potent);6L11 
+mihi Dat.;mir;6L11 
+vir, viri;Mann;6L11 
+se Akk.;sich;6L11 
+ubi Subj. m. Ind.;sobald;6L11 
+munire, munio, munivi;bauen, befestigen, schützen;6L11 
+murus;Mauer;6L11 
+ego (betont);ich (Egoist);6L11 
+enim (nachgestellt);nämlich, in der Tat;6L11 
+hostis, hostis m;Feind (Landesfeind);6L11 
+a/ab m.Abl.;von, von ... her;6L11 
+prohibere, prohibeo, prohibui (a m.Abl.);abhalten (von), hindern (an);6L11 
+ira;Zorn;6L11 
+petere, peto, petivi;(auf)suchen, (er)streben, bitten, verlangen;6L11 
+(hostes/urbem) petere;(Feinde/eine Stadt) angreifen;6L11 
+o(h);ach, oh!;6L11 
+frater, fratris m;Bruder (Frater);6L11 
+lacrima;Träne;6L11 
+tenere, teneo, tenui;besitzen, festhalten, halten;6L11 
+frustra;vergeblich (frustriert, Frustration);6L11 
+ripa;Ufer;6L11 
+alere, alo, alui;ernähren, großziehen ("Alete", Eltern);6L11 
+flere, fleo, flevi;beklagen, (be)weinen (flennen);6L11 
+nex, necis f;Mord, Tod;6L11 
+complere, compleo, complevi;anfüllen, erfüllen;6L11 
+deponere, depono, deposui;ablegen, niederlegen, aufgeben;6L11 
+componere, compono, composui;vergleichen;6L11 
+colere, colo, colui;verehren, pflegen, bewirtschaften;6L11 
+corripere, corripio, corripui;ergreifen, gewaltsam an sich reißen;6L11 
+cupere, cupio, cupivi;verlangen, wünschen, wollen;6L11 
+velle, volo, volui;wollen;6L11 
+nolle, nolo, nolui;nicht wollen;6L11 
+Roma;Rom;6L11 
+Tiberis, Tiberis m (Akk. Tiberim); Tiber (Fluss durch Rom);6L11 

@@ -1,0 +1,17 @@
+donare, dono;schenken;6L21 
+tam;so;6L21 
+se gerere;sich verhalten;6L21 
+fatum;Schicksal, Götterspruch (fatal);6L21 
+posteri, posterorum Pl.;die Nachkommen;6L21 
+pius;fromm, gerecht, pflichtbewusst (Pietät);6L21 
+regio, regionis f;Gebiet, Gegend, Richtung (Region);6L21 
+litus, litoris n;Küste, Strand (Lido);6L21 
+iubere, iubeo, iussi (m.Akk.);anordnen, befehlen;6L21 
+crudelis, e;grausam;6L21 
+dolus;List, Täuschung;6L21 
+tristis, e;traurig, unfreundlich (trist);6L21 
+nimis;(all)zu, (all)zu sehr;6L21 
+credere, credo, credidi;anvertrauen, glauben;6L21 
+promittere, promitto, promisi;versprechen;6L21 
+sponte mea (tua, sua);freiwillig, aus eigener Kraft, von selbst (spontan);6L21 
+desinere, desino, desii;aufhören;6L21 

@@ -1,0 +1,19 @@
+accipere, accipio, accepi, acceptum;aufnehmen, erhalten, erfahren (akzeptieren);7L27 
+nisi Subj.;wenn nicht;7L27 
+igitur Adv.;also, folglich;7L27 
+divinus/divus, a, um;göttlich;7L27 
+pons, pontis m;Brücke;7L27 
+interea Adv.;inzwischen, unterdessen;7L27 
+pugna;Kampf;7L27 
+infestus, a, um;feindlich, feindselig;7L27 
+optare, opto;wünschen (adoptieren);7L27 
+adversus, a, um;entgegengesetzt, feindlich;7L27 
+sententia;Antrag (im Senat), Meinung, Satz, Sinn;7L27 
+indicare, indico;anzeigen, melden (Indikator);7L27 
+timor, timoris m;Angst, Furcht;7L27 
+temptare, tempto;angreifen, prüfen, versuchen;7L27 
+recens, recentis;frisch, neu;7L27 
+reducere, reduco, reduxi, reductum;zurückführen, zurückziehen (reduzieren);7L27 
+fuga;Flucht (Refugium);7L27 
+fuga salutem petere;die Rettung in der Flucht suchen, die Flucht ergreifen;7L27 
+frangere, frango, fregi, fractum;zerbrechen (Fraktur);7L27 

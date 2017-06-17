@@ -1,0 +1,30 @@
+ipse, ipsa, ipsum (Gen. ipsius, Dat. ipsi);(er, sie, es) selbst;7L29 
+epistula;Brief (Epistel);7L29 
+nullus, a, um (Gen. nullius, Dat. nulli);kein;7L29 
+solacium;Trost(mittel);7L29 
+opus est m. Abl.;es ist nötig, man braucht;7L29 
+deserere, desero, deserui, desertum;im Stiche lassen, verlassen;7L29 
+lectus;Bett, Liegesofa;7L29 
+iacere, iaceo, iacui;liegen;7L29 
+perpetuus, a, um;dauerhaft, ewig (Perpetuum mobile);7L29 
+vigilia;Nachtwache, (Wach-)Posten;7L29 
+vix Adv.;kaum, (nur) mit Mühe;7L29 
+sustinere, sustineo, sustinui;ertragen, standhalten;7L29 
+agitare, agito;betreiben, überlegen (Agitation);7L29 
+timore agitari;von Furcht gequält werden;7L29 
+perdere, perdo, perdidi, perditum;zugrunde richten;7L29 
+tectum;Dach, Haus;7L29 
+metuere, metuo, metui;(sich) fürchten;7L29 
+contingere, contingo, contigi, contactum;berühren, gelingen (Kontingent, Kontakt);7L29 
+suscipere, suscipio, suscepi, susceptum m. Akk;auf sich nehmen, sich (einer Sache) annehmen, unternehmen;7L29 
+coniunx, coniugis m/f;Gatte, Gattin;7L29 
+nubere, nubo, nupsi, nuptum m. Dat.;heiraten (von der Frau aus);7L29 
+premere, premo, pessi, pressum;(unter)drücken, bedrängen (Presse, Depression);7L29 
+ops, opis f;Hilfe, Kraft, pl. Macht, Mittel, Reichtum;7L29 
+audacia;Frechheit, Kühnheit;7L29 
+bonum;das Gut(e);7L29 
+consumere, consumo, consumpsi, consumptum;verbrauchen, verwenden (konsumieren, Konsum);7L29 
+consulere in m. Akk.;Maßnahmen ergreifen, vorgehen gegen;7L29 
+eicere, eicio, eieci, eiectum;hinauswerfen, vertreiben („EJECT“);7L29 
+arx, arcis f (Gen. Pl. -ium);Burg;7L29 
+Ulixes, Ulixis;Odysseus (König von Ithaka);7L29 

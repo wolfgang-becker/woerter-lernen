@@ -1,0 +1,23 @@
+obscurus;dunkel, unbekannt (obskur);6L19 
+ceteri, ae, a;die Übrigen (et cetera);6L19 
+nauta m;Seemann, Matrose;6L19 
+quiescere, quiesco, quievi;(aus)ruhen, schlafen;6L19 
+neque ... neque;weder ... noch;6L19 
+ventus;Wind (Ventilator);6L19 
+mare, maris n (Abl.Sg.-i, Nom./Akk.Pl.-ia, Gen.Pl.-ium);Meer (Marine);6L19 
+turbare, turbo;durcheinander bringen, stören;6L19 
+unda;Welle, Gewässer;6L19 
+sedere, sedeo, sedi;sitzen;6L19 
+observare, observo;beobachten;6L19 
+in tuto;in Sicherheit;6L19 
+finis, is m;Grenze, Ende, Ziel, Zweck, Pl. Gebiet (Finale);6L19 
+desiderare, desidero m.Akk.;sich sehnen nach, vermissen;6L19 
+celeritas, celeritatis f;Schnelligkeit (Ak-zeleration);6L19 
+volare, volo;fliegen, eilen (Voliere);6L19 
+pirata m;Pirat, Seeräuber;6L19 
+sceleratus;verbrecherisch, schädlich, Subst. Verbrecher;6L19 
+trahere, traho, traxi;ziehen, schleppen (Traktor);6L19 
+captivus;gefangen, Subst. (Kriegs-)Gefangener;6L19 
+quotiens;wie oft, so oft (Quotient);6L19 
+at;aber, jedoch, dagegen;6L19 
+o nos miseros;Ach, wir Armen/Unglücklichen!;6L19 

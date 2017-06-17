@@ -1,0 +1,37 @@
+is, ea, id;dieser, diese, dieses, er, sie, es;6L15 
+nox, noctis f;Nacht;6L15 
+multa nocte;in tiefer Nacht (wann?);6L15 
+somnus;Schlaf;6L15 
+excitare, excito;wecken, erregen, ermuntern;6L15 
+animadvertere, animadverto, animadverti:bemerken, wahrnehmen;6L15 
+surgere, surgo, surrexi;sich aufrichten, sich erheben, aufstehen;6L15 
+summus;der höchste, der letzte, der oberste;6L15 
+pauci, ae, a; wenige;6L15 
+contendere, contendo, contendi;eilen, sich anstrengen;6L15 
+currere, curro, cucurri;eilen, laufen;6L15 
+arcessere, arcesso, arcessivi;herbeirufen, holen;6L15 
+imperare, impero (m.Dat.);befehlen, herrschen (über) (Imperativ);6L15 
+claudere, claudo, clausi;abschließen, einschließen (Klausel, Klausur);6L15 
+primus;der erste (prima, Primel);6L15 
+lux, lucis f;Licht, Tageslicht;6L15 
+prima luce;bei Tagesanbruch;6L15 
+profecto;sicherlich, tatsächlich;6L15 
+duo, duae, duo;zwei (Duo);6L15 
+stare, sto, steti;stehen;6L15 
+discedere, discedo, discessi;auseinander gehen, weggehen;6L15 
+convocare, convoco;versammeln;6L15 
+accusare, accuso;anklagen, beschuldigen;6L15 
+defendere, defendo, defendi;abwehren, verteidigen, schützen;6L15 
+insidiae, insidiarum Pl.;Falle, Attentat, Hinterlist;6L15 
+vitare, vito;meiden, vermeiden;6L15 
+monere, moneo, monui;(er)mahnen (monieren, Monitor);6L15 
+postulare, postulo;fordern (Postulat);6L15 
+pellere, pello, pepuli;schlagen, vertreiben (Puls);6L15 
+mittere, mitto, misi;(los)lassen, schicken, werfen;6L15 
+restare, resto, restiti;übrig bleiben, Widerstand leisten;6L15 
+dare, do, dedi;geben;6L15 
+instituere, instituo, institui;beginnen, einrichten, unterrichten;6L15 
+attingere, attingo, attigi;berühren;6L15 
+respondere, respondeo, respondi;antworten, entsprechen;6L15 
+expellere, expello, expuli;vertreiben, verbannen;6L15 
+ostendere, ostendo, ostendi;zeigen, darlegen;6L15 

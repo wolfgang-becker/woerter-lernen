@@ -1,0 +1,20 @@
+<html>
+<body>
+<p>
+<form action="/question" method="post">
+  Username: <input type="text" name="user" value="${user}"/><br/>
+  Password: <input type="password" name="pass" value="${pass}"/><br/>
+  Buch:     <select name="book">${book}</select><br/>
+  Kapitel:  <select name="unit">${unit}</select><br/>
+  &nbsp;<br/>
+  ${rating}<br/>
+  &nbsp;<br/>
+  ${question} ? <input type="text" name="answer"/><br/>
+  <input type="hidden" name="question" value="${question}"/>
+  <input type="submit" value="Enter"/>
+</form>
+</p><p>
+<a href="scores">Hall of Fame</a>
+</p>
+</body>
+</html>

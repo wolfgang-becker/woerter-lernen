@@ -1,0 +1,29 @@
+socius;Gefährte, Verbündeter (sozial);7L32 
+colligere, colligo, coll?gi, collectum;sammeln (Kollekte, Kollektion, kollektiv);7L32 
+exercitus, exercit?s m;Heer;7L32 
+Polyn?ce duce;unter Führung des Polyneikes;7L32 
+committere, committo, comm?si, commissum;anvertrauen, veranstalten, zustande bringen, begehen;7L32 
+proelium committere;eine Schlacht schlagen;7L32 
+occ?dere, occ?do, occ?di, occ?sum;niederschlagen, töten;7L32 
+obtinere, obtineo, obtinui;(in Besitz) haben, (besetzt) halten;7L32 
+mens, mentis f (Gen. Pl. –ium);Geist, Sinn, Verstand, Meinung (mental, Kommentar);7L32 
+Creonte auctore;auf Veranlassung Kreons;7L32 
+honor / honos, honoris m;Ehre, (Ehren-)Amt (honorieren, Honorar);7L32 
+condere, condo, condidi, conditum;erbauen, gründen, verwahren, verbergen, bestatten;7L32 
+flagitium;Gemeinheit, Schandtat;7L32 
+honestus, a, um;angesehen, ehrenhaft;7L32 
+una Adv.;zugleich, zusammen;7L32 
+facinus, facinoris n;Handlung, Untat;7L32 
+audere, audeo;wagen;7L32 
+cavere, caveo, cavi, cautum (m. Akk.);sich hüten (vor), Vorsorge treffen (Kaution);7L32 
+aditus, adit?s m;Zugang;7L32 
+difficilis, e;schwierig;7L32 
+custos, custodis m/f;Wächter(in) (Küster);7L32 
+armatus, a, um;bewaffnet;7L32 
+lex, legis f;Gesetz, Bedingung (legal, legitim, Legislative);7L32 
+constituere, constituo, constitui, constitutum;festsetzen, beschließen (Konstitution);7L32 
+obsecrare, obsecro;anflehen, bitten;7L32 
+venia;Gefallen, Nachsicht, Verzeihung;7L32 
+impetrare, impetro;erreichen, durchsetzen;7L32 
+inv?tus, a, um;ungern, gegen den Willen;7L32 
+Creonte inv?to;gegen Kreons Willen;7L32 

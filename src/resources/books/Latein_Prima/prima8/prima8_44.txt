@@ -1,0 +1,36 @@
+petere, peto, petivi, petitum;(auf)suchen, (er)streben;8L44 
+manere, maneo, mansi, mansurum (m. Akk.);bleiben, warten, warten auf (permanent);8L44 
+futurus, a, um;zukünftig, kommend (Futur);8L44 
+res futurae;Zukunft;8L44 
+sperare, spero;erwarten, hoffen;8L44 
+secundus,a,um;der zweite, günstig (Sekunde);8L44 
+res secundae;Glück;8L44 
+providere, provideo, providi, provisum (m. Akk.);vorhersehen;8L44 
+haud;nicht;8L44 
+proferre, profero, protuli, prolatum;(hervor)holen, zur Sprache bringen;8L44 
+ire, eo, ii, itum;gehen;8L44 
+exitus, exitus m;Ausgang, Ende (Exitus);8L44 
+requirere, requiro, requisivi, requisitum;aufsuchen, sich erkundigen, verlangen;8L44 
+excedere, excedo, excessi, excessum;hinausgehen, weggehen;8L44 
+aut...aut;entweder...oder;8L44 
+incolumis, e;unverletzt, wohlbehalten;8L44 
+redire, redeo, redii,reditum;zurückgehen, zurückkehren;8L44 
+posterus, a, um;folgend;8L44 
+obicere, obicio, obieci, obiectum;darbieten, vorwerfen (Objekt, objektiv);8L44 
+se ocicere m. Dat.;sich jem. entgegenwerfen, sich auf jem. stürzen;8L44 
+contra;gegen (Kontrast, Konter);8L44 
+multo Adv.;(um) viel;8L44 
+rem bene gerere;etwas gut durchführen, Erfolg haben;8L44 
+ex illo tempore;seit jener Zeit;8L44 
+supra Adv.;darüber hinaus, oben (Sopran);8L44 
+memorare, memoro;erwähnen, sagen;8L44 
+durus, a, um;hart (Dur, dauern);8L44 
+nec/neque;und nicht, auch nicht, nicht einmal;8L44 
+nec...nec;weder...noch;8L44 
+turris, turris f;Turm;8L44 
+cultus, cultus m;Bildung, Lebensweise, Pflege, Verehrung;8L44 
+cella;Kammer, Keller, Tempel(raum) (Zelle, Keller);8L44 
+auxilium petere;um Hilfe bitten;8L44 
+respondere, respondeo, respondi, responsum;antworten, entsprechen;8L44 
+bono animo esse;guten Mutes sein, zuversichtlich sein;8L44 
+brevi (tempore);nach kurzer Zeit, bald (darauf);8L44 

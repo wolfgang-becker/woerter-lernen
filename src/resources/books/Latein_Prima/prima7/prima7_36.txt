@@ -1,0 +1,30 @@
+aliquis, aliquid (Gen. alicuius usw.);(irgend)jemand;7L36 
+ubi terrarum?;wo in aller Welt?;7L36 
+quid novi?;was an Neuigkeiten?;7L36 
+ob m. Akk.;wegen, für;7L36 
+quis vestrum?;wer von euch?;7L36 
+noscere, nosco, novi, notum;erkennen, kennen lernen;7L36 
+no(vi)sse, novi Perf.;kennen, wissen;7L36 
+cenare, ceno;essen;7L36 
+recte Adv.;geradeaus, richtig, zu Recht;7L36 
+re versa;in Wirklichkeit, tatsächlich;7L36 
+praeesse, praesum, praefui m. Dat.;an der Spitze stehen, leiten;7L36 
+inde Adv.;von dort, darauf, deshalb;7L36 
+genus, generis n;Abstammung, Art, Geschlecht (Genus, Genre, generell);7L36 
+ingenium;Begabung, Talent (Ingenieur);7L36 
+egregius, a, um;ausgezeichnet, hervorragend;7L36 
+pertinere, pertineo (ad m. Akk.);betreffen, gehören (zu), sich erstrecken (bis);7L36 
+quid ad rem pertinet?;was tut das zur Sache?;7L36 
+non modo ... sed etiam;nicht nur ... sondern auch;7L36 
+militaris, e;Kriegs-, militärisch (Militär);7L36 
+otium;freie Zeit, Ruhe (von berufl. Tätigkeit);7L36 
+postremo Adv.;schließlich;7L36 
+sumptus, sumptus m;der Aufwand, die Kosten;7L36 
+sumptus facere;Ausgaben tätigen;7L36 
+varius, a, um;bunt, verschieden, vielfältig (variabel, Variante);7L36 
+voluptas, voluptatis f;Lust, Vergnügen;7L36 
+multum Adv.;sehr, viel;7L36 
+quaestor, oris m;Quästor (röm. Beamter, verantworlich für die Staatskasse);7L36 
+aedilis, is m;Ädil (hoher röm. Polizeibeamter);7L36 
+praetor, oris m;Prätor (röm. Beamter, zuständig für das Rechtswesen);7L36 
+nomine;namens, mit Namen;7L36 

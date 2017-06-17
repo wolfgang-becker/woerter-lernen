@@ -1,0 +1,29 @@
+ad m.Akk.;an, bei , nach, zu;6L03 
+per m.Akk.;durch, hindurch;6L03 
+amica;Freundin;6L03 
+petere, petit;(auf)suchen, (er)streben, bitten, verlangen (Petition);6L03 
+aedificium;Gebäude;6L03 
+spectare, spectat;betrachten, hinsehen;6L03 
+intrare, intrat;betreten, eintreten;6L03 
+mercator;Kaufmann, Händler;6L03 
+bestia;Tier;6L03 
+vendere, vendit;verkaufen;6L03 
+ante m.Akk.;vor;6L03 
+taberna;Laden, Werkstatt, Gasthaus;6L03 
+videre, videt;sehen, darauf achten (Video);6L03 
+statim;auf der Stelle, sofort;6L03 
+in m.Akk.;in (... hinein), nach (... hin), gegen;6L03 
+contendere, contendit;eilen, sich anstrengen;6L03 
+mulier;Frau;6L03 
+autem;aber, andererseits;6L03 
+clamor;Geschrei, Lärm;6L03 
+tollere, tollit;aufheben, in die Höhe heben, wegnehmen;6L03 
+quid?;was?;6L03 
+quis?;wer?;6L03 
+itaque;deshalb;6L03 
+relinquere, relinquit;unbeachtet lassen, verlassen, zurücklassen (Relikt);6L03 
+cur?;warum?;6L03 
+apud m.Akk.;bei, nahe bei;6L03 
+non;nicht;6L03 
+iam;nun, schon;6L03 
+non iam;nicht mehr;6L03 

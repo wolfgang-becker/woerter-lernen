@@ -1,0 +1,35 @@
+salutem dicere (m.Dat.);jmd. grüßen;7L24 
+monstrum;Wunderzeichen, Ungeheuer, Gespenst (monströs);7L24 
+fabula;Geschichte, Erzählung, Theaterstück (Fabel, fabelhaft);7L24 
+mirus, a, um;wunderbar, erstaunlich (Mirakel);7L24 
+commovere, commoveo, commovi;bewegen, veranlassen;7L24 
+talis, e;derartig, ein solcher, so (beschaffen);7L24 
+permovere, permoveo, permovi;beunruhigen, veranlassen;7L24 
+incredibilis, e;unglaublich ;7L24 
+antiquus, a, um;alt, altertümlich (antik, Antiquität);7L24 
+tempus, temporis (n);(günstige) Zeit, Pl. Umstände ;7L24 
+amplus, a, um;weit, groß, bedeutend (Amplitude);7L24 
+nocturnus, a, um;nächtlich;7L24 
+ferrum;Eisen, Waffe;7L24 
+vinculum;Band, Fessel; Pl. Gefängnis;7L24 
+gravis, e;schwer (gravierend, Gravitation);7L24 
+mox (Adv.);bald, dann;7L24 
+ignotus, a, um;unbekannt;7L24 
+quondam (Adv.);einst, einmal, manchmal;7L24 
+philosophus;Philosoph;7L24 
+perturbare, perturbo;in Verwirrung bringen;7L24 
+perterrere, perterreo, perterrui; sehr erschrecken, einschüchtern;7L24 
+conducere, conduco, conduxi;zusammenführen, anwerben, mieten;7L24 
+sinere, sino, sivi;lassen, erlauben;7L24 
+silentium; Schweigen, Stille;7L24 
+movere, moveo, movi;bewegen (Motiv, Motor);7L24 
+tenebrae, tenebrarum (Pl.);Dunkelheit, Finsternis;7L24 
+procedere, procedo, processi;(vorwärts) gehen, vorrücken (Prozession, Prozess);7L24 
+continere, contineo, continui;festhalten;7L24 
+modo (Adv.);eben (noch);7L24 
+abesse, absum, afui; abwesend sein, fehlen (absent, Absentenheft);7L24 
+locus;Ort, Platz, Stelle (Lokal, lokal, Lokalisation);7L24 
+abire, abeo, abii;weggehen;7L24 
+invenire, invenio, inveni;finden, erfinden (Inventur, Inventar);7L24 
+liber, libera, liberum;frei (Liberalismus, liberal);7L24 
+vale;leb'wohl!;7L24 

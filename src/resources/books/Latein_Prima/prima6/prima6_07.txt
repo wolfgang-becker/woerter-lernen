@@ -1,0 +1,29 @@
+circiter;ungefähr;6L07 
+viginti;zwanzig;6L07 
+vestis, vestis (Gen.Pl. vestium);Kleid, Kleidung;6L07 
+velle, volo;wollen;6L07 
+sacrum;Opfer, Heiligtum (Sakrament);6L07 
+convivium;Gastmahl, Gelage;6L07 
+primo;zuerst;6L07 
+toga;Toga ;6L07 
+tunica;Tunika (Unterkleid unter der Toga);6L07 
+verbum;Wort, Äußerung (Verbum, verbal);6L07 
+dicere, dico;sagen, sprechen (dichten, diktieren);6L07 
+copia;Menge, Möglichkeit, Vorrat (Kopie, kopieren);6L07 
+consilium;Beratung, Beschluss, Plan, Rat;6L07 
+admittere, admitto;hinzuziehen, zulassen;6L07 
+filius;Sohn;6L07 
+attingere, attingo;berühren;6L07 
+probare;beweisen, für gut befinden (probieren);6L07 
+non-ne;nicht?;6L07 
+auxilium;Hilfe;6L07 
+gerere, gero;ausführen, führen, tragen (Geste, gestikulieren);6L07 
+filia;Tochter (Filiale);6L07 
+-que;und;6L07 
+oculus;Auge (Okular);6L07 
+convertere, converto;verändern, (um)wenden, richten (auf)(konvertieren);6L07 
+componere, compono;vergleichen;6L07 
+remanere, remaneo;(zurück)bleiben;6L07 
+pater, patris m;Vater (pater);6L07 
+aedes, aedium f Pl.;Haus, Gebäude;6L07 
+nolle, nolo;nicht wollen;6L07 

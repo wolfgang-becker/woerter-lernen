@@ -1,0 +1,30 @@
+ferre, fero, tuli, latum;bringen, tragen, ertragen;7L37 
+morbus;Krankheit;7L37 
+minus Adv.;weniger (minus);7L37 
+quam;als, wie;7L37 
+prius Adv.;früher, zuerst;7L37 
+memoria;Erinnerung, Gedächtnis, Zeit (Memoiren, Memory);7L37 
+memoria tenere;im Gedächtnis behalten;7L37 
+illud philosophorum;jedes bekannte Wort der Philosophen;7L37 
+atque/ac;und, auch und, im Vergleich: wie, als;7L37 
+condicio, condicionis f;Bedingung, Lage, Verabredung (Kondition);7L37 
+scribere, scribo, scripsi, scriptum;beschreiben, schreiben (Schrift, Skript);7L37 
+magnitudo, magnitudinis f;Größe;7L37 
+conferre, confero, contuli, collatum; vergleichen, zusammentragen (Konferenz);7L37 
+visere, viso, visi, visum;besichtigen, besuchen (Visitenkarte);7L37 
+affere, affero, attuli, allatum;bringen, herbeibringen, mitbringen, melden;7L37 
+quidam, quaedam, quoddam (Akk. Sg. quendam, quandam);ein gewisser, (irgend)ein(er);7L37 
+aedis, aedis f (Gen. Pl. -ium);Tempel, Pl. Haus, Gebäude;7L37 
+theatrum;Theater;7L37 
+cernere, cerno;sehen, bemerken;7L37 
+statura;Gestalt, Statur;7L37 
+descendere, descendo, descendi, descensum;herabsteigen (Deszendenz);7L37 
+eiusmodi indekl.;derartig, so beschaffen;7L37 
+auferre, aufero, abstuli, ablatum;rauben, wegbringen (Ablativ);7L37 
+impius, a, um;gottlos, gewissenlos;7L37 
+postremo Adv.;schließlich, kurz (gesagt);7L37 
+praesidium;(Wach-)Posten, Schutztruppe (Präesidium, Präsident);7L37 
+tunc Adv.;damals, dann;7L37 
+avertere, averto, averti, aversum;abwenden, vertreiben (Aversion);7L37 
+foras Adv.;heraus, hinaus (wohin?);7L37 
+laetus, a, um;froh, fruchtbar;7L37 

@@ -1,0 +1,34 @@
+vehemens, vehementis; heftig, energisch, kritisch (vehement);6L16 
+dum;während, solange, (so lange) bis;6L16 
+ingens, ingentis;gewaltig, ungeheuer;6L16 
+praestare, praesto, praestiti m.Dat.;übertreffen;6L16 
+annus;Jahr (Anno);6L16 
+totum annum;das ganze Jahr (wie lange?);6L16 
+verus;echt, richtig, wahr (veri-fizieren);6L16 
+etsi;auch wenn, obwohl;6L16 
+potens, potentis;mächtig, stark (potent);6L16 
+pulcher, pulchra, pulchrum;schön;6L16 
+valere, valeo, valui;Einfluss haben, gesund sein, stark sein (Invalide);6L16 
+cum Subj.m.Ind.;(immer) wenn, als (plötzlich), (zu der Zeit) als;6L16 
+hora;Stunde, Zeit;6L16 
+multas horas;viele Stunden (lang);6L16 
+quamquam;obwohl;6L16 
+contentus (m.Abl.);zufrieden (mit);6L16 
+novus;neu, ungewöhnlich (Novum, renovieren);6L16 
+inimicus;feindlich, Subst. Feind;6L16 
+perspicere, perspicio, perspexi;erkennen, genau betrachten, sehen (Perspektive);6L16 
+copiae, copiarum Pl.;Truppen;6L16 
+navis, navis f;Schiff (Navigation);6L16 
+monumentum;Denkmal (Monument);6L16 
+multos annos;viele Jahre (lang);6L16 
+imperium;Befehl, Befehlsgewalt, Herrschaft, Herrschaftsgebiet (Imperium);6L16 
+temperare, tempero m.Akk.;lenken, ordnen (Temperament);6L16 
+corpus, corporis n;Körper, Leichnam (korpulent);6L16 
+aurum;Gold;6L16 
+sibi;sich;6L16 
+adiungere, adiungo, adiunxi;hinzufügen, anschließen;6L16 
+sibi adiungere;für sich gewinnen;6L16 
+regnum;(Königs-)Herrschaft, Reich;6L16 
+conicere, conicio, conieci;(zusammen)werfen, folgern, vermuten;6L16 
+potentia;Macht (Potenz);6L16 
+

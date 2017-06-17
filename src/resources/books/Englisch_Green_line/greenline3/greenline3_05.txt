@@ -1,0 +1,42 @@
+medium, pl. media;Medium, Medien;3L05
+celeb(rity);berühmte Persönlichkeit;3L05
+to copy;nachmachen;3L05
+to change;(sich)verändern;3L05
+quality;Qualität, Qualitäts-;3L05
+popular newspaper;Boulevardzeitung;3L05
+newspaper;Zeitung;3L05
+to create;(er)schaffen;3L05
+the public;die Öffentlichkeit;3L05
+studio;Studio;3L05
+concert;Konzert;3L05
+awesome;super, spitze, beeindruckend;3L05
+main;Haupt-;3L05
+entertainment;Unterhaltung;3L05
+soap (opera);Seifenoper, Soap;3L05
+realistic;realistisch;3L05
+violence;Gewalt;3L05
+houswife, pl. housewives;Hausfrau;3L05
+to advertise;Werbung machen (für), werben, anpreisen, inserieren;3L05
+soap;Seife;3L05
+cleaning product;Reinigungsmittel, Putzmittel;3L05
+nickname;Spitzname;3L05
+copy;Exemplar;3L05
+programme;Programm, Sendung;3L05
+passive;Passiv;3L05
+to discover;entdecken;3L05
+to cast, cast, cast;jemandem eine Rolle (in einem Film) geben;3L05
+agent;Agent;3L05
+file;Akte;3L05
+script;Drehbuch, Skript;3L05
+sides;Skript beim Casting;3L05
+to reread, reread, reread;noch einmal lesen;3L05
+Don't get your hopes up too high.;Mach dir nicht zu viele Hoffnungen.;3L05
+assistant;Assistent, Assistentin;3L05
+to sign;unterschreiben;3L05
+contract;Vertrag;3L05
+super;super;3L05
+to discuss;diskutieren;3L05
+to film;filmen, drehen;3L05
+to photograph;fotografieren;3L05
+active;Aktiv;3L05
+by;von;3L05

@@ -1,0 +1,29 @@
+silva;Wald;7L28 
+inter (m.Akk.);unter, während, zwischen (intern);7L28 
+arbor, arboris (f);Baum;7L28 
+iuvenis, iuvenis (m);junger Mann, Adj. jung;7L28 
+amor, amoris (m);Liebe;7L28 
+accendere, accendo, accendi, accensum;anfeuern, anzünden;7L28 
+amore accensus;in Liebe entflammt, verliebt;7L28 
+ager, agri (m);Acker, Feld, Gebiet (Agrar-);7L28 
+vestigium;Fußsohle, Spur, Stelle;7L28 
+magis (Adv.);mehr, eher;7L28 
+natura;Beschaffenheit, Natur, Wesen (Naturell, Naturalien, natürlich);7L28 
+vetare, veto, vetui;verhindern, verbieten (Veto);7L28 
+demum (Adv.);endlich;7L28 
+auris, auris (f, Gen.Pl.-ium);Ohr;7L28 
+repetere, repeto, repetivi, repetitum;(zurück)verlangen, wiederholen (Repetent, repetieren);7L28 
+nihil/nil;nichts (Nihilismus, Nihilist);7L28 
+huc (Adv.);hierher;7L28 
+ardere, ardeo, arsi;brennen;7L28 
+rursus (Adv.);wieder;7L28 
+occurrere, occurro, occurri;begegnen, entgegentreten;7L28 
+tangere, tango, tetigi, tactum;berühren (Tango, Takt, Tangente);7L28 
+repellere, repello, reppuli, repulsum;zurückstoßen, abweisen, vertreiben;7L28 
+recipere, recipio, recepi, receptum;aufnehmen, wieder bekommen, zurücknehmen (Rezept);7L28 
+se recipere;sich zurückziehen;7L28 
+hinc (Adv.);von hier, hierauf;7L28 
+dolor, doloris (m);Schmerz;7L28 
+membrum;Glied, Körperteil;7L28 
+solvere, solvo, solvi, solutum;auflösen, bezahlen, lösen (absolvieren);7L28 
+dicere, dico, dixi, dictum;sagen, sprechen;7L28 

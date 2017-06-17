@@ -1,0 +1,26 @@
+consistere, consisto;Halt machen, sich aufstellen (Konsistenz);6L05 
+dubitare;zögern;6L05 
+respondere, respondeo;antworten, entsprechen (Korrespondenz);6L05 
+undique;von allen Seiten;6L05 
+nuntius;Bote, Nachricht;6L05 
+victoria;Sieg;6L05 
+nuntiare;melden (denunzieren);6L05 
+e/ex m.Abl.;aus, von ... her;6L05 
+repente;plötzlich;6L05 
+consul;Konsul;6L05 
+gaudere, gaudeo m.Abl.;sich freuen über etwas;6L05 
+licet;es ist erlaubt, es ist möglich;6L05 
+quod;dass, weil;6L05 
+iniuria;Beleidigung, Unrecht, Gewalttat;6L05 
+dolere, doleo;schmerzen, bedauern, Schmerz empfinden (Kondolenz);6L05 
+barbarus;Ausländer, Barbar;6L05 
+pugnare;kämpfen;6L05 
+patria;Heimat;6L05 
+arma, arma n Pl.;Waffen, Gerät (Armee, Armatur);6L05 
+defendere, defendo;abwehren, verteidigen, schützen (defensiv, Defensive);6L05 
+deus;Gott, Gottheit;6L05 
+colere, colo;verehren, pflegen, bewirtschaften (Kultur);6L05 
+debere, debeo;müssen, sollen, schulden;6L05 
+sine m.Abl.;ohne;6L05 
+periculum;Gefahr;6L05 
+vivere, vivo;leben;6L05 

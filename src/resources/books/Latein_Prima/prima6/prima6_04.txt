@@ -1,0 +1,29 @@
+in m.Abl.;in, an, auf, bei (wo?);6L04 
+cum m.Abl.;mit, zusammen mit;6L04 
+thermae;Thermen, Badeanlage;6L04 
+vestis f;Kleid, Kleidung (Weste);6L04 
+deponere, deponit;ablegen, niederlegen, aufgeben (Depot, Deponie);6L04 
+de m.Abl.;"von, von ... her, von ... herab, über";6L04 
+cogitare;denken, beabsichtigen;6L04 
+cogitare de m.Abl.;denken an;6L04 
+amare;lieben;6L04 
+semper;immer;6L04 
+donum;Geschenk;6L04 
+delectare;erfreuen, unterhalten;6L04 
+vult;er, sie, es will;6L04 
+tamen;dennoch, jedoch;6L04 
+laudare;loben (Laudatio);6L04 
+te;dich;6L04 
+certe;gewiss, sicherlich;6L04 
+complere, complet;anfüllen, erfüllen (komplett);6L04 
+senex;Greis, alter Mann (Senior, senil);6L04 
+vinum;Wein;6L04 
+sumere, sumit;nehmen (Kon-sum);6L04 
+pro m.Abl.;an Stelle von, für;6L04 
+pecunia;Geld, Vermögen;6L04 
+fur, furem m;Dieb;6L04 
+tantum (nachgestellt);nur;6L04 
+numquam;niemals;6L04 
+uxor, uxorem f;Ehefrau;6L04 
+adulescens, adulescentem m;junger Mann;6L04 
+

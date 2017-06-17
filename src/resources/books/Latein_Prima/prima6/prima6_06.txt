@@ -1,0 +1,25 @@
+vocare;rufen, nennen (Vokal, Vokativ);6L06 
+mittere, mitto;(los)lassen, schicken, werfen (Mission, Messe);6L06 
+domina;Herrin;6L06 
+emere, emo;kaufen;6L06 
+serva;Sklavin;6L06 
+parare;bereiten, vorbereiten, vorhaben, erwerben (parat, präparieren, reparieren);6L06 
+ornare;schmücken (Ornament);6L06 
+mensa;Tisch;6L06 
+laborare;arbeiten;6L06 
+cena;Essen, Mahlzeit;6L06 
+iubere, iubeo (m.Akk.);anordnen, befehlen;6L06 
+puella;Mädchen;6L06 
+adesse;"da sein, helfen";6L06 
+puer;Junge, Bub;6L06 
+tu (betont);du ;6L06 
+bene;gut;6L06 
+liberi, liberos Pl.;Kinder;6L06 
+mater, matrem f;Mutter;6L06 
+ostendere, ostendo;zeigen, darlegen;6L06 
+placere, placeo;gefallen;6L06 
+paulo;(um) ein wenig;6L06 
+post;hinter, nach, dann, später;6L06 
+paulo post;kurz darauf;6L06 
+aedes, aedes f Pl.;Haus, Gebäude;6L06 
+portare;tragen, bringen (Porto, transportieren);6L06 

@@ -1,0 +1,24 @@
+quantus, a, um;wie groß, wie viel (Quantität, Quantum);7L41 
+-ne im indir. Fragesatz;ob;7L41 
+-ne ... an im indir. Fragesatz;ob ... oder;7L41 
+num im indir. Fragesatz;ob;7L41 
+beneficium;Wohltat (Benefizspiel);7L41 
+gerere, gero, gessi, gestum;ausführen, führen, tragen;7L41 
+res gestae;Taten;7L41 
+perficere, perficio, perfeci, perfectum;erreichen, fertig stellen, vollenden (perfekt);7L41 
+laetitia;Freude;7L41 
+laborare m. Abl.;leiden (an);7L41 
+orbis terrarum;Erdkreis;7L41 
+ars, artis f (Gen. Pl. -ium);Eigenschaft, Fertigkeit, Kunst (Artist);7L41 
+providere, provideo, providi, provisum (ut); dafür sorgen (dass);7L41 
+apertus, a, um;offen, offenkundig;7L41 
+otium;freie Zeit, Ruhe (von berufl. Tätigkeit), Frieden;7L41 
+testis, testis m/f (Gen. Pl. -ium);Zeuge (Test, Testament, Attest);7L41 
+frumentum;Getreide;7L41 
+fructus, fructus m;Ertrag, Frucht, Nutzen (Frutti di mare, Fructose);7L41 
+villa;Haus, Landhaus (Villa, Weiler);7L41 
+utrum ... an im indir. Fragesatz;ob ... oder;7L41 
+species, speciei f;Anblick, Aussehen, Schein;7L41 
+aetas, aetatis f;Lebensalter, Zeitalter, Zeit;7L41 
+efferre, effero, extuli, elatum;herausheben, hervorbringen;7L41 
+res publica;Staat (Republik);7L41 

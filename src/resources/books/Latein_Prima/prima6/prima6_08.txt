@@ -1,0 +1,24 @@
+venire, venio;kommen;6L08 
+libertus;Freigelassener;6L08 
+negotium;Aufgabe, Geschäft, Angelegenheit;6L08 
+agere, ago;handeln, treiben, verhandeln (Aktie,  aktiv, reagieren);6L08 
+vox;Äußerung, Laut, Stimme;6L08 
+audire, audio;hören (Audienz, Auditorium);6L08 
+patronus;Patron (Schutzherr);6L08 
+via;Straße, Weg (Viadukt);6L08 
+mons, montis m;Berg;6L08 
+pervenire, pervenio ad/in m.Akk.;kommen zu/nach;6L08 
+ducere, duco;führen, ziehen (Äquadukt);6L08 
+propinquus;Verwandter;6L08 
+gens, gentis f;Familienverband, Stamm, Volk;6L08 
+parens, parentis m/f;Vater, Mutter;6L08 
+parentes, parentum m Pl.;Eltern;6L08 
+soror, sororis f;Schwester;6L08 
+ara;Altar;6L08 
+gaudium;Freude (Gaudi);6L08 
+dea;Göttin;6L08 
+salus, salutis f;Gesundheit, Glück, Rettung, Gruß (Salut);6L08 
+pax, pacis f;Friede (Pazifist) ;6L08 
+orare;bitten (Oratorium);6L08 
+agmen, agminis n;(Heeres-)Zug;6L08 
+domum;nach Hause;6L08 

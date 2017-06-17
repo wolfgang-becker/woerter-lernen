@@ -1,0 +1,29 @@
+res ita se habet;die Sache verhält sich so;8L47 
+stultus, a, um;dumm;8L47 
+ignarus, a, um (m. Gen.);ohne Kenntnis, unwissend;8L47 
+tot;so viele;8L47 
+praeterire, praetereo, praeterii, praeteritum;übergehen, vorbeigehen (Präteritum);8L47 
+edere, edo, edidi, editum;herausgeben, bekanntmachen (edieren, Edition);8L47 
+comparare, comparo;vergleichen (Komparativ);8L47 
+pergere, pergo, perrexi;aufbrechen, weitermachen;8L47 
+quemadmodum;auf welche Weise (auch immer);8L47 
+adeo Adv.;so sehr;8L47 
+valere ad m. Akk.;taugen zu;8L47 
+forte Adv.;zufällig;8L47 
+quasi Subj.;wie wenn, als ob;8L47 
+opinio, opinionis f;Meinung, (guter) Ruf;8L47 
+ut opinio mea est;meiner Meinung nach;8L47 
+factum;Handlung, Tat, Tatsache;8L47 
+componere, compono, composui, compositum;abfassen, ordnen, schlichten, vergleichen (Komponente, Kompost);8L47 
+praesertim (cum);besonders (da/weil);8L47 
+constare ex m. Abl.;bestehen aus;8L47 
+pudor, pudoris m;Schamgefühl, Anstand;8L47 
+nudus, a, um;nackt;8L47 
+iniquus, a, um;ungerecht, ungleich;8L47 
+invidia;Neid;8L47 
+omittere, omitto, omisi, omissum;aufgeben, beiseitelassen;8L47 
+odium;Hass;8L47 
+odio incensus;voller Hass;8L47 
+afficere, afficio, affeci, affectum m. Abl.;versehen mit (Affekt);8L47 
+doloribus afficere m. Akk.;jmd. Schmerzen zufügen;8L47 
+invenire, invenio, inveni, inventum;finden, erfinden;8L47 

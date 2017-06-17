@@ -1,0 +1,30 @@
+patres (conscripti), patrum (conscriptorum) Pl.;Senatoren;7L31 
+mutare, muto;(ver)ändern, verwandeln;7L31 
+adulescens, adulescentis;jung, Subst. junger Mann;7L31 
+exstinguere, exstinguo, exstinxi, exstinctum;auslöschen, vernichten;7L31 
+interest (m. Gen.);es ist wichtig (für jmd.);7L31 
+aures praebere;Gehör schenken, zuhören;7L31 
+philosophia;Philosophie;7L31 
+aestimare, aestimo;(ein)schätzen, beurteilen;7L31 
+magni aestimare;hoch schätzen;7L31 
+incipere, incipio, incepi (coepi), inceptum;anfangen, beginnen;7L31 
+pars, partis f (Gen. Pl. –ium);Teil, Richtung, Seite (partiell, Partei);7L31 
+disciplina;Disziplin, Lehre;7L31 
+cognoscere, cognosco, cognovi, cognitum;erkennen, kennen lernen;7L31 
+exercere, exerceo, exercui, exercitum;üben, trainieren, quälen (exerzieren);7L31 
+inopia;Mangel, Not;7L31 
+male Adv.;schlecht, schlimm;7L31 
+necessarius, a, um;notwendig;7L31 
+vindicare in m. Akk.;vorgehen gegen;7L31 
+docere, doceo, docui, doctum;lehren, unterrichten (Doktor, Dozent);7L31 
+damnare, damno (m. Gen.);verurteilen (wegen);7L31 
+funus, funeris n;Begräbnis, Untergang;7L31 
+modus;Art, Weise, Maß (Modell, Mode);7L31 
+corrumpere, corrumpo, corrupi, corruptum;bestechen, verderben (korrupt, Korruption);7L31 
+pellere, pello, pepuli, pulsum;schlagen, vertreiben;7L31 
+acerbus, a, um;bitter, grausam, rücksichtslos;7L31 
+resistere, resisto, restiti;stehen bleiben, Widerstand leisten (resistent);7L31 
+reprehendere, reprehendo, reprehendi, reprehensum;kritisieren, tadeln, wieder aufgreifen;7L31 
+tollere, tollo, sustuli, sublatum;aufheben, in die Höhe heben, beseitigen, wegnehmen;7L31 
+Graecus, a, um;griechisch;7L31 
+Graeci, -orum;(die) Griechen;7L31 

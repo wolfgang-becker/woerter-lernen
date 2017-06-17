@@ -1,0 +1,24 @@
+tempus consumere;die Zeit aufbrauchen/verschwenden;8L46 
+tam...quam;so...wie;8L46 
+ergo Adv.;also;8L46 
+error, erroris m;Fehler, Irrtum;8L46 
+verum Adv.;aber;8L46 
+sensus, sensus m;Gefühl, Sinn, Verstand (Nonsens);8L46 
+comprehendere, comprehendo, comprehendi, comprehensum;begreifen, ergreifen, festnehmen;8L46 
+quamobrem;warum;8L46 
+studium;Beschäftigung, Engagement, Interesse (Studium);8L46 
+cupidus, a, um (m. Gen.);(be)gierig (nach);8L46 
+minime Adv.;am wenigsten, überhaupt nicht;8L46 
+nihil (aliud) nisi;nichts anderes als, nichts außer, nur;8L46 
+indignus, a, um (m. Abl.);unwürdig (einer Sache);8L46 
+libellus;kleines Buch, Heft;8L46 
+recitare, recito;vorlesen, vortragen (Rezitation, zitieren);8L46 
+opus, operis n;Arbeit, Werk;8L46 
+cupiditas, cupiditatis f (m. Gen.);(heftiges) Verlangen (nach), Leidenschaft;8L46 
+quid aliud?;was sonst?;8L46 
+quicumque, quaecumque, quodcumque;jeder, der; wer auch immer;8L46 
+praecipere, praecipio, praecepi, praeceptum;(be)lehren, vorschreiben;8L46 
+mora;Aufenthalt, Verzögerung;8L46 
+paratus, a, um;fertig, bereit;8L46 
+hora abit;die Zeit verfliegt;8L46 
+interim Adv.;inzwischen;8L46 

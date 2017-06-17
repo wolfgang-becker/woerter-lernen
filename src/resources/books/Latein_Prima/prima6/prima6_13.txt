@@ -1,0 +1,48 @@
+nos Nom./Akk.;wir/ uns;6L13 
+accedere, accedo, accessi;herbeikommen, hinzukommen;6L13 
+postquam;nachdem;6L13 
+legio, legionis f;Legion (Legionär);6L13 
+suus;ihr, sein;6L13 
+cuncti, ae, a;alle (zusammen);6L13 
+meus;mein;6L13 
+amittere, amitto, amisi;aufgeben, verlieren;6L13 
+alius;ein anderer;6L13 
+alius ... alius;der eine ... der andere;6L13 
+vocare, voco m.dopp.Akk.;rufen, nennen, bezeichnen als;6L13 
+tuus;dein;6L13 
+manere, maneo, mansi (m.Akk.);bleiben, warten (auf) (permanent);6L13 
+tibi;dir;6L13 
+unus (Gen. unius, Dat. uni);ein(er), ein einziger (Union);6L13 
+unus ex/de m.Abl.;einer von;6L13 
+restare, resto;übrig bleiben, Widerstand leisten (Rest, Arrest);6L13 
+solum;nur;6L13 
+non solum ... sed etiam;nicht nur ... sondern auch;6L13 
+noster, nostra, nostrum;unser;6L13 
+convenire, convenio, conveni;besuchen, zusammenkommen, zusammenpassen;6L13 
+consulere, consulo, consului (de m.Abl.);befragen, beraten (über);6L13 
+dicere, dico, dixi;sagen, sprechen;6L13 
+labor, laboris m;Anstrengung, Arbeit (Labor);6L13 
+miles, militis m;Soldat;6L13 
+ducere, duco, duxi;führen, ziehen;6L13 
+oppidum;Stadt;6L13 
+capere, capio, cepi;fassen, nehmen, erobern;6L13 
+vincere, vinco, vici;(be)siegen, übertreffen;6L13 
+nobis Dat.;uns;6L13 
+equidem;(ich) allerdings, freilich;6L13 
+censere, censeo, censui (m.Akk.);meinen, einschätzen, seine Stimme abgeben (für) (zensieren);6L13 
+aperire, aperio, aperui;aufdecken, öffnen;6L13 
+vero;aber;6L13 
+sententia;Antrag (im Senat), Meinung;6L13 
+proelium;Kampf, Schlacht;6L13 
+moenia, moenium n.Pl.;(Stadt-)Mauern;6L13 
+altus;hoch, tief (Altar);6L13 
+me Akk.; mich;6L13 
+vos Nom./Akk.;ihr/euch;6L13 
+videre, video, vidi;sehen, darauf achten;6L13 
+relinquere, relinquo, reliqui;unbeachtet lassen, verlassen, zurücklassen;6L13 
+agere, ago, egi;handeln, treiben, verhandeln;6L13 
+venire, venio, veni;kommen;6L13 
+pervenire, pervenio, perveni;kommen zu/nach;6L13 
+facere, facio, feci;machen, tun, handeln;6L13 
+ridere, rideo, risi;lachen, auslachen;6L13 
+aspicere, aspicio, aspexi;erblicken;6L13 

@@ -1,0 +1,34 @@
+res, rei f;Angelegenheit, Sache, Ding (Realismus, Realien, reell, real);7L33 
+fides, fidei f;Glaube, Treue, Vertrauen, Zuverlässigkeit;7L33 
+vastus, a, um;riesig, öde, verwüstet;7L33 
+vitam agere;(sein) Leben führen;7L33 
+malum;Leid, Übel, Unglück;7L33 
+cogere, cogo, coegi, coactum;(ver)sammeln, zwingen;7L33 
+praestare, praesto, praestiti;m. Dat. übertreffen, m. Akk gewährleisten, leisten, zeigen;7L33 
+fidem praestare;die Treue halten;7L33 
+adventus, adventus m;Ankunft (Advent, Abenteuer);7L33 
+dies, diei m;Tag;7L33 
+dies noctesque;Tage und Nächte (lang) (wie lange?);7L33 
+sollicitare, sollicito;aufhetzen, beunruhigen, erregen;7L33 
+torquere, torqueo, torsi, tortum;drehen, quälen, schleudern (Torte, Tortur);7L33 
+subire, subeo, subii, subitum;auf sich nehmen, herangehen;7L33 
+labores subire;Arbeiten verrichten;7L33 
+libet, libuit;es gefällt;7L33 
+quo;wie, wo, wohin;7L33 
+quisnam, quidnam;wer denn, was denn?;7L33 
+incendere, incendo, incendi, incensum;in Brand stecken, entflammen;7L33 
+satis Adv.;genug (satt);7L33 
+pudet, puduit;es beschämt;7L33 
+quasi Adv.;gleichsam, geradezu, fast ("quasi");7L33 
+spes, spei f;Erwartung, Hoffnung ;7L33 
+dedere, dedo, dedidi, deditum;ausliefern, übergeben;7L33 
+flamma;Feuer, Flamme;7L33 
+dubitare, dubito;zögern, zweifeln;7L33 
+cedere, cedo, cessi, cessum;gehen, nachgeben, weichen;7L33 
+amore captus;von Liebe ergriffen, verliebt;7L33 
+levis, e;leicht, leichtsinnig;7L33 
+res adversae;unglückliche Umstände, Unglück;7L33 
+accidere, accido, accidi;geschehen, sich ereignen;7L33 
+ratio, rationis f;Grund, Vernunft, Überlegung, Berechnung, Art und Weise (rational, rationell);7L33 
+deesse, desum, defui;abwesend sein, fehlen;7L33 
+furor, furoris m;Wahnsinn, Wut (Furie, furios);7L33 

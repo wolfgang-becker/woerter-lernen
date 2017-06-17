@@ -1,0 +1,30 @@
+magnus;groß, bedeutend ("Magnum");6L12 
+multus;viel (multiplizieren);6L12 
+multi, ae; viele;6L12 
+multa n.Pl.;viel(es);6L12 
+bonus;gut (Bon, Bonus, Bonbon);6L12 
+mors, mortis f;Tod;6L12 
+occupare, occupo; besetzen, einnehmen (okkupieren);6L12 
+terrere, terreo, terrui;erschrecken (Terror, Terrorist);6L12 
+causa;Ursache, Sache, Prozess (Kausalsatz);6L12 
+cognoscere, cognosco, cognovi;erkennen, kennen lernen;6L12 
+scelus, sceleris n;Verbrechen, Schurke;6L12 
+rex, regis m;König;6L12 
+sors, sortis f;Los, Orakelspruch, Schicksal (Sorte);6L12 
+miser, misera, miserum;arm, erbärmlich, unglücklich (Misere, miserabel);6L12 
+magna voce;mit lauter Stimme;6L12 
+inquit (in die wörtl. Rede eingeschoben);sagt(e) er;6L12 
+propter m.Akk.;wegen;6L12 
+expellere, expello;vertreiben, verbannen;6L12 
+superbus;stolz, überheblich;6L12 
+ignorare, ignoro;nicht kennen, nicht wissen (Ignorant);6L12 
+non ignorare;genau wissen, gut kennen;6L12 
+num (im dir. Fragesatz);etwa?;6L12 
+si Subj.;falls, wenn;6L12 
+tutus;sicher (vor);6L12 
+totus (Gen. totius, Dat. toti);ganz (total);6L12 
+liberare, libero;befreien, freilassen (liefern);6L12 
+et ... et;sowohl ... als auch;6L12 
+timere, timeo, timui;Angst haben, fürchten;6L12 
+ita;so;6L12 
+ultimus;der äußerste, der entfernteste, der letzte (Ultimatum);6L12 

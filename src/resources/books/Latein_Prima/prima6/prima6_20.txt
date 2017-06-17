@@ -1,0 +1,22 @@
+ire, eo, ii;gehen;6L20 
+celer, celeris, celere;schnell;6L20 
+fortis, e;tapfer, kräftig;6L20 
+adire, adeo, adii m.Akk.;herantreten (an), bitten;6L20 
+instare, insto, institi;bevorstehen, hart zusetzen (Instanz);6L20 
+omnis, e;ganz, jeder, Pl. alle (Omnibus);6L20 
+classis, classis f;Flotte, Abteilung (Klasse);6L20 
+perire, pereo, perii;zugrunde gehen, umkommen;6L20 
+perii;ich bin verloren;6L20 
+transire, transeo, transii;hinübergehen, überschreiten, durchqueren (Transit);6L20 
+inire, ineo, inii;hineingehen, beginnen;6L20 
+praeda;Beute;6L20 
+regere, rego, rexi;lenken, leiten, beherrschen (regieren, Rektor);6L20 
+facilis, e;leicht (zu tun);6L20 
+nobilis, e;adelig, berühmt, vornehm (nobel);6L20 
+fugere, fugio, fugi m.Akk.;fliehen (vor), meiden;6L20 
+fortuna;Glück, Schicksal;6L20 
+fallere, fallo, fefelli;täuschen, betrügen;6L20 
+gratus;dankbar, willkommen, beliebt (gratulieren);6L20 
+probus;anständig, gut;6L20 
+deserere, desero, deserui;verlassen, im Stich lassen (desertieren);6L20 
+consistere, consisto, constiti;Halt machen, sich aufstellen;6L20 
