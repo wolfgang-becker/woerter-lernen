@@ -116,7 +116,7 @@ public class VokabelGameHaupt
 			                           (word.numKnownsInSeq > 1 ? (word.numKnownsInSeq + " mal in Folge gewusst\r\n") : "") +
                                        "Noch " + questionSession.wordIndexNoLongerAsk + " Wörter.";
 		} else {
-			ratingAndNextQuestion[0] = "Falsch. Richtig ist: " + gefragteVokabel.Deutsch;
+			ratingAndNextQuestion[0] = gefragteVokabel.Fremdwort + " = <font color=\"red\"><b>" + gefragteVokabel.Deutsch + "</b></font>";
 			questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
 			questionSession.vokabeln.get(ZeilenNummer).numKnownsInSeq = 0;
 		}
