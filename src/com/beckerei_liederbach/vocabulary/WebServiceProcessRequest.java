@@ -1,6 +1,8 @@
 package com.beckerei_liederbach.vocabulary;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -105,6 +107,7 @@ public class WebServiceProcessRequest extends Thread
 		}
 		StringBuffer outBuf = new StringBuffer();
 		OutputStream os = null;
+		boolean binary = false;
 		try	{
 			String user     = "";
 			String pass     = "";
@@ -115,7 +118,7 @@ public class WebServiceProcessRequest extends Thread
 			for (String nameValue : reqParams.split("&", -1)) {
 				String nameValueSplit[] = nameValue.split("=", -1); 
 				String name = nameValueSplit[0];
-				String value = nameValueSplit.length > 1 ? URLDecoder.decode(nameValueSplit[1], "UTF-8") : "";
+				String value = nameValueSplit.length > 1 ? URLDecoder.decode(nameValueSplit[1], "ISO-8859-1").trim() : "";
 				if (name.equals("book") || name.equals("unit")) {
 					if (value.contains("\\") || value.startsWith("/") || value.contains(":")) {
 						throw new Exception("No paths allowed in book or unit");
@@ -133,11 +136,14 @@ public class WebServiceProcessRequest extends Thread
 				os = cs.getOutputStream();
 			}
 			catch (IOException e) { System.out.println("error from getOutputStream: " + e.getMessage()); return; }
-			outBuf.append("HTTP/1.0 200 OK\r\n" + "Content-Type: text/html; charset=UTF-8\r\n" + "\r\n");
+			binary = filePath.endsWith(".ico");
+			String contentType = filePath.endsWith(".ico") ? "image/x-icon" : "text/html; charset=iso-8859-1";
+			if (binary) os.write(("HTTP/1.0 200 OK\r\n" + "Content-Type: " + contentType + "\r\n" + "\r\n").getBytes("ISO-8859-1"));
+			else outBuf.append("HTTP/1.0 200 OK\r\n" + "Content-Type: " + contentType + "\r\n" + "\r\n");
 
 			System.out.println("## " + filePath + " ## " + reqParams);
 			if (filePath.equals("/favicon.ico")) {
-				outBuf.append("have no /favicon.ico");
+				loadWebPageBinary("favicon.ico", os);
 			} else if (filePath.equals("/question") || filePath.equals("/") || filePath.isEmpty()) {
 				String webPage = loadWebPage("next_question.html");
 				String ratingAndNextQuestion[] = new String[2]; // die beiden Array Elemente werden von der Methode "evaluateAnswerAndGetNextQuestion" gefuellt
@@ -175,7 +181,7 @@ public class WebServiceProcessRequest extends Thread
 		try {
 			cs.setSoLinger(true, 60); // wait 60 seconds on close that browser can read the data
 			if (os != null) {
-				os.write(outBuf.toString().getBytes("UTF-8"));
+				if (!binary) os.write(outBuf.toString().getBytes("ISO-8859-1"));
 				os.close();
 			}
 		} catch (IOException e) {
@@ -199,5 +205,18 @@ public class WebServiceProcessRequest extends Thread
 			}
 		}
 		return alleZeilen.toString();
+	}
+	
+	private static void loadWebPageBinary(String fileName, OutputStream os) throws FileNotFoundException, IOException
+	{
+		try (InputStream is = new FileInputStream("src/resources/Webseiten/" + fileName);
+			 BufferedInputStream bis = new BufferedInputStream(is)) {
+			byte buf[] = new byte[16384];
+			while (true){
+				int n = is.read(buf);
+				if (n <= 0) break;
+				os.write(buf, 0, n);
+			}
+		}
 	}
 }

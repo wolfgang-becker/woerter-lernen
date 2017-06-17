@@ -18,11 +18,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class VokabelGameHaupt
 {
 	private static final String BOOK_DIR = "src/resources/books/";
-	Map<String,QuestionSession> questionSessions = new HashMap<>(); // session key = user:pass:book:unit
+	Map<String,QuestionSession> questionSessions = new ConcurrentHashMap<>(); // session key = user:pass:book:unit
 	Random                      zufallszahlen = new Random();
 	Connection                  con; // database connection
 	private Map<String, String> userAccounts = new HashMap<>();
@@ -50,6 +51,7 @@ public class VokabelGameHaupt
 
 		new SessionSaver(this);
 		
+		// on the console we can enter a question + answer to see the result for debugging
 		String ratingAndNextQuestion[] = new String[2];
 		while (true){
 			System.out.print(ratingAndNextQuestion[1] + " Übersetzung :  ");
@@ -84,12 +86,17 @@ public class VokabelGameHaupt
 		return false;
 	}
 
-	public void evaluateAnswerAndGetNextQuestion(String user, String pass, String bookName, String unitName, String question, String answer, String ratingAndNextQuestion[]) throws Exception
+	public boolean evaluateAnswerAndGetNextQuestion(String user, String pass, String bookName, String unitName, String question, String answer, String ratingAndNextQuestion[]) throws Exception
 	{
+		if (user.isEmpty() || pass.isEmpty()) {
+			ratingAndNextQuestion[0] = "Please enter a username &amp; and a password.";
+			ratingAndNextQuestion[1] = "If you are new, just choose any.";
+			return false;
+		}
 		if (!authenticateUser(user, pass)) {
-			ratingAndNextQuestion[0] = "Wrong password for this user";
-			ratingAndNextQuestion[1] = "";
-			return;
+			ratingAndNextQuestion[0] = "Wrong password for this user.";
+			ratingAndNextQuestion[1] = "If you don't remember, create a new user.";
+			return false;
 		}
 		String sessionKey = QuestionSession.getKey(user, bookName, unitName);
 		QuestionSession questionSession = getOrOpenQuestionSession(sessionKey, user, bookName, unitName);
@@ -112,9 +119,9 @@ public class VokabelGameHaupt
 			questionSession.wordIndexNoLongerAsk--;
 			word.lastAskTime = System.currentTimeMillis();
 			word.numKnownsInSeq++;
-			ratingAndNextQuestion[0] = "Richtig! [" + gefragteVokabel.Deutsch + "]\r\n" +
-			                           (word.numKnownsInSeq > 1 ? (word.numKnownsInSeq + " mal in Folge gewusst\r\n") : "") +
-                                       "Noch " + questionSession.wordIndexNoLongerAsk + " Wörter.";
+			ratingAndNextQuestion[0] = gefragteVokabel.Fremdwort + " = <font color=\"green\">" + gefragteVokabel.Deutsch + "</font> " +
+			                           (word.numKnownsInSeq > 1 ? ("<br/><font color=\"brown\">" + word.numKnownsInSeq + " x richtig!</font>") : "") +
+                                       "<br/><font color=\"brown\">Noch " + questionSession.wordIndexNoLongerAsk + " Wörter</font>";
 		} else {
 			ratingAndNextQuestion[0] = gefragteVokabel.Fremdwort + " = <font color=\"red\"><b>" + gefragteVokabel.Deutsch + "</b></font>";
 			questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
@@ -128,6 +135,7 @@ public class VokabelGameHaupt
 			int neueZeilenNummer = zufallszahlen.nextInt(questionSession.wordIndexNoLongerAsk);
 			ratingAndNextQuestion[1] = questionSession.vokabeln.get(neueZeilenNummer).Fremdwort;
 		}
+		return true;
 	}
 
 	private QuestionSession getOrOpenQuestionSession(String sessionKey, String user, String book, String unit) throws Exception

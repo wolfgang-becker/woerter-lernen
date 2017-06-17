@@ -5,7 +5,6 @@ import java.net.Socket;
 
 public class WebService extends Thread
 {
-	private int port;
 	private ServerSocket acceptSocket;
 	VokabelGameHaupt vokabelGameHaupt;
 
