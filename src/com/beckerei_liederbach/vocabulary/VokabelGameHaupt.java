@@ -57,88 +57,115 @@ public class VokabelGameHaupt
 			System.out.print(ratingAndNextQuestion[1] + " Übersetzung :  ");
 			BufferedReader bur = new BufferedReader(new InputStreamReader(System.in));			
 			String TastaturEingabe = bur.readLine();
-			evaluateAnswerAndGetNextQuestion("Felix", "FelixSecret", "Latein_Prima_Vokabeln/prima6", "prima6_13", ratingAndNextQuestion[1], TastaturEingabe, ratingAndNextQuestion);
+			evaluateAnswerAndGetNextQuestion("Felix@email", "FelixSecret", "Latein_Prima_Vokabeln/prima6", "prima6_13", ratingAndNextQuestion[1], TastaturEingabe, ratingAndNextQuestion, true);
 			System.out.println(ratingAndNextQuestion[0]);
 		}
 
 	}
 
-	private boolean vergleiche(String Eingabe, String deutsch) {
-		String[] alternativen = deutsch.split("[,/]",-1);
+	private boolean vergleiche(String givenAnswer, String correctAnswer) {
+		String[] alternativen = correctAnswer.split("[,/]",-1);
 		if (alternativen.length > 1 ){
 			for (String alternative : alternativen) {
-				if (vergleiche(Eingabe, alternative.trim())){
+				if (vergleiche(givenAnswer, alternative.trim())){
 					return true;
 				}
 			}
 		}
-		else if (Eingabe.equalsIgnoreCase(deutsch)){
+		else if (givenAnswer.equalsIgnoreCase(correctAnswer)){
 			return true;
 		}
-		String DeutschOhneDasInDenKlammern = deutsch.replaceAll("\\(.*\\)", "").replaceAll("-","").trim();
-		if (Eingabe.equalsIgnoreCase(DeutschOhneDasInDenKlammern)){
+		String DeutschOhneDasInDenKlammern = correctAnswer.replaceAll("\\(.*\\)", "").replaceAll("-","").trim();
+		if (givenAnswer.equalsIgnoreCase(DeutschOhneDasInDenKlammern)){
 			return true;
 		}
-		String DeutschohneKlammern = deutsch.replaceAll("\\(", "").replaceAll("\\)","").trim();
-		if (Eingabe.equalsIgnoreCase(DeutschohneKlammern)){
+		String DeutschohneKlammern = correctAnswer.replaceAll("\\(", "").replaceAll("\\)","").trim();
+		if (givenAnswer.equalsIgnoreCase(DeutschohneKlammern)){
 			return true;
 		}
 		return false;
 	}
 
-	public boolean evaluateAnswerAndGetNextQuestion(String user, String pass, String bookName, String unitName, String question, String answer, String ratingAndNextQuestion[]) throws Exception
+	/**
+	 * @param toGerman 
+	 * @return true if no error occurred
+	 */
+	public boolean evaluateAnswerAndGetNextQuestion(String email, String pass, String bookName, String unitName, String question, String answer, String ratingAndNextQuestion[], boolean toGerman) throws Exception
 	{
-		if (user.isEmpty() || pass.isEmpty()) {
-			ratingAndNextQuestion[0] = "Please enter a username &amp; and a password.";
+		if (email.isEmpty()) {
+			ratingAndNextQuestion[0] = "<font color='red'>Please enter email &amp; password.</font>";
 			ratingAndNextQuestion[1] = "If you are new, just choose any.";
 			return false;
 		}
-		if (!authenticateUser(user, pass)) {
-			ratingAndNextQuestion[0] = "Wrong password for this user.";
-			ratingAndNextQuestion[1] = "If you don't remember, create a new user.";
+		if (!email.contains("@")) {
+			ratingAndNextQuestion[0] = "<font color='red'>Email address must contain &#64;.</font>";
 			return false;
 		}
-		String sessionKey = QuestionSession.getKey(user, bookName, unitName);
-		QuestionSession questionSession = getOrOpenQuestionSession(sessionKey, user, bookName, unitName);
-		// finde die Zeile mit der Frage
-		Vokabel gefragteVokabel = null;
-		int ZeilenNummer = 0;
-		for (; ZeilenNummer < questionSession.vokabeln.size(); ZeilenNummer++) {
-			Vokabel vokabel = questionSession.vokabeln.get(ZeilenNummer);
-			if (vokabel.Fremdwort.equals(question)) {
-				gefragteVokabel = vokabel;
-				break;
+		if (pass.isEmpty()) {
+			ratingAndNextQuestion[0] = "<font color='red'>Please enter your password.</font>";
+			ratingAndNextQuestion[1] = "If you are new, just choose any.";
+			return false;
+		}
+		if (!authenticateUser(email, pass)) {
+			ratingAndNextQuestion[0] = "Wrong password for this user.";
+			ratingAndNextQuestion[1] = "If you don't remember, create a new account.";
+			return false;
+		}
+		QuestionSession questionSession = null;
+		String sessionKey = QuestionSession.getKey(email, bookName, unitName, toGerman);
+		try {
+			questionSession = getOrOpenQuestionSession(sessionKey, email, bookName, unitName, toGerman);
+		}
+		catch (Exception e) {
+			ratingAndNextQuestion[0] = e.getMessage();
+			return false;
+		}
+		
+		if (!question.isEmpty()) { // find the question text line in the book/unit
+			Vokabel gefragteVokabel = null;
+			int ZeilenNummer = 0;
+			for (; ZeilenNummer < questionSession.vokabeln.size(); ZeilenNummer++) {
+				Vokabel vokabel = questionSession.vokabeln.get(ZeilenNummer);
+				if ((toGerman && vokabel.Fremdwort.equals(question)) || (!toGerman && vokabel.Deutsch.equals(question))) {
+					gefragteVokabel = vokabel;
+					break;
+				}
 			}
+			if (gefragteVokabel == null) {
+				ratingAndNextQuestion[0] = "Couldn't find the question";
+				return false;
+			}
+			else if (vergleiche(answer, toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort)) {
+				Vokabel word = questionSession.vokabeln.remove(ZeilenNummer);
+				questionSession.vokabeln.add(word);
+				questionSession.wordIndexNoLongerAsk--;
+				word.lastAskTime = System.currentTimeMillis();
+				word.numKnownsInSeq++;
+				ratingAndNextQuestion[0] = question + " = <font color=\"green\">" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</font> " +
+						(word.numKnownsInSeq > 1 ? ("<br/><font color=\"brown\">" + word.numKnownsInSeq + " x richtig!</font>") : "") +
+						"<br/><font color=\"brown\">Noch " + questionSession.wordIndexNoLongerAsk + " Wörter</font>";
+			} else {
+				ratingAndNextQuestion[0] = question + " = <font color=\"red\"><b>" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</b></font>";
+				questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
+				questionSession.vokabeln.get(ZeilenNummer).numKnownsInSeq = 0;
+			}
+		} else { // got no question
+			ratingAndNextQuestion[0] = "";
 		}
-		if (gefragteVokabel == null) {
-			ratingAndNextQuestion[0] = "Couldn't find the question";
-		}
-		else if (vergleiche(answer, gefragteVokabel.Deutsch)) {
-			Vokabel word = questionSession.vokabeln.remove(ZeilenNummer);
-			questionSession.vokabeln.add(word);
-			questionSession.wordIndexNoLongerAsk--;
-			word.lastAskTime = System.currentTimeMillis();
-			word.numKnownsInSeq++;
-			ratingAndNextQuestion[0] = gefragteVokabel.Fremdwort + " = <font color=\"green\">" + gefragteVokabel.Deutsch + "</font> " +
-			                           (word.numKnownsInSeq > 1 ? ("<br/><font color=\"brown\">" + word.numKnownsInSeq + " x richtig!</font>") : "") +
-                                       "<br/><font color=\"brown\">Noch " + questionSession.wordIndexNoLongerAsk + " Wörter</font>";
-		} else {
-			ratingAndNextQuestion[0] = gefragteVokabel.Fremdwort + " = <font color=\"red\"><b>" + gefragteVokabel.Deutsch + "</b></font>";
-			questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
-			questionSession.vokabeln.get(ZeilenNummer).numKnownsInSeq = 0;
-		}
+
 		if (questionSession.wordIndexNoLongerAsk <= 0) {
 			ratingAndNextQuestion[1] = "Fertig, Du kennst alle Wörter! Gratuliere!";
 			questionSession.saveToDatabase(con);
 			questionSessions.remove(questionSession.getKey());
+			return false;
 		} else { // suche die naechste Frage aus
 			int neueZeilenNummer = zufallszahlen.nextInt(questionSession.wordIndexNoLongerAsk);
-			ratingAndNextQuestion[1] = questionSession.vokabeln.get(neueZeilenNummer).Fremdwort;
+			ratingAndNextQuestion[1] = toGerman ? questionSession.vokabeln.get(neueZeilenNummer).Fremdwort : questionSession.vokabeln.get(neueZeilenNummer).Deutsch;
 		}
 		return true;
 	}
 
-	private QuestionSession getOrOpenQuestionSession(String sessionKey, String user, String book, String unit) throws Exception
+	private QuestionSession getOrOpenQuestionSession(String sessionKey, String email, String book, String unit, boolean toGerman) throws Exception
 	{
 		if (book.isEmpty()) throw new Exception("Please select a book");
 		if (unit.isEmpty()) throw new Exception("Please select a unit in the book");
@@ -147,7 +174,7 @@ public class VokabelGameHaupt
 			questionSession.lastInteractionTimeStamp = System.currentTimeMillis();
 			return questionSession; // already cached in memory
 		}
-		questionSession = new QuestionSession(user, book, unit);
+		questionSession = new QuestionSession(email, book, unit, toGerman);
 		String bookKey = book + "/" + unit;
 		try (FileReader fr = new FileReader(BOOK_DIR + "/" + bookKey + ".txt")) {
 			try (BufferedReader br = new BufferedReader(fr)) {
@@ -169,19 +196,23 @@ public class VokabelGameHaupt
 			boolean sessionWasNotYetStoredInDatabase = true;
 			try (PreparedStatement s = con.prepareStatement("select foreign_word, last_ask_time, num_knowns_in_seq " +
                                                             "from USER_WORD_STATUS " +
-                                                            "where username = ? and book = ? and unit = ?")) {
-				s.setString(1, user);
-				s.setString(2, book);
-				s.setString(3, unit);
+                                                            "where email = ? and book = ? and unit = ? and to_german = ?")) {
+				s.setString (1, email   );
+				s.setString (2, book    );
+				s.setString (3, unit    );
+				s.setBoolean(4, toGerman);
 				try (ResultSet r = s.executeQuery()) {
 					while (r.next()) {
 						sessionWasNotYetStoredInDatabase = false;
-						String foreignWord = r.getString(1);
-						long lastAskTime = r.getLong(2);
-						int numKnownsInSeq = r.getInt(3);
+						String foreignWord    = r.getString(1);
+						long   lastAskTime    = r.getLong  (2);
+						int    numKnownsInSeq = r.getInt   (3);
 						int indexInMemory = 0;
 						while (indexInMemory < questionSession.vokabeln.size() && !questionSession.vokabeln.get(indexInMemory).Fremdwort.equals(foreignWord)) indexInMemory++;
-						if (indexInMemory >= questionSession.vokabeln.size()) throw new Exception("find word '" + foreignWord + "' in database but not in the book/unit");
+						if (indexInMemory >= questionSession.vokabeln.size()) {
+							System.out.println("Found word '" + foreignWord + "' in database but not in the book/unit");
+							continue;
+						}
 						Vokabel word = questionSession.vokabeln.get(indexInMemory);
 						word.lastAskTime    = lastAskTime   ;
 						word.numKnownsInSeq = numKnownsInSeq;
@@ -199,12 +230,13 @@ public class VokabelGameHaupt
 				}
 			}
 			if (sessionWasNotYetStoredInDatabase) { // store all questions into the database, so that we can simply them update later on (insert-or-update is complicated with SQL)
-				try (PreparedStatement s = con.prepareStatement("insert into USER_WORD_STATUS (username, book, unit, foreign_word, last_ask_time, num_knowns_in_seq) values (?,?,?,?,0,0)")) {
+				try (PreparedStatement s = con.prepareStatement("insert into USER_WORD_STATUS (email, book, unit, foreign_word, last_ask_time, num_knowns_in_seq, to_german) values (?,?,?,?,0,0,?)")) {
 					for (Vokabel word : questionSession.vokabeln) {
-						s.setString(1, user);
-						s.setString(2, book);
-						s.setString(3, unit);
-						s.setString(4, word.Fremdwort);
+						s.setString (1, email);
+						s.setString (2, book);
+						s.setString (3, unit);
+						s.setString (4, word.Fremdwort);
+						s.setBoolean(5, toGerman);
 						s.addBatch();
 					}
 					s.executeBatch();
@@ -232,14 +264,14 @@ public class VokabelGameHaupt
 		try (Statement stmt = con.createStatement()) {
 			if (!existingTables.contains("USERS")) {
 				System.out.println("create table USERS");
-				stmt.executeUpdate("create table USERS(username varchar(100) primary key, password varchar(100), status varchar(100), email varchar(100), role varchar(100))");
-				stmt.executeUpdate("insert into USERS(username,password,status,email,role) values ('admin','admin','ok','wolfgang.becker@vodafone.de','admin')");
+				stmt.executeUpdate("create table USERS(email varchar(100) primary key, password varchar(100), status varchar(100), role varchar(100))");
+				stmt.executeUpdate("insert into USERS(email,password,status,role) values ('wolfgang.becker@vodafone.de','admin','ok','admin')");
 				con.commit();
 			}
 			if (!existingTables.contains("USER_WORD_STATUS")) {
 				System.out.println("create table USER_WORD_STATUS");
-				stmt.executeUpdate("create table USER_WORD_STATUS(username varchar(100), book varchar(100), unit varchar(100), foreign_word varchar(4000), last_ask_time bigint, num_knowns_in_seq int, " +
-			                       "primary key (username, book, unit , foreign_word))");
+				stmt.executeUpdate("create table USER_WORD_STATUS(email varchar(100), book varchar(100), unit varchar(100), foreign_word varchar(4000), last_ask_time bigint, num_knowns_in_seq int, " +
+			                       "to_german boolean, primary key (email, book, unit , foreign_word, to_german))");
 			}
 		}
 	}
@@ -265,28 +297,28 @@ public class VokabelGameHaupt
 		return units;		
 	}
 
-	private boolean authenticateUser(String user, String pass) throws SQLException
+	private boolean authenticateUser(String email, String pass) throws SQLException
 	{
-		String expectedPass = userAccounts.get(user);
+		String expectedPass = userAccounts.get(email);
 		if (expectedPass == null || !expectedPass.equals(pass)) { // load from database
 			synchronized(con) {
-				try (PreparedStatement s = con.prepareStatement("select password from USERS where username = ?")) {
-					s.setString(1, user);
+				try (PreparedStatement s = con.prepareStatement("select password from USERS where email = ?")) {
+					s.setString(1, email);
 					try (ResultSet r = s.executeQuery()) {
 						if (r.next()) {
-							userAccounts.put(user, r.getString(1));
+							userAccounts.put(email, r.getString(1));
 						}
 					}
 				}
 			}
 		}
-		expectedPass = userAccounts.get(user);
+		expectedPass = userAccounts.get(email);
 		if (expectedPass == null) { // new user
-			System.out.println("New user '" + user + "'");
-			userAccounts.put(user, pass);
+			System.out.println("New user '" + email + "'");
+			userAccounts.put(email, pass);
 			synchronized(con) {
-				try (PreparedStatement s = con.prepareStatement("insert into USERS (username, password) values (?,?)")) {
-					s.setString(1, user);
+				try (PreparedStatement s = con.prepareStatement("insert into USERS (email, password) values (?,?)")) {
+					s.setString(1, email);
 					s.setString(2, pass);
 					s.executeUpdate();
 					con.commit();
