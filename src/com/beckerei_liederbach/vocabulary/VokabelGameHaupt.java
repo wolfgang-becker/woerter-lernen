@@ -64,6 +64,7 @@ public class VokabelGameHaupt
 	}
 
 	private boolean vergleiche(String givenAnswer, String correctAnswer) {
+		correctAnswer = correctAnswer.replaceAll("  ", " ");
 		String[] alternativen = correctAnswer.split("[,/]",-1);
 		if (alternativen.length > 1 ){
 			for (String alternative : alternativen) {
@@ -75,11 +76,11 @@ public class VokabelGameHaupt
 		else if (givenAnswer.equalsIgnoreCase(correctAnswer)){
 			return true;
 		}
-		String DeutschOhneDasInDenKlammern = correctAnswer.replaceAll("\\(.*\\)", "").replaceAll("-","").trim();
+		String DeutschOhneDasInDenKlammern = correctAnswer.replaceAll("\\(.*\\)", "").replaceAll("-","").replaceAll("  ", " ").trim();
 		if (givenAnswer.equalsIgnoreCase(DeutschOhneDasInDenKlammern)){
 			return true;
 		}
-		String DeutschohneKlammern = correctAnswer.replaceAll("\\(", "").replaceAll("\\)","").trim();
+		String DeutschohneKlammern = correctAnswer.replaceAll("\\(", "").replaceAll("\\)","").replaceAll("  ", " ").trim();
 		if (givenAnswer.equalsIgnoreCase(DeutschohneKlammern)){
 			return true;
 		}
@@ -132,8 +133,7 @@ public class VokabelGameHaupt
 				}
 			}
 			if (gefragteVokabel == null) {
-				ratingAndNextQuestion[0] = "Couldn't find the question";
-				return false;
+				ratingAndNextQuestion[0] = "Bezog sich die Antwort auf ein anderes Kapitel?";
 			}
 			else if (vergleiche(answer, toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort)) {
 				Vokabel word = questionSession.vokabeln.remove(ZeilenNummer);
@@ -181,6 +181,7 @@ public class VokabelGameHaupt
 				while (true){
 					String zeile = br.readLine();
 					if (zeile == null) break;
+					if (zeile.trim().isEmpty()) continue;
 					String[] FremdwortDeutschBuch = zeile.split(";",-1);
 					Vokabel vokabel = new Vokabel(FremdwortDeutschBuch[0],FremdwortDeutschBuch[1],FremdwortDeutschBuch[2], 0, 0);
 					questionSession.vokabeln.add(vokabel);
