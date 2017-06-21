@@ -374,7 +374,7 @@ public class VokabelGameHaupt
 				String email2 = e.email;
 				if (email2.contains("@")) email2 = email2.substring(0, email2.indexOf("@"));
 				long minutesSinceAsked = (System.currentTimeMillis() - e.lastAskTimeMSec) / 1000 / 60;
-				String last = e.lastAskTimeMSec == Long.MAX_VALUE ? "nie" : (minutesSinceAsked < 60 ? ("vor " + minutesSinceAsked + " Minuten") : (minutesSinceAsked < 60 * 24 ? ("vor " + minutesSinceAsked/60 + " Stunden") : ("vor " + minutesSinceAsked/60/24 + " Tagen")));
+				String last = e.lastAskTimeMSec == 0 ? "nie" : (minutesSinceAsked < 60 ? ("vor " + minutesSinceAsked + " Minuten") : (minutesSinceAsked < 60 * 24 ? ("vor " + minutesSinceAsked/60 + " Stunden") : ("vor " + minutesSinceAsked/60/24 + " Tagen")));
 				sb.append("<tr><td>" + (rank++) + ".</td><td>" + email2 + "</td><td>" + e.knownWords + "</td><td>" + e.knownWords2 + "</td><td>" + e.knownWords3 + "</td><td>" + last + "</td></tr>");
 			}
 			sb.append("</tbody></table>");
