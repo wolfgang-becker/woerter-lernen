@@ -5,7 +5,6 @@ public class Vokabel {
 	String Deutsch;
 	String BuchLektion;
 	long   lastAskTime;
-	int    numKnownsInSeq;
 	int    numKnowsInSequence;
 
 	public Vokabel(String Fremdwort, String Deutsch, String BuchLektion, long lastAskTime, int numKnowsInSequence) {

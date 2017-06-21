@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class VokabelGameHaupt
@@ -140,14 +141,14 @@ public class VokabelGameHaupt
 				questionSession.vokabeln.add(word);
 				questionSession.wordIndexNoLongerAsk--;
 				word.lastAskTime = System.currentTimeMillis();
-				word.numKnownsInSeq++;
+				word.numKnowsInSequence++;
 				ratingAndNextQuestion[0] = question + " = <font color=\"green\">" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</font> " +
-						(word.numKnownsInSeq > 1 ? ("<br/><font color=\"brown\">" + word.numKnownsInSeq + " x richtig!</font>") : "") +
+						(word.numKnowsInSequence > 1 ? ("<br/><font color=\"brown\">" + word.numKnowsInSequence + " x richtig!</font>") : "") +
 						"<br/><font color=\"brown\">Noch " + questionSession.wordIndexNoLongerAsk + " Wörter</font>";
 			} else {
 				ratingAndNextQuestion[0] = question + " = <font color=\"red\"><b>" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</b></font>";
 				questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
-				questionSession.vokabeln.get(ZeilenNummer).numKnownsInSeq = 0;
+				questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence = 0;
 			}
 		} else { // got no question
 			ratingAndNextQuestion[0] = "";
@@ -216,7 +217,7 @@ public class VokabelGameHaupt
 						}
 						Vokabel word = questionSession.vokabeln.get(indexInMemory);
 						word.lastAskTime    = lastAskTime   ;
-						word.numKnownsInSeq = numKnownsInSeq;
+						word.numKnowsInSequence = numKnownsInSeq;
 						long hoursSinceLastAsked = (now - lastAskTime) / 1000 / 60 / 60;
 						long daysSinceLastAsked = hoursSinceLastAsked / 24;
 						if ((numKnownsInSeq >= 8 && daysSinceLastAsked  < 60) ||
@@ -328,5 +329,74 @@ public class VokabelGameHaupt
 			return true;
 		}
 		return expectedPass.equals(pass);
+	}
+
+	/**
+	 * List all users that have learning records for this book/unit/direction
+	 */
+	public String getHighScores(String email, String pass, String book, String unit, boolean toGerman)
+	{
+		try {
+			if (!authenticateUser(email, pass)) throw new Exception("Anmeldung fehlgeschlagen.");
+			if (book.isEmpty()) throw new Exception("Bitte wähle zuerst ein Buch aus.");
+			if (unit.isEmpty()) throw new Exception("Bitte wähle zuerst ein Kapitel aus.");
+			String sessionKey = QuestionSession.getKey(email, book, unit, toGerman);
+			QuestionSession questionSession = getOrOpenQuestionSession(sessionKey, email, book, unit, toGerman);
+			if (questionSession != null) questionSession.saveToDatabase(con);
+			Map<String,ScoreEntry> users = new HashMap<>(); // key = email
+			int userCount = 0;
+			synchronized(con) {
+				try (PreparedStatement s = con.prepareStatement("select email, last_ask_time, num_knowns_in_seq " +
+						                                        "from USER_WORD_STATUS " +
+						                                        "where book = ? and unit = ? and to_german = ?")) {
+					s.setString (1, book    );
+					s.setString (2, unit    );
+					s.setBoolean(3, toGerman);
+					try (ResultSet r = s.executeQuery()) {
+						while (r.next()) {
+							String email1         = r.getString(1);
+							long   lastAskTime    = r.getLong  (2);
+							int    numKnownsInSeq = r.getInt   (3);
+							ScoreEntry e = users.get(email1);
+							if (e == null) { e = new ScoreEntry(userCount++); users.put(email1, e); }
+							e.add(email1, lastAskTime, numKnownsInSeq);
+						}
+					}
+				}
+			}
+			// now sort the users by score
+			Map<Double,ScoreEntry> sortedUsers = new TreeMap<>(); // key = score
+			for (ScoreEntry e : users.values()) sortedUsers.put(-e.score(), e); // sort highest first
+			StringBuffer sb = new StringBuffer();
+			sb.append("<table style='border: 1px solid black; font-size: 25px'><thead><td></td><td>Name</td><td>Wörter&nbsp;</td><td>Doppelt&nbsp;</td><td>Mehrfach&nbsp;</td><td>Wann?</td></thead><tbody>");
+			int rank = 1;
+			for (ScoreEntry e : sortedUsers.values()) {
+				String email2 = e.email;
+				if (email2.contains("@")) email2 = email2.substring(0, email2.indexOf("@"));
+				long minutesSinceAsked = (System.currentTimeMillis() - e.lastAskTimeMSec) / 1000 / 60;
+				String last = e.lastAskTimeMSec == Long.MAX_VALUE ? "nie" : (minutesSinceAsked < 60 ? ("vor " + minutesSinceAsked + " Minuten") : (minutesSinceAsked < 60 * 24 ? ("vor " + minutesSinceAsked/60 + " Stunden") : ("vor " + minutesSinceAsked/60/24 + " Tagen")));
+				sb.append("<tr><td>" + (rank++) + ".</td><td>" + email2 + "</td><td>" + e.knownWords + "</td><td>" + e.knownWords2 + "</td><td>" + e.knownWords3 + "</td><td>" + last + "</td></tr>");
+			}
+			sb.append("</tbody></table>");
+			return sb.toString();
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+	}
+	
+	static void dumpDatabase(Connection con) throws SQLException
+	{
+		synchronized(con) {
+			try (PreparedStatement s = con.prepareStatement("select * from USER_WORD_STATUS order by email, book, unit, to_german, foreign_word")) {
+				try (ResultSet r = s.executeQuery()) {
+					while (r.next()) {
+						int cols = r.getMetaData().getColumnCount();
+						StringBuffer row = new StringBuffer();
+						for (int c = 0; c < cols; c++) row.append(", " + r.getString(c + 1));
+						System.out.println(row.toString());
+					}
+				}
+			}
+		}
 	}
 }

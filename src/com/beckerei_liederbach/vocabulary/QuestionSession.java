@@ -8,7 +8,7 @@ import java.util.List;
 
 public class QuestionSession
 {
-	String  user;
+	String  email;
 	String  book;
 	String  unit;
 	boolean toGerman;
@@ -16,9 +16,9 @@ public class QuestionSession
 	int wordIndexNoLongerAsk; // starting this index words are no longer asked
 	public long lastInteractionTimeStamp;
 	
-	QuestionSession(String user, String book, String unit, boolean toGerman)
+	QuestionSession(String email, String book, String unit, boolean toGerman)
 	{
-		this.user = user;
+		this.email = email;
 		this.book = book;
 		this.unit = unit;
 		this.toGerman = toGerman;
@@ -33,7 +33,7 @@ public class QuestionSession
 
 	public String getKey()
 	{
-		return getKey(user, book, unit, toGerman);
+		return getKey(email, book, unit, toGerman);
 	}
 	
 	public void saveToDatabase(Connection con) throws SQLException
@@ -41,11 +41,11 @@ public class QuestionSession
 		System.out.println("Saving session " + getKey());
 		synchronized(con) {
 			try (PreparedStatement s = con.prepareStatement("update USER_WORD_STATUS set last_ask_time = ?, num_knowns_in_seq = ? " +
-					"where user = ? and book = ? and unit = ? and foreign_word = ? and to_german = ?")) {
+					"where email = ? and book = ? and unit = ? and foreign_word = ? and to_german = ?")) {
 				for (Vokabel word : vokabeln) {
 					s.setLong   (1, word.lastAskTime);
 					s.setInt    (2, word.numKnowsInSequence);
-					s.setString (3, user);
+					s.setString (3, email);
 					s.setString (4, book);
 					s.setString (5, unit);
 					s.setString (6, word.Fremdwort);

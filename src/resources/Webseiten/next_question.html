@@ -13,7 +13,7 @@ body, table, input, select { font-family: Arial, Helvetica, sans-serif; color: b
     <tr>	<td>Password:</td>	<td><input type="password" name="pass" value="${pass}"/></td></tr>
     <tr>	<td>Buch:</td>		<td><select name="book" onchange='this.form.submit()'>${book}</select></td></tr>
     <tr>	<td>Kapitel:</td>	<td><select name="unit" onchange='this.form.submit()'>${unit}</select></td></tr>
-    <tr>	<td colspan="2">${direction}<input type="button" name="changedirection" value="<"
+    <tr>	<td colspan="2">${direction}&nbsp;<input type="button" name="changedirection" value="<"
                                                onclick='document.getElementById("direction").value = document.getElementById("direction").value.replace("->","<-"); this.form.submit()'/>
 	                                    <input type="hidden" id="direction" name="direction" value="${direction}"/></td></tr>
     <tr>	<td colspan="2">&nbsp;</td></tr>
@@ -24,9 +24,11 @@ body, table, input, select { font-family: Arial, Helvetica, sans-serif; color: b
 					    <input type="hidden" name="question" value="${question}"/></td></tr>
     <tr>	<td><input type="submit" value="Enter" style="display:none"/></td>	<td></td></tr>
 </table>
-</form>
 <p>
-<a href="scores">Hall of Fame</a>
+	<input name="scorebutton" type="button" value="Rangliste"
+     onclick='document.getElementById("score").value = "y"; this.form.submit()'/>
+	<input type="hidden" name="score" id="score" value="n"/>
 </p>
+</form>
 </body>
 </html>

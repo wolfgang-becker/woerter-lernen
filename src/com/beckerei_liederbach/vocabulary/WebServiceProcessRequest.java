@@ -118,6 +118,7 @@ public class WebServiceProcessRequest extends Thread
 			String language = "";
 			String direction= "";
 			boolean error = false;
+			boolean showHighScores = false;
 			for (String nameValue : reqParams.split("&", -1)) {
 				String nameValueSplit[] = nameValue.split("=", -1); 
 				String name = nameValueSplit[0];
@@ -134,6 +135,7 @@ public class WebServiceProcessRequest extends Thread
 				else if (name.equals("question" )) question  = value;
 				else if (name.equals("answer"   )) answer    = value;
 				else if (name.equals("direction")) direction = value;
+				else if (name.equals("score"    )) showHighScores = value.equals("y");
 			}
 			boolean changeDirection = direction.contains("<-");
 			if (!book.isEmpty() && book.contains("_")) language = book.substring(0, book.indexOf("_"));
@@ -188,6 +190,9 @@ public class WebServiceProcessRequest extends Thread
 				webPage = webPage.replaceAll("\\$\\{rating\\}"      , ratingAndNextQuestion[0]);
 				webPage = webPage.replaceAll("\\$\\{question\\}"    , ratingAndNextQuestion[1] == null ? "" : ratingAndNextQuestion[1]);
 				webPage = webPage.replaceAll("\\$\\{showquestion\\}", error ? "display:none" : "display:initial");
+				if (showHighScores) {
+					webPage = webPage.replaceAll("<input name=\"scorebutton\"", webService.vokabelGameHaupt.getHighScores(email, pass, book, unit, toGerman) + "</p><p><input name=\"scorebutton\"");
+				}
 				outBuf.append(webPage);
 			} else {
 				outBuf.append("undefined file path");
