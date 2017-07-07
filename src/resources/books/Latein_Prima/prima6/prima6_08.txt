@@ -18,7 +18,7 @@ ara;Altar;6L08
 gaudium;Freude (Gaudi);6L08 
 dea;Göttin;6L08 
 salus, salutis f;Gesundheit, Glück, Rettung, Gruß (Salut);6L08 
-pax, pacis f;Friede (Pazifist) ;6L08 
+pax, pacis f;Friede (Pazifist);6L08 
 orare;bitten (Oratorium);6L08 
 agmen, agminis n;(Heeres-)Zug;6L08 
 domum;nach Hause;6L08 
