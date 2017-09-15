@@ -184,7 +184,7 @@ public class VokabelGameHaupt
 					if (zeile == null) break;
 					if (zeile.trim().isEmpty()) continue;
 					String[] FremdwortDeutschBuch = zeile.split(";",-1);
-					Vokabel vokabel = new Vokabel(FremdwortDeutschBuch[0],FremdwortDeutschBuch[1],FremdwortDeutschBuch[2], 0, 0);
+					Vokabel vokabel = new Vokabel(FremdwortDeutschBuch[0],FremdwortDeutschBuch[1], 0, 0);
 					questionSession.vokabeln.add(vokabel);
 				}
 			} 

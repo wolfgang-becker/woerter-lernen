@@ -1,0 +1,26 @@
+servus;Sklave;6L01 
+adesse, adest;da sein;6L01 
+rogare, rogat;bitten, erbitten, fragen;6L01 
+ubi?;wo?;6L01 
+ridere, ridet;lachen, auslachen;6L01 
+tum;da, damals, darauf, dann;6L01 
+templum;Tempel;6L01 
+basilica;Basilika, Halle;6L01 
+circus;Zirkus, Rennbahn;6L01 
+senator;Senator;6L01 
+forum;Marktplatz, Forum, Öffentlichkeit;6L01 
+properare, properat;eilen, sich beeilen;6L01 
+nam;denn, nämlich;6L01 
+ibi;dort;6L01 
+curia;Kurie, Rathaus;6L01 
+esse, est;sein (Essenz, essenziell);6L01 
+hic;hier;6L01 
+turba;Menschenmenge, Lärm, Verwirrung (Trubel, turbulent);6L01 
+stare, stat;stehen;6L01 
+et;und, auch;6L01 
+clamare, clamat;laut rufen, schreien (Re-klame);6L01 
+ave!;sei gegrüßt!;6L01 
+gaudere, gaudet;sich freuen;6L01 
+salve!;sei gegrüßt!;6L01 
+salvete!;seid gegrüßt!;6L01 
+subito;plötzlich;6L01 

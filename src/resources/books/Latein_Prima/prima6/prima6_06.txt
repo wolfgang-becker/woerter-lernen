@@ -10,9 +10,9 @@ laborare;arbeiten;6L06
 cena;Essen, Mahlzeit;6L06 
 iubere, iubeo (m.Akk.);anordnen, befehlen;6L06 
 puella;Mädchen;6L06 
-adesse;"da sein, helfen";6L06 
+adesse;da sein, helfen;6L06 
 puer;Junge, Bub;6L06 
-tu (betont);du ;6L06 
+tu (betont);du;6L06 
 bene;gut;6L06 
 liberi, liberos Pl.;Kinder;6L06 
 mater, matrem f;Mutter;6L06 
