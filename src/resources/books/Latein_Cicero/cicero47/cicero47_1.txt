@@ -23,7 +23,7 @@ praedicare;rühmen, öffentlich sprechen
 praesens, praesentis;gegenwärtig
 praesidium;Schutz(truppen)
 praestare, praesto, praestiti;voranstehen, leisten
-preatermittere, preatermitto, preatermisi;preatermissum;vorbeigehen lassen
+preatermittere, preatermitto, preatermisi,preatermissum;vorbeigehen lassen
 premere, premo, pressi, pressum;drücken, pressen, immer wieder aufsuchen
 principium;Anfang
 privare;berauben

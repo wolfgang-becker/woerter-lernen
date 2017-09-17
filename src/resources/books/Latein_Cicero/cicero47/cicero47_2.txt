@@ -12,8 +12,8 @@ quisque;jeder
 quoad;soweit
 quoniam;da ja
 recreari;sich erholen
-referre ad;beziehen aufbrechen
-reficere, reficio, refeci, refectum;ins Gleichgewicht bringen
+referre ad;sich beziehen auf
+reficere, reficio, refeci, refectum;wiederherstellen, ins Gleichgewicht bringen
 reperire, reperio, reperri, repertum;finden
 requies,requietis f.;Ruhe, Zeit zur Erholung
 res adversae, rerum adversarum f.;Unglück
