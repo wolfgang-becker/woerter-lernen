@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.Socket;
 import java.net.URLDecoder;
 import java.util.List;
@@ -73,6 +74,9 @@ public class WebServiceProcessRequest extends Thread
 			reqParams = filePath.substring(qs+1);
 			filePath = filePath.substring(0, qs);
 		}
+		try {
+			filePath = URLDecoder.decode(filePath, "UTF-8");
+		} catch (UnsupportedEncodingException e2) { e2.printStackTrace(); }
 		int contentLengthValue = 0;
 		while (i < headersEnd && requestBody[i]!='\r' && requestBody[i]!='\n') i++;
 		while (i < headersEnd) { // parse request headers
@@ -157,8 +161,12 @@ public class WebServiceProcessRequest extends Thread
 				os = cs.getOutputStream();
 			}
 			catch (IOException e) { System.out.println("error from getOutputStream: " + e.getMessage()); return; }
-			binary = filePath.endsWith(".ico");
-			String contentType = filePath.endsWith(".ico") ? "image/x-icon" : "text/html; charset=iso-8859-1";
+			binary = filePath.endsWith(".ico") || filePath.endsWith(".jpg");
+			String contentType = "";
+			if      (filePath.endsWith(".ico")) contentType = "image/x-icon";
+			else if (filePath.endsWith(".jpg")) contentType = "image/jpeg";
+			else if (filePath.endsWith(".css")) contentType = "text/css";
+			else                                contentType = "text/html; charset=iso-8859-1";
 			if (binary) os.write(("HTTP/1.0 200 OK\r\n" + "Content-Type: " + contentType + "\r\n" + "\r\n").getBytes("ISO-8859-1"));
 			else outBuf.append("HTTP/1.0 200 OK\r\n" + "Content-Type: " + contentType + "\r\n" + "\r\n");
 
@@ -194,6 +202,12 @@ public class WebServiceProcessRequest extends Thread
 					webPage = webPage.replaceAll("<input name=\"scorebutton\"", webService.vokabelGameHaupt.getHighScores(email, pass, book, unit, toGerman) + "</p><p><input name=\"scorebutton\"");
 				}
 				outBuf.append(webPage);
+			} else if (filePath.matches("/felix/[A-Za-z0-9 \\-\\.]*") || filePath.matches("/felix/Bilder/[A-Za-z0-9 \\-\\.]*")) {
+				if (filePath.endsWith(".jpg"))
+					loadWebPageBinary(filePath.substring(1), os);
+				else
+					outBuf.append(loadWebPage(filePath.substring(1)));
+
 			} else {
 				outBuf.append("undefined file path");
 			}

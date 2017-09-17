@@ -1,0 +1,40 @@
+h3{
+font-family: Arial; 
+color: Blue;
+}
+#haupt{
+	border-width:5px;
+	border-style:solid;
+	border-color:DarkBlue ;
+	padding: 10px;
+	width: 800px;
+	margin: auto;
+	text-decoration: none;
+}
+body{
+	background-color: #1270C5;
+}
+h1{
+	color : DarkBlue ;
+}
+IMG.displayed {
+	display: block;
+    margin-left: auto;
+    margin-right: auto; 
+	height: 250px;
+}
+a:hover { 
+    background-color: Navy ;
+	color: LightBlue;
+	text-decoration:none;
+}
+ul {
+	background: #3399ff;
+    padding: 20px;
+	color: Blue;
+}
+p{
+	color : DarkBlue ;
+}
+
+
