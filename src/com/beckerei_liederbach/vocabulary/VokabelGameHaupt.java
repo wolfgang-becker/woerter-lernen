@@ -73,6 +73,7 @@ public class VokabelGameHaupt
 
 	private boolean vergleiche(String givenAnswer, String correctAnswer) {
 		correctAnswer = correctAnswer.replaceAll("  ", " ");
+		correctAnswer = correctAnswer.replaceAll("\\(.*,.*\\)", "").trim(); // ignore stuff in brackets if comma separated
 		String[] alternativen = correctAnswer.split("[,/]",-1);
 		if (alternativen.length > 1 ){
 			for (String alternative : alternativen) {
@@ -134,8 +135,8 @@ public class VokabelGameHaupt
 			return false;
 		}
 		
+		Vokabel gefragteVokabel = null;
 		if (!question.isEmpty()) { // find the question text line in the book/unit
-			Vokabel gefragteVokabel = null;
 			int ZeilenNummer = 0;
 			for (; ZeilenNummer < questionSession.vokabeln.size(); ZeilenNummer++) {
 				Vokabel vokabel = questionSession.vokabeln.get(ZeilenNummer);
@@ -170,9 +171,13 @@ public class VokabelGameHaupt
 			questionSession.saveToDatabase(con);
 			questionSessions.remove(questionSession.getKey());
 			return false;
-		} else { // suche die naechste Frage aus
-			int neueZeilenNummer = zufallszahlen.nextInt(questionSession.wordIndexNoLongerAsk);
-			ratingAndNextQuestion[1] = toGerman ? questionSession.vokabeln.get(neueZeilenNummer).Fremdwort : questionSession.vokabeln.get(neueZeilenNummer).Deutsch;
+		} else { // suche die naechste Frage aus - wenn noch mehr als eine da ist, frage nicht dieselbe nochmal
+			int neueZeilenNummer = 0;
+			while (true) {
+				neueZeilenNummer = zufallszahlen.nextInt(questionSession.wordIndexNoLongerAsk);
+				ratingAndNextQuestion[1] = toGerman ? questionSession.vokabeln.get(neueZeilenNummer).Fremdwort : questionSession.vokabeln.get(neueZeilenNummer).Deutsch;
+				if (questionSession.wordIndexNoLongerAsk == 1 || !questionSession.vokabeln.get(neueZeilenNummer).equals(gefragteVokabel)) break;
+			}
 		}
 		return true;
 	}
@@ -428,7 +433,7 @@ public class VokabelGameHaupt
 		msg.setContent(text, "text/html; charset=ISO-8859-1");
 		msg.saveChanges();
 		Transport transport = s.getTransport("smtp");
-		transport.connect("smtp.gmail.com", "woerter.lernen@gmail.com", "_ABCrow42");
+		transport.connect(props.getProperty("mail.smtp.host"), "woerter.lernen@gmail.com", "_ABCrow42");
 		transport.sendMessage(msg, msg.getAllRecipients());
 		transport.close();
 	}
