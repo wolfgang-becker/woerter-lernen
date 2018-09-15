@@ -16,10 +16,17 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
+
+import javax.mail.Message;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 
 public class VokabelGameHaupt
 {
@@ -108,9 +115,13 @@ public class VokabelGameHaupt
 			ratingAndNextQuestion[1] = "If you are new, just choose any.";
 			return false;
 		}
-		if (!authenticateUser(email, pass)) {
+		String expectedPassword = authenticateUser(email, pass);
+		if (expectedPassword != null) {
 			ratingAndNextQuestion[0] = "Wrong password for this user.";
-			ratingAndNextQuestion[1] = "If you don't remember, create a new account.";
+			ratingAndNextQuestion[1] = "Have sent your password to your email.";
+			try {
+				sendMail(email, "woerter-lernen.com Account", "Your password is: " + expectedPassword);
+			} catch (Exception e) { ratingAndNextQuestion[1] = "Couldn't send your password to your email."; }
 			return false;
 		}
 		QuestionSession questionSession = null;
@@ -299,7 +310,8 @@ public class VokabelGameHaupt
 		return units;		
 	}
 
-	private boolean authenticateUser(String email, String pass) throws SQLException
+	// returns null if successful, otherwise the expected password
+	private String authenticateUser(String email, String pass) throws SQLException
 	{
 		String expectedPass = userAccounts.get(email);
 		if (expectedPass == null || !expectedPass.equals(pass)) { // load from database
@@ -326,9 +338,9 @@ public class VokabelGameHaupt
 					con.commit();
 				}
 			}
-			return true;
+			return null;
 		}
-		return expectedPass.equals(pass);
+		return expectedPass.equals(pass) ? null : expectedPass;
 	}
 
 	/**
@@ -337,7 +349,7 @@ public class VokabelGameHaupt
 	public String getHighScores(String email, String pass, String book, String unit, boolean toGerman)
 	{
 		try {
-			if (!authenticateUser(email, pass)) throw new Exception("Anmeldung fehlgeschlagen.");
+			if (authenticateUser(email, pass) != null) throw new Exception("Anmeldung fehlgeschlagen.");
 			if (book.isEmpty()) throw new Exception("Bitte wähle zuerst ein Buch aus.");
 			if (unit.isEmpty()) throw new Exception("Bitte wähle zuerst ein Kapitel aus.");
 			String sessionKey = QuestionSession.getKey(email, book, unit, toGerman);
@@ -398,5 +410,26 @@ public class VokabelGameHaupt
 				}
 			}
 		}
+	}
+	
+	private static final void sendMail(String to, String subject, String text) throws Exception
+	{
+		Properties props = new Properties();
+		props.put("mail.smtp.host", "smtp.gmail.com");
+		props.put("mail.smtp.port", "465");
+		props.put("mail.smtp.auth", true);
+		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+		props.put("mail.smtp.starttls.enable", "true");
+		Session s = Session.getInstance(props, null);
+		MimeMessage msg = new MimeMessage(s);
+		msg.setFrom(new InternetAddress("woerter.lernen@gmail.com"));
+		msg.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+		msg.setSubject(subject);
+		msg.setContent(text, "text/html; charset=ISO-8859-1");
+		msg.saveChanges();
+		Transport transport = s.getTransport("smtp");
+		transport.connect("smtp.gmail.com", "woerter.lernen@gmail.com", "_ABCrow42");
+		transport.sendMessage(msg, msg.getAllRecipients());
+		transport.close();
 	}
 }
