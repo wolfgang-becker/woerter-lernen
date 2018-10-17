@@ -1,5 +1,4 @@
-paene;fast, beinahe;6L18 
-totam noctem;die ganze Nacht (hindurch);6L18 
+paene;fast, beinahe;6L18
 negare, nego;verneinen, leugnen, verweigern (negativ, Negation);6L18 
 existimare, existimo;(ein)schätzen, meinen;6L18 
 vis, Akk. vim, Abl. vi f;Gewalt, Kraft, Menge;6L18 
@@ -9,12 +8,14 @@ sentire, sentio, sensi;fühlen, meinen, wahrnehmen (sensibel);6L18
 animus;Geist, Mut, Gesinnung (reanimieren);6L18 
 animo deficere;den Mut sinken lassen;6L18 
 non debere;nicht dürfen;6L18 
+dextera;die rechte Hand, die Rechte;6L18
 umerus;Oberarm, Schulter;6L18 
 crescere, cresco, crevi;wachsen (konkret);6L18 
 ante;vorher;6L18 
 paulo ante;kurz vorher;6L18 
 contendere, contendo, contendi;behaupten, eilen, sich anstrengen;6L18 
 plerique, pleraeque, pleraque;die meisten, sehr viele;6L18 
+ambo, ambae, ambo;beide (zusammen);6L18
 angustus;eng, schwierig (Angina);6L18 
 iterum;wiederum;6L18 
 iterum atque iterum;immer wieder;6L18 
@@ -24,5 +25,6 @@ vero;aber, in der Tat, wirklich;6L18
 immo (vero);ja sogar, vielmehr, im Gegenteil;6L18 
 concedere, concedo, concessi;erlauben, nachgeben, zugestehen (Konzession);6L18 
 virgo, virginis f;Mädchen;6L18 
-secum;mit sich, bei sich;6L18 
+secum;mit sich, bei sich;6L18
+umerus;Oberarm, Schulter;6L18
 Athenae, Athenarum;Athen;6L18 
