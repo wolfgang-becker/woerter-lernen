@@ -1,0 +1,115 @@
+store;Laden Geschäft
+subway;U-Bahn
+statue;Statue, Standbild
+cab;Taxi
+borough;Bezirk, Stadtteil
+New Yorker;New Yorker
+story;Stock(werk)
+skyscraper;Wolkenkratzer
+elevator:Aufzug, Lift
+to shoot somebody up;jemanden schnell hinauf befördern
+terrorist;Terrorist
+at the back;hinten, am Ende, im hinteren Teil
+to find one's way around;sich zurecht finden
+public transportation;öffentliche Verkehrsmittel
+impression;Eindruck
+statement;Äußerung, Erklärung
+theater;Theater
+exile;im Exil lebende Person
+present perfect progressive;Verlaufsform des Perfekts
+diner;einfaches Restaurant (mit Theke und Tischen)
+at any time;jederzeit
+for;seit
+since;seit
+coffee;Kaffee
+delicious;köstlich
+bagel;Bagel (weiches ringförmiges Brötchen)
+dollar;Dollar
+counter;Theke, Schalter
+ages ago;vor einer Ewigkeit
+hopeless;hoffnungslos
+to notice;bemerken, wahrnehmen
+over here;hierher
+to push;drängeln
+program;Programm(heft), Sendung
+past perfect progressive;Verlaufsform des Plusquamperfects
+spicy;würzig, scharf
+beef;Rindfleisch
+expressing;Ausdrücken
+to put something into words;etwas in Worte fassen
+vacation;Ferien, Urlaub
+to express;ausdrücken
+happiness;Glück, Zufriedenheit, Fröhlichkeit
+expectation;Erwartung
+sympathy;Mitleid, Mitgefühl, Verständnis
+to look forward to;sich freuen auf
+amazing;unglaublich, toll, erstaunlich
+to be on top of the world;überglücklich sein
+community;Gemeinde, Gemeinschaft
+mosaic;Mosaik
+mural;Wandgemälde
+neighborhood;Nachbarschaft
+completely;völlig
+weed;Unkraut
+pretty;ziemlich
+choice;Wahl, Auswahl
+drug;Droge
+none;keiner, keine, keines
+not at all;überhaupt nicht, gar nicht
+artist;Künstler
+result;Ergebnis, Resultat
+hopefully;hoffentlich
+extremely;äußerst, sehr
+adverb of degree;Gradadverb
+too brilliant for words;zu schön, um es in Worte zu fassen
+out of this world;spitze, abgefahren
+Chinese;Chinesisch, aus China, Chinese
+to look around something;sich etwas ansehen
+rookie;Neuling
+colloquial;umgangssprachlich
+to interrupt;unterbrechen
+to recognize;erkennen
+typically;typisch
+pronunciation;Aussprache
+to pronounce;aussprechen
+to not bother (with something);sich nicht kümmern (um etwas)
+joint;Laden
+to serve;servieren
+to happen to do something;zufällig etwas tun
+downtown;im Stadtzentrum
+I'd love to...;Ich würde sehr gern...
+immigrant;Immigrant, Einwanderer
+immigration;Einwanderung
+gate;Tor, Pforte
+yard;(Hinter)hof, Garten
+apartment;Apartment, Wohnung
+to greet;(be)grüßen
+high school;High School (Oberstufe)
+Creole;Kreolisch
+grandparents;Großeltern
+ambitious;ehrgeizig
+mom;Mama
+to do a good job;gute Arbeit leisten
+block;(Häuser)block
+lazy;faul
+crime;Kriminalität, Verbrechen
+drug dealer;Drogenverkäufer
+she was like...;sie sagte sowas wie...
+to get out of the way;aus dem Weg gehen
+respect;Respekt
+to treat;behandeln
+to respect;respektieren
+candy;Süßigkeiten
+barber;(Herren)friseur
+debating;Debattieren
+award;Auszeichnung, Preis
+peace;Frieden
+peer mediator;Vermittler, Mediator (unter Gleichaltrigen)
+to do well;gute Leistungen erbringen
+college;Universität
+pressure;Druck
+to keep one's mouth shut;den Mund halten
+way out;Ausweg
+to drop out of;abbrechen
+in somebody's opinion;jemandes Meinung nach
+jail;Gefängnis
