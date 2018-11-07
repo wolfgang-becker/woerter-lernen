@@ -6,7 +6,7 @@ borough;Bezirk, Stadtteil
 New Yorker;New Yorker
 story;Stock(werk)
 skyscraper;Wolkenkratzer
-elevator:Aufzug, Lift
+elevator;Aufzug, Lift
 to shoot somebody up;jemanden schnell hinauf befördern
 terrorist;Terrorist
 at the back;hinten, am Ende, im hinteren Teil

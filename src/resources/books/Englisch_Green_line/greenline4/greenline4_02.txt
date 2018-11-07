@@ -7,7 +7,7 @@ gymnastics;Gymnastik
 breathtaking;atemberaubend
 try-out;Aufnahmetest für die Mannschaft
 gymnasium;Turnhalle
-final;engültig
+final;endgültig,letzer, letzte, letztes
 grade;Klasse, Note
 student council;Schülerrat
 fall;Herbst
@@ -81,7 +81,7 @@ to take part;teilnehmen (an)
 discussion;Diskussion
 to present;präsentieren
 argument;Argument
-to parctise;üben
+to practise;üben
 to react;reagieren
 to disagree;anderer Meinung sein, nicht einverstanden sein
 obvious;offensichtlich
@@ -95,7 +95,7 @@ to check out;auschecken, abchecken
 furious;wütend
 law;Gesetz
 papers;Unterlagen, Papiere
-apart from;abgesehen von;außer
+apart from;abgesehen von, außer
 advantage;Vorteil
 to elect;wählen
 experience;Erfahrung
@@ -108,7 +108,6 @@ to research;recherchieren, erforschen, untersuchen
 structure;Struktur, Aufbau
 cell phone;Handy, Mobiltelefon
 introduction;Einführung
-final;letzer, letzte, letztes
 conclusion;Schluss, Schlussfolgerung
 to cheat;mogeln, betrügen
 to misuse;missbrauchen
