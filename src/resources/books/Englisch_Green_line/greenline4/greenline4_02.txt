@@ -1,0 +1,114 @@
+Go ... go!;Los ... los!;Lauf(t) ... lauf(t)!
+semester;(Schul)halbjahr, Semester
+focus;Blickpunkt, Fokus
+cheerleading;Cheerleading
+chant;Sprechgesang
+gymnastics;Gymnastik
+breathtaking;atemberaubend
+try-out;Aufnahmetest für die Mannschaft
+gymnasium;Turnhalle
+final;engültig
+grade;Klasse, Note
+student council;Schülerrat
+fall;Herbst
+dance;Tanzveranstaltung, Ball
+date;Verabredung, Date
+dude;Mann
+chaperon;Begleitperson
+for sale;zu verkaufen
+cent;Cent
+to grab;schnappen, greifen
+to attach;anbringen, anfügen, anhängen
+delivery;(Aus)lieferung, Zustellung
+period;(Unterrichts)stunde
+principal;Schulleiter
+class;Unterricht(sstunde), Kurs
+member;Mitglied
+election;Wahl
+to miss;verpassen, nicht teilnehmen
+luckily;glücklicherweise
+calendar;Kalender
+handbook;Handbuch
+to receive;empfangen
+detention;Nachsitzen
+suspension;Suspendierung (Ausschluss vom Unterricht)
+dress code;Kleiderordnung, Bekleidungsvorschriften
+point;Punkt
+earring;Ohrring
+jewelry;Schmuck
+shirt;Hemd, Shirt
+collar;Kragen
+pledge of allegiance;Treueeid
+silence;Stille
+to interfere (with something)
+politics, pl politics;Politik
+fall;Herbst
+semester;Semester
+no one; niemand
+to miss;verpassen, nicht teilnehmen
+for sale;zu verkaufen
+to attach;anbringen, anfügen, anhängen
+to groan;stöhnen
+geek;Außenseiter
+to jeer at somebody;über jemanden spotten, jemanden verhöhnen
+to ignore;ignorieren, außer Acht lassen
+to stuff into;(hinein)stopfen (in)
+backpack;Rucksack
+to fly by;vorbeisausen
+yeah;ja
+luckily;glücklicherweise
+bell;Glocke
+mayonaise;Majonäse
+stain;Fleck, Verfärbung
+jacket;Jacke
+to turn around;(sich) umdrehen, wenden
+to ask somebody to something;jemanden einladen (zu einer Veranstaltung)
+principal;Schulleiter
+hot;heiß, gefragt
+to yell;schreien, brüllen
+to crow;hrähen, (vor Freude) quietschen
+color;Farbe
+mirror;Spiegel
+to elect;wählen
+pledge of allegiance;Treueeid
+to brag;(mit etwas) angeben, (mit etwas) prahlen
+mind; Gedanken, Geist, Verstand
+to whisper;flüstern
+gossip;Klatsch, Tratsch
+to stare;anstarren
+forever;für immer, ewig
+to take part;teilnehmen (an)
+discussion;Diskussion
+to present;präsentieren
+argument;Argument
+to parctise;üben
+to react;reagieren
+to disagree;anderer Meinung sein, nicht einverstanden sein
+obvious;ofensichtlich
+to make a point;etwas anmerken
+big deal;große Sache
+to ignore;ignorieren, außer Acht lassen
+favorite;Lieblings-
+brand;Marke
+teen;Teenager, Jugendlicher
+to check out;auschecken, abchecken
+furious;wütend
+law;Gesetz
+papers;Unterlagen, Papiere
+apart from;abgesehen von;außer
+advantage;Vorteil
+to elect;wählen
+experience;Erfahrung
+qualification;Qualifikation
+disadvantage;Nachteil
+closed;geschlossen
+to comment (on);kommentieren
+author;Autor
+to research;recherchieren, erforschen, untersuchen
+structure;Struktur, Aufbau
+cell phone;Handy, Mobiltelefon
+introduction;Einführung
+final;letzer, letzte, letztes
+conclusion;Schluss, Schlussfolgerung
+to cheat;mogeln, betrügen
+to misuse;missbrauchen
