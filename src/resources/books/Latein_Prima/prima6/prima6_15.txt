@@ -3,7 +3,7 @@ nox, noctis f;Nacht;6L15
 multa nocte;in tiefer Nacht (wann?);6L15 
 somnus;Schlaf;6L15 
 excitare, excito;wecken, erregen, ermuntern;6L15 
-animadvertere, animadverto, animadverti:bemerken, wahrnehmen;6L15 
+animadvertere, animadverto, animadverti;bemerken, wahrnehmen;6L15 
 surgere, surgo, surrexi;sich aufrichten, sich erheben, aufstehen;6L15 
 summus;der höchste, der letzte, der oberste;6L15 
 pauci, ae, a; wenige;6L15 

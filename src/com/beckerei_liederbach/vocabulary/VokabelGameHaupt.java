@@ -205,6 +205,7 @@ public class VokabelGameHaupt
 				}
 			} 
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw new Exception("Book " + bookKey + " not found in library");
 		}
 		questionSession.wordIndexNoLongerAsk = questionSession.vokabeln.size();

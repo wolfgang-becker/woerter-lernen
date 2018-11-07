@@ -88,7 +88,11 @@ public class WebServiceProcessRequest extends Thread
 			for (i3 = i2; i3 < headersEnd && requestBody[i3]!='\n'; i3++) {}
 			String value = new String(requestBody, i2, i3-i2).trim();
 			i = i3+1;
-			if (name.equals("content-length")) contentLengthValue = Integer.parseInt(value);
+			if (name.equals("content-length")) {
+				try {
+					contentLengthValue = Integer.parseInt(value);
+				} catch (NumberFormatException e) { e.printStackTrace(); }
+			}
 		}
 		System.arraycopy(requestBody, headersEnd, requestBody, 0, requestBodyUsed - headersEnd);
 		requestBodyUsed -= headersEnd;

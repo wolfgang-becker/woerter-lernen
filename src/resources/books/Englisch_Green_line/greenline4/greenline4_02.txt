@@ -40,7 +40,7 @@ shirt;Hemd, Shirt
 collar;Kragen
 pledge of allegiance;Treueeid
 silence;Stille
-to interfere (with something)
+to interfere (with something);etwas beeinträchtigen, stören
 politics, pl politics;Politik
 fall;Herbst
 semester;Semester
@@ -84,7 +84,7 @@ argument;Argument
 to parctise;üben
 to react;reagieren
 to disagree;anderer Meinung sein, nicht einverstanden sein
-obvious;ofensichtlich
+obvious;offensichtlich
 to make a point;etwas anmerken
 big deal;große Sache
 to ignore;ignorieren, außer Acht lassen
@@ -112,3 +112,13 @@ final;letzer, letzte, letztes
 conclusion;Schluss, Schlussfolgerung
 to cheat;mogeln, betrügen
 to misuse;missbrauchen
+homecoming;Ehemaligentreffen
+to deny;abstreiten, verweigern
+lovely;schön, hübsch, herrlich
+ugly;hässlich
+I can't help but ...;ich kann nicht anders als ...
+secretly;insgeheim
+prom;Ball am Ende des Jahres (in einer amerikanischen High School)
+marching band;Marschkapelle
+stand;(Zuschauer)tribüne
+top bunk;oberes Bett (eines Etagenbetts)
