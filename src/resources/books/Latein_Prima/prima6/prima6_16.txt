@@ -9,7 +9,7 @@ potens, potentis;mächtig, stark (potent);6L16
 pulcher, pulchra, pulchrum;schön;6L16
 valere, valeo, valui;Einfluss haben, gesund sein, stark sein (Invalide);6L16
 multum valere;viel gelten;6L16
-plus valer quam;mehr gelten als;6L16
+plus valere quam;mehr gelten als;6L16
 pristinus, pristina, pristinum;früher;6L16
 cum (Subj.m.Ind.);(immer) wenn, als (plötzlich), (zu der Zeit) als;6L16 
 quamquam;obwohl;6L16 

@@ -3,7 +3,6 @@ package com.beckerei_liederbach.vocabulary;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
@@ -31,6 +30,8 @@ import javax.mail.internet.MimeMessage;
 public class VokabelGameHaupt
 {
 	private static final String BOOK_DIR = "src/resources/books/";
+	private static final int LEARN_GROUP_SIZE = 15;
+
 	Map<String,QuestionSession> questionSessions = new ConcurrentHashMap<>(); // session key = user:pass:book:unit
 	Random                      zufallszahlen = new Random();
 	Connection                  con; // database connection
@@ -192,7 +193,7 @@ public class VokabelGameHaupt
 		} else { // suche die naechste Frage aus - wenn noch mehr als eine da ist, frage nicht dieselbe nochmal
 			int neueZeilenNummer = 0;
 			while (true) {
-				neueZeilenNummer = zufallszahlen.nextInt(questionSession.wordIndexNoLongerAsk);
+				neueZeilenNummer = zufallszahlen.nextInt(Math.min(LEARN_GROUP_SIZE, questionSession.wordIndexNoLongerAsk));
 				ratingAndNextQuestion[1] = toGerman ? questionSession.vokabeln.get(neueZeilenNummer).Fremdwort : questionSession.vokabeln.get(neueZeilenNummer).Deutsch;
 				if (questionSession.wordIndexNoLongerAsk == 1 || !questionSession.vokabeln.get(neueZeilenNummer).equals(gefragteVokabel)) break;
 			}
@@ -311,6 +312,12 @@ public class VokabelGameHaupt
 			                       "to_german boolean, primary key (email, book, unit , foreign_word, to_german))");
 			}
 		}
+		// cleanup sessions of deleted users
+		try (Statement stmt = con.createStatement()) {
+			stmt.executeUpdate("delete from USER_WORD_STATUS w where not exists (select 1 from USERS u where w.email = u.email)");
+			con.commit();
+		}
+
 	}
 
 	public List<String> listBooks()
