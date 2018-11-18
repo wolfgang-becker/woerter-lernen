@@ -58,17 +58,6 @@ public class VokabelGameHaupt
 		new WebService(this, port); // this object listens to requests from the Internet
 
 		new SessionSaver(this);
-		
-		// on the console we can enter a question + answer to see the result for debugging
-		String ratingAndNextQuestion[] = new String[2];
-		while (true){
-			System.out.print(ratingAndNextQuestion[1] + " Übersetzung :  ");
-			BufferedReader bur = new BufferedReader(new InputStreamReader(System.in));			
-			String TastaturEingabe = bur.readLine();
-			evaluateAnswerAndGetNextQuestion("Felix@email", "FelixSecret", "Latein_Prima_Vokabeln/prima6", "prima6_13", ratingAndNextQuestion[1], TastaturEingabe, ratingAndNextQuestion, true);
-			System.out.println(ratingAndNextQuestion[0]);
-		}
-
 	}
 
 	private boolean vergleiche(String givenAnswer, String correctAnswer) {
@@ -120,7 +109,8 @@ public class VokabelGameHaupt
 	 * @param toGerman 
 	 * @return true if no error occurred
 	 */
-	public boolean evaluateAnswerAndGetNextQuestion(String email, String pass, String bookName, String unitName, String question, String answer, String ratingAndNextQuestion[], boolean toGerman) throws Exception
+	public boolean evaluateAnswerAndGetNextQuestion(String email, String pass, String bookName, String unitName, String question,
+			                                        String answer, int answerFieldRandomNumber, String ratingAndNextQuestion[], boolean toGerman) throws Exception
 	{
 		if (email.isEmpty()) {
 			ratingAndNextQuestion[0] = "<font color='red'>Please enter email &amp; password.</font>";
@@ -153,6 +143,14 @@ public class VokabelGameHaupt
 		catch (Exception e) {
 			ratingAndNextQuestion[0] = e.getMessage();
 			return false;
+		}
+		
+		if (answerFieldRandomNumber == questionSession.lastAnswerFieldRandomNumber) {
+			ratingAndNextQuestion[0] = "<font color='red'>Don't use browser's Back button.</font>";
+			ratingAndNextQuestion[1] = "This is cheating.";
+			return false;			
+		} else {
+			questionSession.lastAnswerFieldRandomNumber = answerFieldRandomNumber;
 		}
 		
 		Vokabel gefragteVokabel = null;

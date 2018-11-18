@@ -15,6 +15,7 @@ public class QuestionSession
 	List <Vokabel> vokabeln;
 	int wordIndexNoLongerAsk; // starting this index words are no longer asked
 	public long lastInteractionTimeStamp;
+	public int lastAnswerFieldRandomNumber; // to avoid resubmits with browser's "Back" button
 	
 	QuestionSession(String email, String book, String unit, boolean toGerman)
 	{

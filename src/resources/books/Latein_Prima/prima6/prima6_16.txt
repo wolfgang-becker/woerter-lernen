@@ -15,7 +15,7 @@ cum (Subj.m.Ind.);(immer) wenn, als (plötzlich), (zu der Zeit) als;6L16
 quamquam;obwohl;6L16 
 contentus (m.Abl.);zufrieden (mit);6L16 
 novus;neu, ungewöhnlich (Novum, renovieren);6L16 
-inimicus;feindlich, Subst. Feind;6L16 
+inimicus;feindlich, (Subst.) Feind;6L16 
 perspicere, perspicio, perspexi;erkennen, genau betrachten, sehen (Perspektive);6L16 
 copiae, copiarum Pl.;Truppen;6L16 
 navis, navis f;Schiff (Navigation);6L16 
