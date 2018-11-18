@@ -11,7 +11,7 @@ valere, valeo, valui;Einfluss haben, gesund sein, stark sein (Invalide);6L16
 multum valere;viel gelten;6L16
 plus valer quam;mehr gelten als;6L16
 pristinus, pristina, pristinum;früher;6L16
-cum Subj.m.Ind.;(immer) wenn, als (plötzlich), (zu der Zeit) als;6L16 
+cum (Subj.m.Ind.);(immer) wenn, als (plötzlich), (zu der Zeit) als;6L16 
 quamquam;obwohl;6L16 
 contentus (m.Abl.);zufrieden (mit);6L16 
 novus;neu, ungewöhnlich (Novum, renovieren);6L16 
@@ -22,7 +22,7 @@ navis, navis f;Schiff (Navigation);6L16
 monumentum;Denkmal (Monument);6L16 
 imperium;Befehl, Befehlsgewalt, Herrschaft, Herrschaftsgebiet (Imperium);6L16 
 temperare, tempero m.Akk.;lenken, ordnen (Temperament);6L16 
-corpus, corporis n;Körper, Leichnam (korpulent);6L16 
+corpus, corporis (n);Körper, Leichnam (korpulent);6L16 
 aurum;Gold;6L16 
 sibi (Dativ);sich;6L16 
 adiungere, adiungo, adiunxi;hinzufügen, anschließen;6L16 

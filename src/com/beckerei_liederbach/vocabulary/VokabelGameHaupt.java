@@ -72,6 +72,26 @@ public class VokabelGameHaupt
 	}
 
 	private boolean vergleiche(String givenAnswer, String correctAnswer) {
+		if (correctAnswer.contains(",")) { // split at commas, but not at commas within brackets
+			List<Integer> splitPoints = new ArrayList<>();
+			int bracketLevel = 0;
+			for (int i = 0; i < correctAnswer.length(); i++) {
+				char c = correctAnswer.charAt(i);
+				if      (c == '(')   bracketLevel++;
+				else if (c == ')') { bracketLevel--; if (bracketLevel < 0) { bracketLevel = 0; System.out.println("Bracket mess in " + correctAnswer); } }
+				else if (c == ',' && bracketLevel == 0) splitPoints.add(i);
+			}
+			if (bracketLevel > 0) System.out.println("Bracket mess in " + correctAnswer);
+			splitPoints.add(correctAnswer.length()); // the last comma section ends at the end of the string
+			if (splitPoints.size() > 1) {
+				int commaSectionStartIndex = 0;
+				for (int commaSectionEndIndex : splitPoints) {
+					if (vergleiche(givenAnswer, correctAnswer.substring(commaSectionStartIndex, commaSectionEndIndex))) return true;
+					commaSectionStartIndex = commaSectionEndIndex + 1;
+				}
+				return false;
+			}
+		}
 		correctAnswer = correctAnswer.replaceAll("  ", " ");
 		correctAnswer = correctAnswer.replaceAll("\\(.*,.*\\)", "").trim(); // ignore stuff in brackets if comma separated
 		String[] alternativen = correctAnswer.split("[,/]",-1);
@@ -184,8 +204,8 @@ public class VokabelGameHaupt
 
 	private QuestionSession getOrOpenQuestionSession(String sessionKey, String email, String book, String unit, boolean toGerman) throws Exception
 	{
-		if (book.isEmpty()) throw new Exception("Please select a book");
-		if (unit.isEmpty()) throw new Exception("Please select a unit in the book");
+		if (book.isEmpty()) throw new Exception("Select a book");
+		if (unit.isEmpty()) throw new Exception("Select a unit in the book");
 		QuestionSession questionSession = questionSessions.get(sessionKey);
 		if (questionSession != null) {
 			questionSession.lastInteractionTimeStamp = System.currentTimeMillis();
@@ -233,13 +253,13 @@ public class VokabelGameHaupt
 							continue;
 						}
 						Vokabel word = questionSession.vokabeln.get(indexInMemory);
-						word.lastAskTime    = lastAskTime   ;
+						word.lastAskTime        = lastAskTime   ;
 						word.numKnowsInSequence = numKnownsInSeq;
 						long hoursSinceLastAsked = (now - lastAskTime) / 1000 / 60 / 60;
 						long daysSinceLastAsked = hoursSinceLastAsked / 24;
 						if ((numKnownsInSeq >= 8 && daysSinceLastAsked  < 60) ||
-							(numKnownsInSeq >= 5 && daysSinceLastAsked  <  7)	||
-							(numKnownsInSeq >= 3 && hoursSinceLastAsked < 24)	||
+							(numKnownsInSeq >= 5 && daysSinceLastAsked  <  7) ||
+							(numKnownsInSeq >= 3 && hoursSinceLastAsked < 24) ||
 							(numKnownsInSeq >= 2 && hoursSinceLastAsked <  2)) { // move it back to the end, update the border index
 							questionSession.vokabeln.remove(indexInMemory);
 							questionSession.vokabeln.add(word);
@@ -248,7 +268,7 @@ public class VokabelGameHaupt
 					}
 				}
 			}
-			if (sessionWasNotYetStoredInDatabase) { // store all questions into the database, so that we can simply them update later on (insert-or-update is complicated with SQL)
+			if (sessionWasNotYetStoredInDatabase) { // store all questions into the database, so that we can update them more easily later on (insert-or-update is complicated with SQL)
 				try (PreparedStatement s = con.prepareStatement("insert into USER_WORD_STATUS (email, book, unit, foreign_word, last_ask_time, num_knowns_in_seq, to_german) values (?,?,?,?,0,0,?)")) {
 					for (Vokabel word : questionSession.vokabeln) {
 						s.setString (1, email);

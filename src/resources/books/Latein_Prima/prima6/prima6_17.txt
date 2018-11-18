@@ -23,7 +23,7 @@ scelus committere;ein Verbrechen begehen;6L17
 suspicio, suspicionis f;Verdacht, Vermutung;6L17 
 quaerere, quaero, quaesivi;erwerben wollen, suchen (requirieren);6L17 
 interrogare, interrogo;fragen;6L17 
-reperire, reperio, repperi;(wieder) finden (Repertoire);6L17
+reperire, reperio, repperi;(wieder)finden (Repertoire);6L17
 continere, contineo, continui;festhalten;6L17
 eripere, eripio, eripui;entreißen;6L17 
 inducere, induco, induxi;(hin)einführen, verleiten (induktiv);6L17 
