@@ -219,7 +219,7 @@ public class VokabelGameHaupt
 					if (zeile == null) break;
 					if (zeile.trim().isEmpty()) continue;
 					String[] FremdwortDeutschBuch = zeile.split(";",-1);
-					if (FremdwortDeutschBuch.length != 2) throw new Exception("Got " + FremdwortDeutschBuch.length + " sections instead of 2 in line " + zeile);
+					if (FremdwortDeutschBuch.length < 2) throw new Exception("Got " + FremdwortDeutschBuch.length + " sections instead of 2 in line " + zeile);
 					Vokabel vokabel = new Vokabel(FremdwortDeutschBuch[0],FremdwortDeutschBuch[1], 0, 0);
 					questionSession.vokabeln.add(vokabel);
 				}
