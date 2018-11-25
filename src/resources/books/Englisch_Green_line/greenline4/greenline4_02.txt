@@ -1,4 +1,4 @@
-Go ... go!;Los ... los!;Lauf(t) ... lauf(t)!
+Go ... go!;Los ... los!,Lauf(t) ... lauf(t)!
 semester;(Schul)halbjahr, Semester
 focus;Blickpunkt, Fokus
 cheerleading;Cheerleading
@@ -44,7 +44,7 @@ to interfere (with something);etwas beeinträchtigen, stören
 politics, pl politics;Politik
 fall;Herbst
 semester;Semester
-no one; niemand
+no one;niemand
 to miss;verpassen, nicht teilnehmen
 for sale;zu verkaufen
 to attach;anbringen, anfügen, anhängen
@@ -66,13 +66,13 @@ to ask somebody to something;jemanden einladen (zu einer Veranstaltung)
 principal;Schulleiter
 hot;heiß, gefragt
 to yell;schreien, brüllen
-to crow;hrähen, (vor Freude) quietschen
+to crow;krähen, (vor Freude) quietschen
 color;Farbe
 mirror;Spiegel
 to elect;wählen
 pledge of allegiance;Treueeid
 to brag;(mit etwas) angeben, (mit etwas) prahlen
-mind; Gedanken, Geist, Verstand
+mind;Gedanken, Geist, Verstand
 to whisper;flüstern
 gossip;Klatsch, Tratsch
 to stare;anstarren

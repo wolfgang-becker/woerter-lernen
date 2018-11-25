@@ -397,7 +397,7 @@ public class VokabelGameHaupt
 					s.setBoolean(3, toGerman);
 					try (ResultSet r = s.executeQuery()) {
 						while (r.next()) {
-							String email1         = r.getString(1);
+							String email1         = r.getString(1).toLowerCase();
 							long   lastAskTime    = r.getLong  (2);
 							int    numKnownsInSeq = r.getInt   (3);
 							ScoreEntry e = users.get(email1);
