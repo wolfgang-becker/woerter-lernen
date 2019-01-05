@@ -17,7 +17,7 @@ volare, volo;fliegen, eilen (Voliere);6L19
 pirata m;Pirat, Seeräuber;6L19 
 sceleratus;verbrecherisch, schädlich, Subst. Verbrecher;6L19 
 trahere, traho, traxi;ziehen, schleppen (Traktor);6L19 
-captivus;gefangen, Subst. (Kriegs-)Gefangener;6L19 
+captivus;gefangen, (Substantiv:) (Kriegs-)Gefangener;6L19 
 quotiens;wie oft, so oft (Quotient);6L19 
 at;aber, jedoch, dagegen;6L19 
-o nos miseros;Ach, wir Armen/Unglücklichen!;6L19 
+o nos miseros;Ach wir Armen!, Ach wir Unglücklichen!;6L19 
