@@ -125,6 +125,7 @@ public class WebServiceProcessRequest extends Thread
 					String direction= "";
 					boolean error = false;
 					boolean showHighScores = false;
+					boolean fastForward = false;
 					int answerFieldRandomNumber = -1;
 					for (String nameValue : reqParams.split("&", -1)) {
 						String nameValueSplit[] = nameValue.split("=", -1); 
@@ -135,14 +136,15 @@ public class WebServiceProcessRequest extends Thread
 								throw new Exception("No paths allowed in book or unit");
 							}
 						}
-						if      (name.equals    ("email"    )) email     = value;
-						else if (name.equals    ("pass"     )) pass      = value;
-						else if (name.equals    ("book"     )) book      = value;
-						else if (name.equals    ("unit"     )) unit      = value;
-						else if (name.equals    ("question" )) question  = value;
-						else if (name.startsWith("answer"   )) { answer    = value; answerFieldRandomNumber = Integer.parseInt(name.substring(6)); } // answer2343
-						else if (name.equals    ("direction")) direction = value;
-						else if (name.equals    ("score"    )) showHighScores = value.equals("y");
+						if      (name.equals    ("email"      )) email          = value;
+						else if (name.equals    ("pass"       )) pass           = value;
+						else if (name.equals    ("book"       )) book           = value;
+						else if (name.equals    ("unit"       )) unit           = value;
+						else if (name.equals    ("question"   )) question       = value;
+						else if (name.startsWith("answer"     )) { answer       = value; answerFieldRandomNumber = Integer.parseInt(name.substring(6)); } // answer2343
+						else if (name.equals    ("direction"  )) direction      = value;
+						else if (name.equals    ("score"      )) showHighScores = value.equals("y");
+						else if (name.equals    ("fastforward")) fastForward    = value.equals("y");
 					}
 					boolean changeDirection = direction.contains("<-");
 					if (!book.isEmpty() && book.contains("_")) language = book.substring(0, book.indexOf("_"));
@@ -183,7 +185,8 @@ public class WebServiceProcessRequest extends Thread
 							for (String b : books1) books += "<option value=\"" + b + "\">" + b + "</option>\r\n";
 							List<String> units1 = webService.vokabelGameHaupt.listUnits(book);
 							for (String u : units1) units += "<option value=\"" + u + "\">" + u + "</option>\r\n";
-							error |= !webService.vokabelGameHaupt.evaluateAnswerAndGetNextQuestion(email, pass, book, unit, question, answer, answerFieldRandomNumber, ratingAndNextQuestion, toGerman);
+							error |= !webService.vokabelGameHaupt.evaluateAnswerAndGetNextQuestion(email, pass, book, unit, question, answer, answerFieldRandomNumber,
+									                                                               ratingAndNextQuestion, toGerman, showHighScores, fastForward);
 						}
 						catch (Exception e) {
 							ratingAndNextQuestion[0] = e.getMessage();
