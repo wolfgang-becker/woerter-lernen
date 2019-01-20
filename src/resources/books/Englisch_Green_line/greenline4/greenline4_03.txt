@@ -123,7 +123,7 @@ nation;Volk, Nation
 to develop;(sich) entwickeln
 to admire;bewundern
 ugly;hässlich
-surburb;Vorort
+suburb;Vorort
 double standard;Doppelmoral
 business people;Geschäftsleute
 to reinvest;reinvestieren
