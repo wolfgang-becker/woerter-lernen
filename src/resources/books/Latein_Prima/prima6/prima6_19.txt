@@ -17,7 +17,7 @@ volare, volo;fliegen, eilen (Voliere)
 pirata m;Pirat, Seeräuber
 sceleratus;verbrecherisch, schädlich, Subst. Verbrecher
 trahere, traho, traxi;ziehen, schleppen (Traktor)
-captivus;gefangen, Subst. (Kriegs-)Gefangener
+captivus;gefangen, (Substantiv:) (Kriegs-)Gefangener
 quotiens;wie oft, so oft (Quotient)
 at;aber, jedoch, dagegen
-o nos miseros;Ach, wir Armen/Unglücklichen!
+o nos miseros;Ach wir Armen!, Ach wir Unglücklichen!

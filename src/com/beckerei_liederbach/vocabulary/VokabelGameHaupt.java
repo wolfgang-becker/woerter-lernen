@@ -110,8 +110,8 @@ public class VokabelGameHaupt
 	 * @param toGerman 
 	 * @return true if no error occurred
 	 */
-	public boolean evaluateAnswerAndGetNextQuestion(String email, String pass, String bookName, String unitName, String question,
-			                                        String answer, int answerFieldRandomNumber, String ratingAndNextQuestion[], boolean toGerman) throws Exception
+	public boolean evaluateAnswerAndGetNextQuestion(String email, String pass, String bookName, String unitName, String question, String answer, int answerFieldRandomNumber,
+			                                        String ratingAndNextQuestion[], boolean toGerman, boolean showHighScores, boolean fastForward) throws Exception
 	{
 		if (email.isEmpty()) {
 			ratingAndNextQuestion[0] = "<font color='red'>Please enter email &amp; password.</font>";
@@ -178,13 +178,23 @@ public class VokabelGameHaupt
 						"<br/><font color=\"brown\">Noch " + questionSession.wordIndexNoLongerAsk + " Wörter</font>";
 			} else {
 				ratingAndNextQuestion[0] = question + " = <font color=\"red\"><b>" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</b></font>";
-				questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
-				questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence = 0;
+				if ((!showHighScores && !fastForward) || !answer.isEmpty()) { // if people click on "High Scores" then they usually didn't answer the question
+					questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
+					if (questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence > 0) questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence--; // don't put it completely back to "unknown"
+				}
 			}
 		} else { // got no question
 			ratingAndNextQuestion[0] = "";
 		}
 
+		if (fastForward) { // throw the current "learn group" into "no longer ask"
+			for (int ff = 0; ff < 5; ff++) {
+				Vokabel word = questionSession.vokabeln.remove(0);
+				questionSession.vokabeln.add(word);
+				questionSession.wordIndexNoLongerAsk--;
+			}
+		}
+		
 		if (questionSession.wordIndexNoLongerAsk <= 0) {
 			ratingAndNextQuestion[1] = "Fertig, Du kennst alle Wörter! Gratuliere!";
 			questionSession.saveToDatabase(con);
@@ -257,10 +267,10 @@ public class VokabelGameHaupt
 						word.numKnowsInSequence = numKnownsInSeq;
 						long hoursSinceLastAsked = (now - lastAskTime) / 1000 / 60 / 60;
 						long daysSinceLastAsked = hoursSinceLastAsked / 24;
-						if ((numKnownsInSeq >= 8 && daysSinceLastAsked  < 60) ||
-							(numKnownsInSeq >= 5 && daysSinceLastAsked  <  7) ||
+						if ((numKnownsInSeq >= 8 && daysSinceLastAsked  < 14) ||
+							(numKnownsInSeq >= 5 && daysSinceLastAsked  <  4) ||
 							(numKnownsInSeq >= 3 && hoursSinceLastAsked < 24) ||
-							(numKnownsInSeq >= 2 && hoursSinceLastAsked <  2)) { // move it back to the end, update the border index
+							(numKnownsInSeq >= 2 && hoursSinceLastAsked < 12)) { // move it back to the end, update the border index
 							questionSession.vokabeln.remove(indexInMemory);
 							questionSession.vokabeln.add(word);
 							questionSession.wordIndexNoLongerAsk--;

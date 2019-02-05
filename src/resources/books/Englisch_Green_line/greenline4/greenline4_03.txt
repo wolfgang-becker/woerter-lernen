@@ -24,7 +24,7 @@ sea level;Meeresspiegel
 mobility;Mobilität
 moving;Umziehen
 gerund;Gerundivum
-to be tired of (+gerund);einer Sache überdüssig sein, jemands überdrüssig sein
+to be tired of (+gerund);einer Sache überdrüssig sein, jemands überdrüssig sein
 to ski;Ski fahren
 to hit the slopes;auf die (Ski)piste gehen
 slope;(Ski)piste, (Ab)hang
@@ -79,7 +79,7 @@ rhythm;Rhythmus
 diagram;Diagramm
 billion-dollar;milliardenschwer
 attraction;Attraktion, Sehenswürdigkeit
-fedral; Bundes-, föderalistisch
+federal; Bundes-, föderalistisch
 controversial;strittig, umstritten
 resort;Ferienort, Ferienanlage
 environmental protection;Umweltschutz
@@ -123,7 +123,7 @@ nation;Volk, Nation
 to develop;(sich) entwickeln
 to admire;bewundern
 ugly;hässlich
-surburb;Vorort
+suburb;Vorort
 double standard;Doppelmoral
 business people;Geschäftsleute
 to reinvest;reinvestieren
