@@ -19,11 +19,12 @@ body, table, input, select { font-family: Arial, Helvetica, sans-serif; color: b
     <tr>	<td colspan="2">&nbsp;</td></tr>
     <tr>	<td colspan="2">${rating}</td></tr>
     <tr>	<td colspan="2">&nbsp;</td></tr>
-    <tr>	<td colspan="2"><font color='black'>${question}</font>
-                            <input name="fastforward" type="button" value=">>" onclick='document.getElementById("fastforward").value = "y"; this.form.submit()'/>
-	                        <input type="hidden" name="fastforward" id="fastforward" value="n"/></td></tr>
+    <tr>	<td colspan="2"><font color='black'>${question}</font></td></tr>
 	<tr>	<td colspan="2"><input type="text" name="${answer}" autofocus style="${showquestion}"/>
-					    <input type="hidden" name="question" value="${question}"/><input type="submit" value="Enter"/></td>	<td></td></tr>
+					        <input type="hidden" name="question" value="${question}"/><input type="submit" value="Enter"/>
+					        <input name="fastforward" type="button" value=">>" onclick='document.getElementById("fastforward").value = "y"; this.form.submit()'/>
+					        <input type="hidden" name="fastforward" id="fastforward" value="n"/>
+					        </td>	<td></td></tr>
 </table>
 <p>
 	<input name="scorebutton" type="button" value="Rangliste"

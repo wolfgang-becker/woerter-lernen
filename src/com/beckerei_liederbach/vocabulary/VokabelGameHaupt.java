@@ -61,7 +61,13 @@ public class VokabelGameHaupt
 		new SessionSaver(this);
 	}
 
-	private boolean vergleiche(String givenAnswer, String correctAnswer) {
+	/**
+	 * @return matchedPartOfAnswer or null if no match
+	 */
+	private String vergleiche1(String givenAnswer, String correctAnswer)
+	{
+		int comma = givenAnswer.indexOf(',');
+		if (comma >= 0)	givenAnswer = givenAnswer.substring(0, comma); // if user gave the additional "Perfektstamm" and so on
 		if (correctAnswer.contains(",")) { // split at commas, but not at commas within brackets
 			List<Integer> splitPoints = new ArrayList<>();
 			int bracketLevel = 0;
@@ -76,10 +82,11 @@ public class VokabelGameHaupt
 			if (splitPoints.size() > 1) {
 				int commaSectionStartIndex = 0;
 				for (int commaSectionEndIndex : splitPoints) {
-					if (vergleiche(givenAnswer, correctAnswer.substring(commaSectionStartIndex, commaSectionEndIndex))) return true;
+					String matchedPart = vergleiche1(givenAnswer, correctAnswer.substring(commaSectionStartIndex, commaSectionEndIndex));
+					if (matchedPart != null) return matchedPart;
 					commaSectionStartIndex = commaSectionEndIndex + 1;
 				}
-				return false;
+				return null;
 			}
 		}
 		correctAnswer = correctAnswer.replaceAll("  ", " ");
@@ -87,31 +94,45 @@ public class VokabelGameHaupt
 		String[] alternativen = correctAnswer.split("[,/]",-1);
 		if (alternativen.length > 1 ){
 			for (String alternative : alternativen) {
-				if (vergleiche(givenAnswer, alternative.trim())){
-					return true;
-				}
+				String matchedPart = vergleiche1(givenAnswer, alternative.trim());
+				if (matchedPart != null) return matchedPart;
 			}
 		}
 		else if (givenAnswer.equalsIgnoreCase(correctAnswer)){
-			return true;
+			return givenAnswer;
 		}
 		String DeutschOhneDasInDenKlammern = correctAnswer.replaceAll("\\(.*\\)", "").replaceAll("-","").replaceAll("  ", " ").trim();
 		if (givenAnswer.equalsIgnoreCase(DeutschOhneDasInDenKlammern)){
-			return true;
+			return givenAnswer;
 		}
 		String DeutschohneKlammern = correctAnswer.replaceAll("\\(", "").replaceAll("\\)","").replaceAll("  ", " ").trim();
 		if (givenAnswer.equalsIgnoreCase(DeutschohneKlammern)){
-			return true;
+			return givenAnswer;
 		}
-		return false;
+		return null;
 	}
 
 	/**
-	 * @param toGerman 
+	 * originalQuestion         = ire, eo, ii m.Akk.
+	 * givenAnswer              = laufen, eo, ii m.Akk.
+	 * matchedPartOfGivenAnswer = laufen
+	 * matchedPartOfQuestion    = ire
+	 */
+	private boolean vergleiche2(String originalQuestion, String givenAnswer, String matchedPartOfGivenAnswer, int howOftenAnsweredCorrectly, String direction)
+	{
+		if (howOftenAnsweredCorrectly == 0) return true;
+		if (!direction.equals("Latein->Deutsch")) return true;
+		int comma = originalQuestion.indexOf(',');
+		if (comma < 0) return true;
+		String matchedPartOfQuestion = originalQuestion.substring(0, comma);
+		return givenAnswer.substring(matchedPartOfGivenAnswer.length()).equalsIgnoreCase(originalQuestion.substring(matchedPartOfQuestion.length()));
+	}
+
+	/**
 	 * @return true if no error occurred
 	 */
 	public boolean evaluateAnswerAndGetNextQuestion(String email, String pass, String bookName, String unitName, String question, String answer, int answerFieldRandomNumber,
-			                                        String ratingAndNextQuestion[], boolean toGerman, boolean showHighScores, boolean fastForward) throws Exception
+			                                        String ratingAndNextQuestion[], boolean toGerman, boolean showHighScores, boolean fastForward, String direction) throws Exception
 	{
 		if (email.isEmpty()) {
 			ratingAndNextQuestion[0] = "<font color='red'>Please enter email &amp; password.</font>";
@@ -162,25 +183,34 @@ public class VokabelGameHaupt
 				if ((toGerman && vokabel.Fremdwort.equals(question)) || (!toGerman && vokabel.Deutsch.equals(question))) {
 					gefragteVokabel = vokabel;
 					break;
+				} else if (direction.equals("Latein->Deutsch") && question.replace(" ", "").contains(",?") && // if user already answered once correctly, then he must additionally answer the "Stammformen" etc.
+						vokabel.Fremdwort.contains(",") && vokabel.Fremdwort.substring(0, vokabel.Fremdwort.indexOf(",")).equals(question.substring(0, question.indexOf(",")))) {
+					gefragteVokabel = vokabel;
+					break;
 				}
 			}
 			if (gefragteVokabel == null) {
 				ratingAndNextQuestion[0] = "Bezog sich die Antwort auf ein anderes Kapitel?";
-			}
-			else if (vergleiche(answer, toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort)) {
-				Vokabel word = questionSession.vokabeln.remove(ZeilenNummer);
-				questionSession.vokabeln.add(word);
-				questionSession.wordIndexNoLongerAsk--;
-				word.lastAskTime = System.currentTimeMillis();
-				word.numKnowsInSequence++;
-				ratingAndNextQuestion[0] = question + " = <font color=\"green\">" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</font> " +
-						(word.numKnowsInSequence > 1 ? ("<br/><font color=\"brown\">" + word.numKnowsInSequence + " x richtig!</font>") : "") +
-						"<br/><font color=\"brown\">Noch " + questionSession.wordIndexNoLongerAsk + " Wörter</font>";
 			} else {
-				ratingAndNextQuestion[0] = question + " = <font color=\"red\"><b>" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</b></font>";
-				if ((!showHighScores && !fastForward) || !answer.isEmpty()) { // if people click on "High Scores" then they usually didn't answer the question
-					questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
-					if (questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence > 0) questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence--; // don't put it completely back to "unknown"
+				String expectedAnswer  = toGerman ? gefragteVokabel.Deutsch   : gefragteVokabel.Fremdwort;
+				String orignalQuestion = toGerman ? gefragteVokabel.Fremdwort : gefragteVokabel.Deutsch  ;
+				String matchedAnswerPart = vergleiche1(answer, expectedAnswer);
+				if (matchedAnswerPart != null &&
+					vergleiche2(orignalQuestion, answer, matchedAnswerPart, questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence, direction)) {
+					Vokabel word = questionSession.vokabeln.remove(ZeilenNummer);
+					questionSession.vokabeln.add(word);
+					questionSession.wordIndexNoLongerAsk--;
+					word.lastAskTime = System.currentTimeMillis();
+					word.numKnowsInSequence++;
+					ratingAndNextQuestion[0] = orignalQuestion + " = <font color=\"green\">" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</font> " +
+							(word.numKnowsInSequence > 1 ? ("<br/><font color=\"brown\">" + word.numKnowsInSequence + " x richtig!</font>") : "") +
+							"<br/><font color=\"brown\">Noch " + questionSession.wordIndexNoLongerAsk + " Wörter</font>";
+				} else {
+					ratingAndNextQuestion[0] = orignalQuestion + " = <font color=\"red\"><b>" + (toGerman ? gefragteVokabel.Deutsch : gefragteVokabel.Fremdwort) + "</b></font>";
+					if ((!showHighScores && !fastForward) || !answer.isEmpty()) { // if people click on "High Scores" then they usually didn't answer the question
+						questionSession.vokabeln.get(ZeilenNummer).lastAskTime = System.currentTimeMillis();
+						if (questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence > 0 && matchedAnswerPart == null) questionSession.vokabeln.get(ZeilenNummer).numKnowsInSequence--; // don't put it completely back to "unknown"
+					}
 				}
 			}
 		} else { // got no question
@@ -206,6 +236,16 @@ public class VokabelGameHaupt
 				neueZeilenNummer = zufallszahlen.nextInt(Math.min(LEARN_GROUP_SIZE, questionSession.wordIndexNoLongerAsk));
 				ratingAndNextQuestion[1] = toGerman ? questionSession.vokabeln.get(neueZeilenNummer).Fremdwort : questionSession.vokabeln.get(neueZeilenNummer).Deutsch;
 				if (questionSession.wordIndexNoLongerAsk == 1 || !questionSession.vokabeln.get(neueZeilenNummer).equals(gefragteVokabel)) break;
+			}
+			if (direction.equals("Latein->Deutsch") && questionSession.vokabeln.get(neueZeilenNummer).numKnowsInSequence > 0 && ratingAndNextQuestion[1].contains(",")) { // replace everything behind commas by ?
+				boolean behindComma = false;
+				StringBuffer q = new StringBuffer();
+				for (int i = 0; i < ratingAndNextQuestion[1].length(); i++) {
+					char c = ratingAndNextQuestion[1].charAt(i);
+					behindComma |= c == ',';
+					if (behindComma && !Character.isWhitespace(c) && c != ',') q.append('?'); else q.append(c);
+				}
+				ratingAndNextQuestion[1] = q.toString();
 			}
 		}
 		return true;

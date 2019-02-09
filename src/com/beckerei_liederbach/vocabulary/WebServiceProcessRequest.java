@@ -186,7 +186,7 @@ public class WebServiceProcessRequest extends Thread
 							List<String> units1 = webService.vokabelGameHaupt.listUnits(book);
 							for (String u : units1) units += "<option value=\"" + u + "\">" + u + "</option>\r\n";
 							error |= !webService.vokabelGameHaupt.evaluateAnswerAndGetNextQuestion(email, pass, book, unit, question, answer, answerFieldRandomNumber,
-									                                                               ratingAndNextQuestion, toGerman, showHighScores, fastForward);
+									                                                               ratingAndNextQuestion, toGerman, showHighScores, fastForward, direction);
 						}
 						catch (Exception e) {
 							ratingAndNextQuestion[0] = e.getMessage();
