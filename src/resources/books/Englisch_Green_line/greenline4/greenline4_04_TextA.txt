@@ -1,0 +1,49 @@
+extreme;extrem, radikal
+novel;Roman
+to cycle;(Fahr)rad fahren
+to lock;abschließen
+cliff;Klippe;Kliff
+deep;tief
+slot;Schlitz
+in places;an manchen Stellen
+narrow;eng, schmal
+boulder;Felsblock, Felsbrocken
+pound;Pfund (Maßeinheit)
+in time;rechtzeitig
+to crush;zerquetschen, einklemmen
+to pull;ziehen
+adrenaline;Adrenalin
+panic;Panik
+nasty;gefährlich, schlimm
+outdoor;Freiluft-, Outdoor
+avalanche;Lawine
+to breathe;atmen
+desert;Wüste
+to let up;nachlassen, aufhören
+trail;Weg, Pfad
+to chip off;abbrechen
+multitool;Multitool (Multifunktionswerkzeug für Tasche/Gürtel)
+rope;Seil
+to lift;(hoch)heben, anheben
+to come to peace with;Frieden schließen mit, in Frieden leben mit
+death;Tod
+to run out (of);ausgehen
+to quit, quit, quit;aufhören, aufgeben
+alive;lebend, am Leben, lebendig
+to cut (off);(ab)schneiden
+to realize;erkennen, realisieren
+sharp;scharf, schneidend
+bone;Knochen
+to force something;etwas mit Gewalt tun
+cap gun;Spielzeugpistole (mit Platzpatronen)
+to echo;(wider)hallen
+joy;Freude
+ordeal;Qual, Martyrium
+over;vorüber
+possible;möglich
+to hike;wandern
+sight;Sicht, Blick
+reaction;Reaktion
+brave;mutig, tapfer
+reckless;leichtsinnig, unbesonnen, rücksichtslos
+shocking;schockierend
