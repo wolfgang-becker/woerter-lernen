@@ -17,7 +17,7 @@ to march;marschieren
 trail;Weg, Pfad
 to flip;eine (schnelle Um)drehung machen
 to realize;erkennen, realisieren
-to stans up to somebody;jemanden die Stirn bieten
+to stand up to somebody;jemanden die Stirn bieten
 to sneer;spotten, spöttisch grinsen
 bronc rider;Rodeoreiter
 to pull;ziehen
