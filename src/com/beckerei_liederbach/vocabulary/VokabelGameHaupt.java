@@ -124,8 +124,10 @@ public class VokabelGameHaupt
 		if (!direction.equals("Latein->Deutsch")) return true;
 		int comma = originalQuestion.indexOf(',');
 		if (comma < 0) return true;
-		String matchedPartOfQuestion = originalQuestion.substring(0, comma);
-		return givenAnswer.substring(matchedPartOfGivenAnswer.length()).equalsIgnoreCase(originalQuestion.substring(matchedPartOfQuestion.length()));
+		String matchedPartOfQuestion = originalQuestion.substring(0, comma); // eo, ii m.Akk.
+		return givenAnswer     .substring(matchedPartOfGivenAnswer.length()).replace(" ", "").replace(",", "").replace(".", "")
+				.equalsIgnoreCase(                                                                                                // , eo, ii m.Akk. == , eo, ii m.Akk.
+			   originalQuestion.substring(matchedPartOfQuestion   .length()).replace(" ", "").replace(",", "").replace(".", ""));
 	}
 
 	/**
