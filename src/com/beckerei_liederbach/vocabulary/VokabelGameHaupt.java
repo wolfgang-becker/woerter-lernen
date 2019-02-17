@@ -67,7 +67,11 @@ public class VokabelGameHaupt
 	private String vergleiche1(String givenAnswer, String correctAnswer)
 	{
 		int comma = givenAnswer.indexOf(',');
-		if (comma >= 0)	givenAnswer = givenAnswer.substring(0, comma); // if user gave the additional "Perfektstamm" and so on
+		if (comma >= 0)	{
+			String matchedPart = vergleiche1(givenAnswer.substring(comma + 1), correctAnswer); // try if user put the Perfektstamm first
+			if (matchedPart != null) return matchedPart;
+			givenAnswer = givenAnswer.substring(0, comma); // if user gave the additional "Perfektstamm" and so on
+		}
 		if (correctAnswer.contains(",")) { // split at commas, but not at commas within brackets
 			List<Integer> splitPoints = new ArrayList<>();
 			int bracketLevel = 0;
@@ -114,7 +118,7 @@ public class VokabelGameHaupt
 
 	/**
 	 * originalQuestion         = ire, eo, ii m.Akk.
-	 * givenAnswer              = laufen, eo, ii m.Akk.
+	 * givenAnswer              = laufen, eo, ii m.Akk.    or      eo, ii m.Akk., laufen
 	 * matchedPartOfGivenAnswer = laufen
 	 * matchedPartOfQuestion    = ire
 	 */
@@ -125,9 +129,16 @@ public class VokabelGameHaupt
 		int comma = originalQuestion.indexOf(',');
 		if (comma < 0) return true;
 		String matchedPartOfQuestion = originalQuestion.substring(0, comma); // eo, ii m.Akk.
-		return givenAnswer     .substring(matchedPartOfGivenAnswer.length()).replace(" ", "").replace(",", "").replace(".", "")
-				.equalsIgnoreCase(                                                                                                // , eo, ii m.Akk. == , eo, ii m.Akk.
-			   originalQuestion.substring(matchedPartOfQuestion   .length()).replace(" ", "").replace(",", "").replace(".", ""));
+		boolean match = givenAnswer     .substring(matchedPartOfGivenAnswer.length()).replace(" ", "").replace(",", "").replace(".", "").trim()
+				          .equalsIgnoreCase(                                                                                                // [laufen], eo, ii m.Akk. == [ire], eo, ii m.Akk.
+			            originalQuestion.substring(matchedPartOfQuestion   .length()).replace(" ", "").replace(",", "").replace(".", "").trim());
+		if (match) return true;
+		int answerLastComma = givenAnswer.lastIndexOf(',');
+		if (answerLastComma < 0) return false;
+		return          givenAnswer     .substring(0, answerLastComma + 1           ).replace(" ", "").replace(",", "").replace(".", "").trim()
+		                  .equalsIgnoreCase(                                                                                                // eo, ii m.Akk., [laufen] == [ire], eo, ii m.Akk.
+	                    originalQuestion.substring(matchedPartOfQuestion   .length()).replace(" ", "").replace(",", "").replace(".", "").trim());
+		
 	}
 
 	/**
