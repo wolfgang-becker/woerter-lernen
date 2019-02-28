@@ -66,6 +66,8 @@ public class VokabelGameHaupt
 	 */
 	private String vergleiche1(String givenAnswer, String correctAnswer)
 	{
+		givenAnswer = givenAnswer.trim();
+		correctAnswer = correctAnswer.trim();
 		int comma = givenAnswer.indexOf(',');
 		if (comma >= 0)	{
 			String matchedPart = vergleiche1(givenAnswer.substring(comma + 1), correctAnswer); // try if user put the Perfektstamm first
