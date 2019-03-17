@@ -1,0 +1,32 @@
+golden;golden
+climate;Klima
+southern;südlich
+attractive;attraktiv
+to keep;belassen
+state;Zustand
+Californian;Kalifornier, kalifornisch
+luxury;Luxus
+to support;unterstützen
+fame;Ruhm
+desert;Wüste
+dry;trocken
+magnet;Magnet
+fake;künstlich
+explorer;Forscher, Forschungsreisender
+electronics;Elektronik
+definitely;bestimmt, mit Bestimmtheit, definitiv, eindeutig
+rags-to-riches;vom Tellerwäscher zum Millionär
+economy;Wirtschaft
+to attract;anziehen
+Hispanic;Lateinamerikaner, hispanisch, lateinamerikanisch
+border;Grenze
+illegal;illegal, rechtswidrig, unrechtmäßig
+poorly;schlecht
+to guard;bewachen
+standard of living;Lebensstandard
+guarantee;Garantie
+criminal;kriminell, verbrecherisch
+defining relative clause;notwendiger Relativsatz
+non-defining relative clause;nicht-notwendiger Relativsatz
+company;Firma, Unternehmen
+population;Einwohner, Bevölkerung
