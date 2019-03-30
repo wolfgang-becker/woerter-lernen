@@ -1,6 +1,22 @@
-aedificare, aedifico;bauen;6L22 
-gloria;Ehre, Ruhm;6L22 
-augere, augeo, auxi;vermehren, vergrößern (Auktion);6L22 
-condere, condo, condidi;erbauen, gründen;6L22 
-orbis, orbis m;Kreis(lauf), Erdkreis, Welt (Orbit);6L22 
-parcere, parco, peperci m.Dat.;schonen, sparen;6L22 
+legatio, legationis f;Gesandtschaft
+sacerdor, sacerdotis m/f;Priester(in)
+quando?;wann?
+tandem (im Aussagesatz);endlich
+tandem (im Fragesatz);denn eigentlich
+facere finam m. Gen;beenden, aufhören (mit)
+sortem dare;einen Oraklespruch geben
+legatus;Gesandter, Bevollmächtigter
+intellegere, intellego, intellexi;(be)merken, verstehen
+redire, redeo, redii;zurückgehen, zurückkehren
+supplicium;flehentliches Bitten, Strafe, Hinrichtung
+ac (~atque);und, und auch
+civitas, civitatis f;Bürgerrecht, Gemeinde, Staat
+superbia;Stoz, Überheblichkeit
+aliter (Adv.);anders, sonst
+ut (Adv.);wie
+confirmare, confirmo;bekräftigen, ermutigen, stärken
+oraculum;Orakel, Götterspruch, Orakelstätte
+exire, exeo, exii;herausgehen
+antea (Adv.);vorher, früher
+statuere, statuo, statui;aufstellen, beschließen, festsetzen
+cura;Sorge, Pflege
