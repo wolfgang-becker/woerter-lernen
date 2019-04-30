@@ -1,39 +1,36 @@
-mittere, mitto, misi, missum;loslassen, schicken, werfen;7L25 
-paulatim Adv.;allmählich;7L25 
-campus; Feld, freier Platz, Ebene;7L25 
-civis, civis m (Gen.Pl. -ium);Bürger (zivil);7L25 
-censere, censeo, censui, censum (m. Akk.);meinen, einschätzen, seine Stimme abgeben (für);7L25 
-longus, a, um;lang, weit;7L25 
-instruere, instruo, instruxi, instructum;aufstellen, ausrüsten, unterrichten (Instruktion);7L25 
-pariter Adv.;ebenso, gleichzeitig;7L25 
-palam Adv.;bekannt, in aller Öffentlichkeit;7L25 
-agere, ago, egi, actum;handeln, treiben, verhandeln;7L25 
-complures, complura (Gen.Pl. complurium);mehrere;7L25 
-nomen, nominis n;Name (Pronomen);7L25 
-deligere, deligo, delegi, delectum;auswählen (Delegierter);7L25 
-legere, lego, legi, lectum;lesen, auswählen;7L25 
-circum m.Akk.;um...herum, rings um (circa);7L25 
-ducere, duco, duxi, ductum;führen, ziehen;7L25 
-ponere, pono, posui, positum;(auf)stellen, (hin)legen, setzen (Position);7L25 
-illic Adv.;dort;7L25 
-sanguis, sanguinis m;Blut (Sanguiniker);7L25 
-interficere, interficio, interfeci, interfectum;töten, vernichten;7L25 
-excipere, excipio, excepi, exceptum;aufnehmen, eine Ausnahme machen (exzeptionell);7L25 
-supplex, supplicis;demütig bittend;7L25 
-publicus, a, um;öffentlich, staatlich (publik);7L25 
-mandare, mando;einen Auftrag geben, übergeben (Mandat);7L25 
-movere, moveo, movi, motum;bewegen (Motiv);7L25 
-officium;Dienst, Pflicht(gefühl) (Offizier);7L25 
-debere, debeo, debui, debitum;müssen, sollen, schulden;7L25 
-religio, religionis f;Glaube, Gottesverehrung, Frömmigkeit, Gewissenhaftigkeit, Aberglaube;7L25 
-respicere, respicio, respexi, respectum;zurückblicken, berücksichtigen (Respekt);7L25 
-prex, precis f;Bitte, Pl. Gebet;7L25 
-augere, augeo, auxi, auctum;vermehren, vergrößern (Auktion);7L25 
-habere, habeo, habui, habitum;haben, halten;7L25 
-videre, video, vidi, visum;sehen, darauf achten;7L25 
-dare, do, dedi, datum;geben;7L25 
-colere, colo, colui, cultum;bewirtschaften, pflegen, verehren;7L25 
-commovere, commoveo, commovi, commotum; bewegen, veranlassen;7L25 
-
-
-
+locus;Ort, Platz, Stelle (Lokal, lokal, Lokalisation)
+continere, contineo, continui;festhalten
+modo (Adv.);eben (noch)
+gravis, e;schwer (gravierend, Gravitation)
+legatio, legationis f;Gesandtschaft (Delegation)
+intus Adv.;im Innern, innen
+sacerdos, sacerdotis m/f;Priester, Priesterin
+flectere, flecto, flexi;biegen, hinlenken, umstimmen (flexibel)
+turpis, e;sittlich schlecht, hässlich, schändlich
+iucundus, a, um;angenehm, erfreulich
+quando?;wann?
+tandem (im Aussagesatz/im Fragesatz);endlich/denn eigentlich
+facere finem m.Gen.;beenden, aufhören (mit)
+sortem dare;einen Orakelspruch geben
+legatus;Gesandter, Bevollmächtigter
+intellegere, intellego, intellexi;bemerken, verstehen (Intelligenz)
+redire, redeo, redii;zurückgehen, zurückkehren
+libens, libentis;gern
+supplicium; flehentliches Bitten, Strafe, Hinrichtung
+ac, atque;und, und auch
+multum valere;viel gelten
+civitas, civitatis f;Bürgerrecht, Gemeinde, Staat
+superbia;Stolz, Überheblichkeit
+aliter Adv.;anders, sonst
+ut Adv.;wie
+confirmare, confirmo;bekräftigen, ermutigen, stärken (Konfirmation)
+adicere, adicio, adieci;hinzufügen (Adjektiv)
+oraculum;Orakel, Götterspruch, Orakelstätte
+exire, exeo, exii;herausgehen
+antea Adv.;vorher, früher
+cingere, cingo, cinxi;umgeben, umzingeln
+statuere, statuo, statui;aufstellen, beschließen, festsetzen (statuieren)
+cura;Sorge, Pflege (Kur)
+pariter Adv.;ebenso, gleichzeitig
+palam Adv.;bekannt, in aller Öffentlichkeit
+illic Adv.;dort

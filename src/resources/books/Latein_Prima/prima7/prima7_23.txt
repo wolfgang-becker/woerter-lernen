@@ -1,31 +1,31 @@
-legatio, legationis f;Gesandtschaft (Delegation);7L23 
-intus Adv.;im Innern, innen;7L23 
-sacerdos, sacerdotis m/f;Priester, Priesterin;7L23 
-flectere, flecto, flexi;biegen, hinlenken, umstimmen (flexibel);7L23 
-turpis, e;sittlich schlecht, hässlich, schändlich;7L23 
-iucundus, a, um;angenehm, erfreulich;7L23 
-quando?;wann?;7L23 
-tandem (im Aussagesatz/im Fragesatz);endlich/denn eigentlich;7L23 
-facere finem m.Gen.;beenden, aufhören (mit);7L23 
-sortem dare;einen Orakelspruch geben;7L23 
-legatus;Gesandter, Bevollmächtigter;7L23 
-intellegere, intellego, intellexi;bemerken, verstehen (Intelligenz);7L23 
-redire, redeo, redii;zurückgehen, zurückkehren;7L23 
-libens, libentis;gern;7L23 
-supplicium; flehentliches Bitten, Strafe, Hinrichtung;7L23 
-ac, atque;und, und auch;7L23 
-multum valere;viel gelten;7L23 
-civitas, civitatis f;Bürgerrecht, Gemeinde, Staat;7L23 
-superbia;Stolz, Überheblichkeit;7L23 
-aliter Adv.;anders, sonst;7L23 
-ut Adv.;wie;7L23 
-confirmare, confirmo;bekräftigen, ermutigen, stärken (Konfirmation);7L23 
-adicere, adicio, adieci;hinzufügen (Adjektiv);7L23 
-oraculum;Orakel, Götterspruch, Orakelstätte;7L23 
-exire, exeo, exii;herausgehen;7L23 
-antea Adv.;vorher, früher;7L23 
-cingere, cingo, cinxi;umgeben, umzingeln;7L23 
-statuere, statuo, statui;aufstellen, beschließen, festsetzen (statuieren);7L23 
-cura;Sorge, Pflege (Kur);7L23 
-
-
+salutem dicere (m.Dat.);jmd. grüßen
+monstrum;Wunderzeichen, Ungeheuer, Gespenst (monströs)
+fabula;Geschichte, Erzählung, Theaterstück (Fabel, fabelhaft)
+mirus, a, um;wunderbar, erstaunlich (Mirakel)
+commovere, commoveo, commovi;bewegen, veranlassen
+talis, e;derartig, ein solcher, so (beschaffen)
+permovere, permoveo, permovi;beunruhigen, veranlassen
+incredibilis, e;unglaublich 
+antiquus, a, um;alt, altertümlich (antik, Antiquität)
+tempus, temporis (n);(günstige) Zeit, Pl. Umstände 
+amplus, a, um;weit, groß, bedeutend (Amplitude)
+nocturnus, a, um;nächtlich
+ferrum;Eisen, Waffe
+vinculum;Band, Fessel; Pl. Gefängnis
+mox (Adv.);bald, dann
+ignotus, a, um;unbekannt
+quondam (Adv.);einst, einmal, manchmal
+philosophus;Philosoph
+perturbare, perturbo;in Verwirrung bringen
+perterrere, perterreo, perterrui; sehr erschrecken, einschüchtern
+conducere, conduco, conduxi;zusammenführen, anwerben, mieten
+silentium; Schweigen, Stille
+movere, moveo, movi;bewegen (Motiv, Motor)
+tenebrae, tenebrarum (Pl.);Dunkelheit, Finsternis
+procedere, procedo, processi;(vorwärts) gehen, vorrücken (Prozession, Prozess)
+abesse, absum, afui; abwesend sein, fehlen (absent, Absentenheft)
+abire, abeo, abii;weggehen
+invenire, invenio, inveni;finden, erfinden (Inventur, Inventar)
+sinere, sino, sivi;lassen, erlauben
+liber, libera, liberum;frei (Liberalismus, liberal)
+vale;leb'wohl!
