@@ -1,3 +1,32 @@
+hic, haec, hoc;dieser, diese, dieses (hier), folgender
+ille, illa, illud;jener, jene, jenes
+illuc (Adverb); dahin, dorthin
+praeclarus, praeclara, praeclarum;großartig
+spectaculum;Schauspiel
+victor, victoris (Adjektiv); siegreich
+dux, ducis (m); Anführer
+capere, capio, cepi, captum; fassen, nehmen, erobern
+nimius, nimia, nimium; übermaßig, zu groß
+permovere, permoveo, permovi, permotum; beunruhigen, veranlassen
+triumphus; Triumph(zug)
+mortalis, mortale; sterblich, Mensch (als Substantiv)
+conficere, conficio, confeci, confectum;beenden, fertigmachen
+incedere, incedo, incessi, incessum (m.Akk.);heranrücken, eintreten, (jemanden) befallen
+vincere, vinco, vici, victum; besiegen, übertreffen
+signum; Merkmal, Zeichen, Statue
+aureus, aurea, aureum; golden
+aes, aeris (n); Erz, Geld
+facere, facio, feci, fectum; machen, tun, handeln
+tabula;Tafel, GEmälde, Aufzeichnung
+regius, regia, regium; königlich
+tantus, tanta, tanum; so groß, so viel
+argentum; Silber
+dignitas, dignitatis (f); Würde, Ansehen, (gesellschaftliche) Stellung
+miseria; Not, Elend, Unglück
+simul (Adverb); zugleich, gleichzeitig
+eques, equitis (m); Reiter, Ritter
+
+
 locus;Ort, Platz, Stelle (Lokal, lokal, Lokalisation)
 continere, contineo, continui;festhalten
 modo (Adv.);eben (noch)
@@ -33,4 +62,3 @@ statuere, statuo, statui;aufstellen, beschließen, festsetzen (statuieren)
 cura;Sorge, Pflege (Kur)
 pariter Adv.;ebenso, gleichzeitig
 palam Adv.;bekannt, in aller Öffentlichkeit
-illic Adv.;dort
