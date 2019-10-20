@@ -1,30 +1,33 @@
-patres (conscripti), patrum (conscriptorum) Pl.;Senatoren;7L31 
-mutare, muto;(ver)ändern, verwandeln;7L31 
-adulescens, adulescentis;jung, Subst. junger Mann;7L31 
-exstinguere, exstinguo, exstinxi, exstinctum;auslöschen, vernichten;7L31 
-interest (m. Gen.);es ist wichtig (für jmd.);7L31 
-aures praebere;Gehör schenken, zuhören;7L31 
-philosophia;Philosophie;7L31 
-aestimare, aestimo;(ein)schätzen, beurteilen;7L31 
-magni aestimare;hoch schätzen;7L31 
-incipere, incipio, incepi (coepi), inceptum;anfangen, beginnen;7L31 
-pars, partis f (Gen. Pl. –ium);Teil, Richtung, Seite (partiell, Partei);7L31 
-disciplina;Disziplin, Lehre;7L31 
-cognoscere, cognosco, cognovi, cognitum;erkennen, kennen lernen;7L31 
-exercere, exerceo, exercui, exercitum;üben, trainieren, quälen (exerzieren);7L31 
-inopia;Mangel, Not;7L31 
-male Adv.;schlecht, schlimm;7L31 
-necessarius, a, um;notwendig;7L31 
-vindicare in m. Akk.;vorgehen gegen;7L31 
-docere, doceo, docui, doctum;lehren, unterrichten (Doktor, Dozent);7L31 
-damnare, damno (m. Gen.);verurteilen (wegen);7L31 
-funus, funeris n;Begräbnis, Untergang;7L31 
-modus;Art, Weise, Maß (Modell, Mode);7L31 
-corrumpere, corrumpo, corrupi, corruptum;bestechen, verderben (korrupt, Korruption);7L31 
-pellere, pello, pepuli, pulsum;schlagen, vertreiben;7L31 
-acerbus, a, um;bitter, grausam, rücksichtslos;7L31 
-resistere, resisto, restiti;stehen bleiben, Widerstand leisten (resistent);7L31 
-reprehendere, reprehendo, reprehendi, reprehensum;kritisieren, tadeln, wieder aufgreifen;7L31 
-tollere, tollo, sustuli, sublatum;aufheben, in die Höhe heben, beseitigen, wegnehmen;7L31 
-Graecus, a, um;griechisch;7L31 
-Graeci, -orum;(die) Griechen;7L31 
+res, rei f;Angelegenheit, Sache, Ding (Realismus, Realien, reell, real);7L33 
+fides, fidei f;Glaube, Treue, Vertrauen, Zuverlässigkeit;7L33 
+vastus, a, um;riesig, öde, verwüstet;7L33 
+vitam agere;(sein) Leben führen;7L33 
+malum;Leid, Übel, Unglück;7L33 
+cogere, cogo, coegi, coactum;(ver)sammeln, zwingen;7L33 
+praestare, praesto, praestiti;m. Dat. übertreffen, m. Akk gewährleisten, leisten, zeigen;7L33 
+fidem praestare;die Treue halten;7L33 
+adventus, adventus m;Ankunft (Advent, Abenteuer);7L33 
+dies, diei m;Tag;7L33 
+dies noctesque;Tage und Nächte (lang) (wie lange?);7L33 
+sollicitare, sollicito;aufhetzen, beunruhigen, erregen;7L33 
+subire, subeo, subii, subitum;auf sich nehmen, herangehen;7L33 
+labores subire;Arbeiten verrichten;7L33 
+libet, libuit;es gefällt;7L33 
+quo;wie, wo, wohin;7L33 
+quisnam, quidnam;wer denn, was denn?;7L33 
+incendere, incendo, incendi, incensum;in Brand stecken, entflammen;7L33 
+satis Adv.;genug (satt);7L33 
+pudet, puduit;es beschämt;7L33 
+quasi Adv.;gleichsam, geradezu, fast ("quasi");7L33 
+spes, spei f;Erwartung, Hoffnung ;7L33 
+dedere, dedo, dedidi, deditum;ausliefern, übergeben;7L33 
+flamma;Feuer, Flamme;7L33 
+dubitare, dubito;zögern, zweifeln;7L33 
+cedere, cedo, cessi, cessum;gehen, nachgeben, weichen;7L33 
+amore captus;von Liebe ergriffen, verliebt;7L33 
+levis, e;leicht, leichtsinnig;7L33 
+res adversae;unglückliche Umstände, Unglück;7L33 
+accidere, accido, accidi;geschehen, sich ereignen;7L33 
+ratio, rationis f;Grund, Vernunft, Überlegung, Berechnung, Art und Weise (rational, rationell);7L33 
+deesse, desum, defui;abwesend sein, fehlen;7L33 
+furor, furoris m;Wahnsinn, Wut (Furie, furios);7L33 

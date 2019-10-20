@@ -1,19 +1,29 @@
-accipere, accipio, accepi, acceptum;aufnehmen, erhalten, erfahren (akzeptieren);7L27 
-nisi Subj.;wenn nicht;7L27 
-igitur Adv.;also, folglich;7L27 
-divinus/divus, a, um;göttlich;7L27 
-pons, pontis m;Brücke;7L27 
-interea Adv.;inzwischen, unterdessen;7L27 
-pugna;Kampf;7L27 
-infestus, a, um;feindlich, feindselig;7L27 
-optare, opto;wünschen (adoptieren);7L27 
-adversus, a, um;entgegengesetzt, feindlich;7L27 
-sententia;Antrag (im Senat), Meinung, Satz, Sinn;7L27 
-indicare, indico;anzeigen, melden (Indikator);7L27 
-timor, timoris m;Angst, Furcht;7L27 
-temptare, tempto;angreifen, prüfen, versuchen;7L27 
-recens, recentis;frisch, neu;7L27 
-reducere, reduco, reduxi, reductum;zurückführen, zurückziehen (reduzieren);7L27 
-fuga;Flucht (Refugium);7L27 
-fuga salutem petere;die Rettung in der Flucht suchen, die Flucht ergreifen;7L27 
-frangere, frango, fregi, fractum;zerbrechen (Fraktur);7L27 
+ipse, ipsa, ipsum (Gen. ipsius, Dat. ipsi);(er, sie, es) selbst;7L29 
+epistula;Brief (Epistel);7L29 
+nullus, a, um (Gen. nullius, Dat. nulli);kein;7L29 
+solacium;Trost(mittel);7L29 
+opus est m. Abl.;es ist nötig, man braucht;7L29 
+deserere, desero, deserui, desertum;im Stiche lassen, verlassen;7L29 
+lectus;Bett, Liegesofa;7L29 
+iacere, iaceo, iacui;liegen;7L29 
+perpetuus, a, um;dauerhaft, ewig (Perpetuum mobile);7L29 
+vigilia;Nachtwache, (Wach-)Posten;7L29 
+vix Adv.;kaum, (nur) mit Mühe;7L29 
+sustinere, sustineo, sustinui;ertragen, standhalten;7L29
+timor, timoris m;Angst, Furcht
+agitare, agito;betreiben, überlegen (Agitation);7L29 
+timore agitari;von Furcht gequält werden;7L29 
+perdere, perdo, perdidi, perditum;zugrunde richten;7L29 
+tectum;Dach, Haus;7L29 
+metuere, metuo, metui;(sich) fürchten;7L29 
+contingere, contingo, contigi, contactum;berühren, gelingen (Kontingent, Kontakt);7L29 
+suscipere, suscipio, suscepi, susceptum m. Akk;auf sich nehmen, sich (einer Sache) annehmen, unternehmen;7L29 
+coniunx, coniugis m/f;Gatte, Gattin;7L29 
+nubere, nubo, nupsi, nuptum m. Dat.;heiraten (von der Frau aus);7L29 
+premere, premo, pessi, pressum;(unter)drücken, bedrängen (Presse, Depression);7L29 
+ops, opis f;Hilfe, Kraft, pl. Macht, Mittel, Reichtum;7L29 
+audacia;Frechheit, Kühnheit;7L29 
+bonum;das Gut(e);7L29 
+consumere, consumo, consumpsi, consumptum;verbrauchen, verwenden (konsumieren, Konsum);7L29 
+consulere in m. Akk.;Maßnahmen ergreifen, vorgehen gegen;7L29 
+arx, arcis f (Gen. Pl. -ium);Burg;7L29 

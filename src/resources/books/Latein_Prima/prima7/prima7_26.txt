@@ -1,62 +1,30 @@
-hic, haec, hoc;dieser, diese, dieses (hier), folgender;7L26 
-ille, illa, illud;jener, jene, jenes;7L26 
-illuc (Adv.);dahin, dorthin;7L26 
-praeclarus, a, um;großartig;7L26 
-spectaculum;Schauspiel (Spektakel);7L26 
-victor, victoris (Adj.);siegreich;7L26 
-dux, ducis (m);Anführer;7L26 
-capere, capio, cepi, captum;fassen, nehmen, erobern;7L26 
-nimius, a, um;übermäßig, zu groß;7L26 
-permovere, permoveo, permovi, permotum;beunruhigen, veranlassen;7L26 
-triumphus; Triumph(zug);7L26 
-mortalis,e;sterblich; Subst. Mensch (Salto mortale);7L26 
-pristinus, a, um;früher;7L26 
-conficere, conficio, confeci, confectum;beenden, fertig machen (Konfektion, Konfitüre);7L26 
-incedere, incedo, incessi, incessum (m.Akk.);heranrücken, eintreten, (jmd.) befallen;7L26 
-signum;Merkmal, Zeichen, Statue;7L26 
-aureus, a, um; golden;7L26 
-aes, aeris (n);Erz, Geld;7L26 
-facere, facio, feci, factum;machen, tun, handeln;7L26 
-tabula;Tafel, Gemälde, Aufzeichnung (Tabelle, Tablette);7L26 
-regius, a, um;königlich;7L26 
-tantus, a, um;so groß, so viel;7L26 
-argentum; Silber (Argentinien);7L26 
-vincere, vinco, vici, victum;(be)siegen, übertreffen;7L26 
-dignitas, dignitatis (f);Würde, Ansehen, (gesellschaftliche) Stellung;7L26 
-ambo, ambae, ambo;beide (zusammen);7L26 
-miseria;Not, Elend, Unglück (Misere);7L26 
-simul (Adv.);zugleich, gleichzeitig (simultan);7L26 
-eques, equitis (m);Reiter, Ritter;7L26 
-Galli, Gallorum; die Gallier;7L26 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+silva;Wald;7L28 
+inter (m.Akk.);unter, während, zwischen (intern);7L28 
+arbor, arboris (f);Baum;7L28 
+iuvenis, iuvenis (m);junger Mann, Adj. jung;7L28 
+amor, amoris (m);Liebe;7L28 
+accendere, accendo, accendi, accensum;anfeuern, anzünden;7L28 
+amore accensus;in Liebe entflammt, verliebt;7L28 
+ager, agri (m);Acker, Feld, Gebiet (Agrar-);7L28 
+vestigium;Fußsohle, Spur, Stelle;7L28 
+magis (Adv.);mehr, eher;7L28 
+natura;Beschaffenheit, Natur, Wesen (Naturell, Naturalien, natürlich);7L28 
+vetare, veto, vetui;verhindern, verbieten (Veto);7L28 
+demum (Adv.);endlich;7L28 
+auris, auris (f, Gen.Pl.-ium);Ohr;7L28
+accipere, accipio, accepi, acceptum;aufnehmen, erhalten, erfahren (akzeptieren, to accept)
+repetere, repeto, repetivi, repetitum;(zurück)verlangen, wiederholen (Repetent, repetieren);7L28 
+nihil/nil;nichts (Nihilismus, Nihilist);7L28 
+huc (Adv.);hierher;7L28 
+ardere, ardeo, arsi;brennen;7L28 
+rursus (Adv.);wieder;7L28 
+occurrere, occurro, occurri;begegnen, entgegentreten;7L28 
+tangere, tango, tetigi, tactum;berühren (Tango, Takt, Tangente);7L28 
+repellere, repello, reppuli, repulsum;zurückstoßen, abweisen, vertreiben;7L28 
+recipere, recipio, recepi, receptum;aufnehmen, wieder bekommen, zurücknehmen (Rezept);7L28 
+se recipere;sich zurückziehen;7L28 
+hinc (Adv.);von hier, hierauf;7L28 
+dolor, doloris (m);Schmerz;7L28 
+membrum;Glied, Körperteil;7L28 
+solvere, solvo, solvi, solutum;auflösen, bezahlen, lösen (absolvieren);7L28 
+dicere, dico, dixi, dictum;sagen, sprechen;7L28 

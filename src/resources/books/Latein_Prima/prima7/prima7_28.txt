@@ -1,29 +1,27 @@
-silva;Wald;7L28 
-inter (m.Akk.);unter, während, zwischen (intern);7L28 
-arbor, arboris (f);Baum;7L28 
-iuvenis, iuvenis (m);junger Mann, Adj. jung;7L28 
-amor, amoris (m);Liebe;7L28 
-accendere, accendo, accendi, accensum;anfeuern, anzünden;7L28 
-amore accensus;in Liebe entflammt, verliebt;7L28 
-ager, agri (m);Acker, Feld, Gebiet (Agrar-);7L28 
-vestigium;Fußsohle, Spur, Stelle;7L28 
-magis (Adv.);mehr, eher;7L28 
-natura;Beschaffenheit, Natur, Wesen (Naturell, Naturalien, natürlich);7L28 
-vetare, veto, vetui;verhindern, verbieten (Veto);7L28 
-demum (Adv.);endlich;7L28 
-auris, auris (f, Gen.Pl.-ium);Ohr;7L28 
-repetere, repeto, repetivi, repetitum;(zurück)verlangen, wiederholen (Repetent, repetieren);7L28 
-nihil/nil;nichts (Nihilismus, Nihilist);7L28 
-huc (Adv.);hierher;7L28 
-ardere, ardeo, arsi;brennen;7L28 
-rursus (Adv.);wieder;7L28 
-occurrere, occurro, occurri;begegnen, entgegentreten;7L28 
-tangere, tango, tetigi, tactum;berühren (Tango, Takt, Tangente);7L28 
-repellere, repello, reppuli, repulsum;zurückstoßen, abweisen, vertreiben;7L28 
-recipere, recipio, recepi, receptum;aufnehmen, wieder bekommen, zurücknehmen (Rezept);7L28 
-se recipere;sich zurückziehen;7L28 
-hinc (Adv.);von hier, hierauf;7L28 
-dolor, doloris (m);Schmerz;7L28 
-membrum;Glied, Körperteil;7L28 
-solvere, solvo, solvi, solutum;auflösen, bezahlen, lösen (absolvieren);7L28 
-dicere, dico, dixi, dictum;sagen, sprechen;7L28 
+magistratus, magistrat?s m;Amt, Beamter (Magistrat);7L30 
+senatus, senat?s m;Senat, Senatsversammlung, Rat);7L30 
+sacer, sacra, sacrum (m. Gen.);geweiht, heilig (sakral));7L30 
+nominare, nomino;nennen (Nominativ));7L30 
+idem, eadem, idem;derselbe, der gleiche (identisch, Identität));7L30 
+motus, mot?s m;Bewegung);7L30 
+terra;Erde, Land (Terrarium, Territorium, Terrasse));7L30 
+motus terrae;Erdbeben);7L30 
+fluctus, fluct?s m;Flut, Strömung (Fluktuation));7L30 
+quare;weshalb, rel. Satzanschluss: deshalb);7L30 
+memor, memoris m. Gen.;in Erinnerung an (= denkend an));7L30 
+metus, met?s m;Angst);7L30 
+persuadere, persuadeo, persuasi, persuasum m. Dat.;überzeugen (m. ACI/Inf.));7L30 
+neglegere, neglego, neglexi, neglectum;nicht (be)achten, vernachlässigen);7L30 
+intra m. Akk.;innerhalb (von) (intra-venös));7L30 
+domus, dom?s f;Haus (Dom; Domizil));7L30 
+vertere, verto, verti, versum;drehen, wenden (Version, versiert));7L30
+frangere, frango, fregi, fractum;zerbrechen (Fraktur, Fraktion, Fragment) 
+cadere, cado, cécidi;fallen (Kadenz));7L30 
+demittere, demitto, dem?si, demissum;herabschicken, sinken lassen (Demission));7L30 
+manus, man?s f;Hand (manuell, Manier));7L30 
+caelum;Himmel);7L30 
+tendere, tendo, tetendi, tentum;sich anstrengen, spannen (Tendenz, tendieren));7L30 
+luctus, luct?s m;Trauer);7L30 
+plenus, a, um (m. Gen.);voll (von/ mit) (Plenum, Plenarsaal));7L30 
+gemitus, gemit?s m;Seufzen, Stöhnen, Traurigkeit);7L30 
+vivere, vivo, vixi;leben);7L30 

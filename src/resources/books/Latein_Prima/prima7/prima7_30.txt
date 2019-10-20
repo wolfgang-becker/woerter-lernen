@@ -1,26 +1,28 @@
-magistratus, magistrat?s m;Amt, Beamter (Magistrat);7L30 
-senatus, senat?s m;Senat, Senatsversammlung, Rat);7L30 
-sacer, sacra, sacrum (m. Gen.);geweiht, heilig (sakral));7L30 
-idem, eadem, idem;derselbe, der gleiche (identisch, Identität));7L30 
-nominare, nomino;nennen (Nominativ));7L30 
-motus, mot?s m;Bewegung);7L30 
-terra;Erde, Land (Terrarium, Territorium, Terrasse));7L30 
-motus terrae;Erdbeben);7L30 
-fluctus, fluct?s m;Flut, Strömung (Fluktuation));7L30 
-quare;weshalb, rel. Satzanschluss: deshalb);7L30 
-memor, memoris m. Gen.;in Erinnerung an (= denkend an));7L30 
-metus, met?s m;Angst);7L30 
-persuadere, persuadeo, persuasi, persuasum m. Dat.;überzeugen (m. ACI/Inf.));7L30 
-neglegere, neglego, neglexi, neglectum;nicht (be)achten, vernachlässigen);7L30 
-intra m. Akk.;innerhalb (von) (intra-venös));7L30 
-domus, dom?s f;Haus (Dom; Domizil));7L30 
-vertere, verto, verti, versum;drehen, wenden (Version, versiert));7L30 
-cadere, cado, cécidi;fallen (Kadenz));7L30 
-demittere, demitto, dem?si, demissum;herabschicken, sinken lassen (Demission));7L30 
-manus, man?s f;Hand (manuell, Manier));7L30 
-caelum;Himmel);7L30 
-tendere, tendo, tetendi, tentum;sich anstrengen, spannen (Tendenz, tendieren));7L30 
-luctus, luct?s m;Trauer);7L30 
-plenus, a, um (m. Gen.);voll (von/ mit) (Plenum, Plenarsaal));7L30 
-gemitus, gemit?s m;Seufzen, Stöhnen, Traurigkeit);7L30 
-vivere, vivo, vixi;leben);7L30 
+socius;Gefährte, Verbündeter (sozial);7L32 
+colligere, colligo, coll?gi, collectum;sammeln (Kollekte, Kollektion, kollektiv);7L32 
+exercitus, exercit?s m;Heer;7L32 
+Polynice duce;unter Führung des Polyneikes;7L32 
+committere, committo, comm?si, commissum;anvertrauen, veranstalten, zustande bringen, begehen;7L32 
+proelium committere;eine Schlacht schlagen;7L32 
+occidere, occido, occidi, occisum;niederschlagen, töten;7L32 
+obtinere, obtineo, obtinui;(in Besitz) haben, (besetzt) halten;7L32 
+mens, mentis f (Gen. Pl. –ium);Geist, Sinn, Verstand, Meinung (mental, Kommentar);7L32 
+Creonte auctore;auf Veranlassung Kreons;7L32 
+honor / honos, honoris m;Ehre, (Ehren-)Amt (honorieren, Honorar);7L32 
+condere, condo, condidi, conditum;erbauen, gründen, verwahren, verbergen, bestatten;7L32 
+flagitium;Gemeinheit, Schandtat;7L32 
+honestus, a, um;angesehen, ehrenhaft;7L32 
+una Adv.;zugleich, zusammen;7L32 
+facinus, facinoris n;Handlung, Untat;7L32 
+audere, audeo;wagen;7L32 
+cavere, caveo, cavi, cautum (m. Akk.);sich hüten (vor), Vorsorge treffen (Kaution);7L32 
+aditus, adit?s m;Zugang;7L32 
+difficilis, e;schwierig;7L32 
+custos, custodis m/f;Wächter(in) (Küster);7L32 
+lex, legis f;Gesetz, Bedingung (legal, legitim, Legislative);7L32 
+constituere, constituo, constitui, constitutum;festsetzen, beschließen (Konstitution);7L32 
+obsecrare, obsecro;anflehen, bitten;7L32 
+venia;Gefallen, Nachsicht, Verzeihung;7L32 
+impetrare, impetro;erreichen, durchsetzen;7L32 
+invitus, a, um;ungern, gegen den Willen;7L32 
+Creonte invito;gegen Kreons Willen;7L32 
